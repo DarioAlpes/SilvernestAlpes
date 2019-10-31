@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.spotbugs:spotbugs-annotations:3.1.6">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.spotbugs/spotbugs-annotations/3.1.6/47389e74292decf6946b828e0dd75cc1dc3d70cc/spotbugs-annotations-3.1.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.spotbugs/spotbugs-annotations/3.1.6/e451c67e276df878103c9f9f044806abe74c264/spotbugs-annotations-3.1.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

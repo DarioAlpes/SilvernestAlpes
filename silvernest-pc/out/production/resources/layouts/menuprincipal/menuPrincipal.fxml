@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import co.smartobjects.ui.javafx.controladores.menuprincipal.BotonMenuPrincipal?>
-<?import co.smartobjects.ui.javafx.controladores.genericos.DialogoTipoRegistro?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.layout.*?>
@@ -42,11 +41,7 @@
         </padding>
     </BotonMenuPrincipal>
 
-
     <stylesheets>
         <URL value="@/css/estilo.css"/>
     </stylesheets>
-
-    <DialogoTipoRegistro fx:id="dialogoTipoRegistro"/>
-
 </GridPane>

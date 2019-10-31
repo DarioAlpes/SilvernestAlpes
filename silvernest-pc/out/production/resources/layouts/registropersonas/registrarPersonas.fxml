@@ -13,7 +13,8 @@
 <StackPane
         xmlns="http://javafx.com/javafx/8.0.112"
         xmlns:fx="http://javafx.com/fxml/1"
-        styleClass="raiz">
+        styleClass="raiz"
+        maxHeight="700">
     <GridPane alignment="CENTER"
               hgap="10">
         <padding>
@@ -31,7 +32,7 @@
 
         <VBox spacing="10"
               GridPane.rowIndex="0" GridPane.columnIndex="0">
-            <ControladorBuscarPersonasPorNumeroDeTransaccion fx:id="controladorBuscarPorTransaccion"/>
+            <!--<ControladorBuscarPersonasPorNumeroDeTransaccion fx:id="controladorBuscarPorTransaccion"/>-->
 
             <ControladorCrearPersona fx:id="controladorCrearPersonas"/>
         </VBox>

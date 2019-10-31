@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.secnod.shiro:shiro-jersey:0.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.secnod.shiro/shiro-jersey/0.2.0/f91c96663d952a7f4f3da23bb45b9c1c9489fd84/shiro-jersey-0.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.secnod.shiro/shiro-jersey/0.2.0/b3ee47189ef5b5d903f93679b449a36335b7a7de/shiro-jersey-0.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

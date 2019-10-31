@@ -41,6 +41,10 @@
         <Label fx:id="labelError" maxWidth="420"
                alignment="CENTER" styleClass="error-label-externa"
                wrapText="true"/>
+
+        <Label fx:id="labelVersion" maxWidth="420" text="Version 1.0"
+               alignment="BOTTOM_RIGHT" styleClass="title-label-pequeno"
+               wrapText="true"/>
     </VBox>
 
     <DialogoDeEspera fx:id="dialogoDeEspera"/>

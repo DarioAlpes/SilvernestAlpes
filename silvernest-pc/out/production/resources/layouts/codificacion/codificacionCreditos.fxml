@@ -12,7 +12,8 @@
 <?import java.net.URL?>
 <StackPane xmlns="http://javafx.com/javafx/8.0.112"
            xmlns:fx="http://javafx.com/fxml/1"
-           fx:id="raiz">
+           fx:id="raiz"
+           maxHeight="700">
 
     <VBox alignment="TOP_CENTER">
 

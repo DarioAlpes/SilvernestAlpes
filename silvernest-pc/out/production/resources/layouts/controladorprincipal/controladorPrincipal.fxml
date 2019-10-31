@@ -4,15 +4,17 @@
 <?import javafx.scene.layout.*?>
 <?import java.net.URL?>
 <BorderPane
+
         xmlns="http://javafx.com/javafx/8"
         xmlns:fx="http://javafx.com/fxml/1"
-        fx:id="raiz">
+        fx:id="raiz"
+        maxHeight="700">
     <top>
         <ControladorToolbar fx:id="toolbar" BorderPane.alignment="CENTER"/>
     </top>
 
     <center>
-        <StackPane fx:id="panelContendorPrincipal" BorderPane.alignment="CENTER">
+        <StackPane fx:id="panelContendorPrincipal" BorderPane.alignment="CENTER" >
             <StackPane fx:id="contenidoFlujo">
             </StackPane>
         </StackPane>

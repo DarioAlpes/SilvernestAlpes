@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.crazycake:shiro-redis:3.1.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.crazycake/shiro-redis/3.1.0/a82dc2cef7e3335aaa9cdec63229e12bd622559b/shiro-redis-3.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.crazycake/shiro-redis/3.1.0/e4a673e75586b8e18649a31a7f1dd309e87db575/shiro-redis-3.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

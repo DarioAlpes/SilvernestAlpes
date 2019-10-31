@@ -80,12 +80,12 @@ internal class AplicacionPrincipal : Application()
 
 //        val CONFIGURACION_AMBIENTE = ConfiguracionAmbiente(1, "http://localhost:80/") // LOCAL
         //val CONFIGURACION_AMBIENTE = ConfiguracionAmbiente(1, "http:18.191.58.98") // DESARROLLO
-        //val CONFIGURACION_AMBIENTE = ConfiguracionAmbiente(1, "http:18.221.226.238") // NUEVO DESARROLLO
+        val CONFIGURACION_AMBIENTE = ConfiguracionAmbiente(1, "http:18.221.226.238") // NUEVO DESARROLLO
         //val CONFIGURACION_AMBIENTE = ConfiguracionAmbiente(1, "http:18.189.187.126") // PRUEBAS
         //val CONFIGURACION_AMBIENTE = ConfiguracionAmbiente(1, "http:18.223.68.197") // PRODUCCION
         //val CONFIGURACION_AMBIENTE = ConfiguracionAmbiente(1, "http://dev.back.silvernest.com.co/") // DESARROLLO
         //val CONFIGURACION_AMBIENTE = ConfiguracionAmbiente(1, "http://stage.back.silvernest.com.co/") // PREPRODUCCIÓN
-        val CONFIGURACION_AMBIENTE = ConfiguracionAmbiente(1, "https://back.silvernest.cafam.com.co/") // PRODUCCION
+        //val CONFIGURACION_AMBIENTE = ConfiguracionAmbiente(1, "https://back.silvernest.cafam.com.co/") // PRODUCCION
 
         @JvmStatic
         fun main(args: Array<String>)

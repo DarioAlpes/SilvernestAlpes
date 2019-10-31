@@ -27,9 +27,6 @@
                 <Insets top="20"/>
             </padding>
 
-            <JFXComboBox fx:id="comboCajaAliada" prefWidth="Infinity" promptText="Caja Aliada"
-                         styleClass="jfx-combo-principal-blanco"/>
-
             <JFXComboBox fx:id="comboTipoDocumento" prefWidth="Infinity" promptText="Tipo de documento"
                          styleClass="jfx-combo-principal-blanco"/>
 
