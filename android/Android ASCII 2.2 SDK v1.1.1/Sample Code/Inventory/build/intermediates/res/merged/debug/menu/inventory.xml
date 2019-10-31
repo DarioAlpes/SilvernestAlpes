@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>
+<!-- From: file:/C:/workspace_smart_objects/SmartObjects/android/Android%20ASCII%202.2%20SDK%20v1.1.1/Sample%20Code/Inventory/res/menu/inventory.xml -->

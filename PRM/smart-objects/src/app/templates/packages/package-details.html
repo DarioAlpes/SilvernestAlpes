@@ -1,0 +1,59 @@
+<div *ngIf="package">
+    <!--<h2>Detalles del paquete {{package.name}}</h2>
+    <div class="error" *ngIf="error">
+        <label>Error: </label>
+        {{error}}
+    </div>
+    <div *ngIf="package.id"><label>Id: </label>{{package.id}}</div>
+    <div *ngIf="package['historic-id']"><label>Id historico: </label>{{package['historic-id']}}</div>
+    <div>
+      <label>Nombre: </label>
+      <input [(ngModel)]="package.name" placeholder="Nombre"/>
+    </div>
+    <div>
+      <label>Precio: </label>
+      <input type="number" step="0.01" [(ngModel)]="package.price" placeholder="10.01"/>
+    </div>
+    <div>
+      <label>Descripción: </label>
+      <input [(ngModel)]="package.description" placeholder="Descripción"/>
+    </div>
+    <div>
+      <label>Consumo restringido: </label>
+      <input type="checkbox" [(ngModel)]="package['restricted-consumption']"/>
+    </div>
+    <div>
+      <label>Valido desde: </label>
+      <input [(ngModel)]="package['valid-from']" placeholder="20100101"/>
+    </div>
+    <div>
+      <label>Valido hasta: </label>
+      <input [(ngModel)]="package['valid-through']" placeholder="20150101"/>
+    </div>
+    <div>
+      <label>Duración: </label>
+      <input type="number" [(ngModel)]="package.duration" placeholder="5"/>
+    </div>
+    <div>
+      <label>Ubicación: </label>
+      <select [(ngModel)]="package['id-location']">
+        <option *ngFor="let location of locations" [ngValue]="location.id">{{location.name}}</option>
+      </select>
+    </div>
+    <div>
+      <label>Evento: </label>
+      <select [(ngModel)]="package['id-social-event']">
+        <option *ngFor="let event of events" [ngValue]="event.id">{{event.name}}</option>
+      </select>
+    </div>
+    <button (click)="savePackage()">Guardar</button>
+    <button (click)="goBack()">Volver</button>
+    <div *ngIf="package.id"><a [routerLink]="['/clients', idClient, '/packages', package.id, '/accesses']">Accesos del paquete</a></div>
+    <div *ngIf="package.id"><a [routerLink]="['/clients', idClient, '/packages', package.id, '/consumptions']">Consumos del paquete</a></div>
+    <div *ngIf="package.id"><a [routerLink]="['/clients', idClient, '/packages', package.id, '/reservations']">Reservas del paquete</a></div>
+    <div *ngIf="package.id"><a [routerLink]="['/clients', idClient, '/packages', package.id, '/persons-reservations']">Reservas de personas del paquete</a></div>-->
+    <pageheader [title]="'Paquete'"></pageheader>
+    <formview *ngIf="package&&fields" [fields]="fields" [(model)]="package" [click]="boundCallBack"></formview>
+
+
+</div>

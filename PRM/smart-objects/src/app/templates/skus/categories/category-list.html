@@ -1,0 +1,28 @@
+<div class="error" *ngIf="error">{{error}}</div>
+<!--<table>
+    <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Llave</th>
+        <th>Id categoria padre</th>
+    </tr>
+    <tr *ngFor="let category of categories">
+        <td>{{category.id}}</td>
+        <td>{{category.name}}</td>
+        <td>{{category.key}}</td>
+        <td>{{category["id-parent-category"]}}</td>
+        <td>
+            <button type="button" (click)="onSelect(category)">Editar</button>
+        </td>
+    </tr>
+</table>
+<button (click)="addCategory()">Crear categoria</button>
+<button (click)="goBack()">Volver</button>
+<div *ngIf="showCategory">
+    <sku-category-detail (close)="close($event)" [category]="selectedCategory"></sku-category-detail>
+</div>-->
+<pageheader [title]="'Categorías'"></pageheader>
+
+<tableview *ngIf="categories" [config]="config" [TableData] = "categories"
+           [rows]="rows" [columns]="columns" [click]="boundCallBack" [edit]="boundCallBack2">
+</tableview>

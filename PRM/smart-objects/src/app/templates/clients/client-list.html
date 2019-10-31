@@ -1,0 +1,25 @@
+<div class="error" *ngIf="error">{{error}}</div>
+<!--<table>
+    <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+    </tr>
+    <tr *ngFor="let client of clients">
+        <td>{{client.id}}</td>
+        <td>{{client.name}}</td>
+        <td>
+            <button type="button" (click)="onSelect(client)">Editar</button>
+            <button type="button" (click)="onDelete(client)">Eliminar</button>
+        </td>
+    </tr>
+</table>-->
+<pageheader [title]="'Clientes'"></pageheader>
+
+<tableview *ngIf="clients" [config]="config" [TableData] = "TableData"
+           [rows]="rows" [columns]="columns" [click]="boundCallBack" [edit]="boundCallBack2" [delete]="boundCallBackDelete">
+</tableview>
+
+
+<!--<div *ngIf="showClient">
+    <client-detail (close)="close($event)" [client]="selectedClient"></client-detail>
+</div>-->

@@ -1,0 +1,31 @@
+rootProject.name = 'prompter-backend'
+
+includeBuild("../weaver-aspectj-interno")
+
+include ':entidades'
+project(':entidades').projectDir = new File(settingsDir, '../entidades')
+
+include ':red'
+project(':red').projectDir = new File(settingsDir, '../red')
+
+include ':persistencia'
+project(':persistencia').projectDir = new File(settingsDir, '../persistencia')
+
+include ':configuracion-persistencia'
+project(':configuracion-persistencia').projectDir = new File(settingsDir, '../configuracion-persistencia')
+
+include ':configuracion-persistencia-h2'
+project(':configuracion-persistencia-h2').projectDir = new File(settingsDir, '../configuracion-persistencia-h2')
+
+include ':configuracion-persistencia-sqlite'
+project(':configuracion-persistencia-sqlite').projectDir = new File(settingsDir, '../configuracion-persistencia-sqlite')
+
+include ':configuracion-persistencia-postgresql'
+project(':configuracion-persistencia-postgresql').projectDir = new File(settingsDir, '../configuracion-persistencia-postgresql')
+
+include ':logger'
+project(':logger').projectDir = new File(settingsDir, '../logger')
+
+include ':integraciones'
+project(':integraciones').projectDir = new File(settingsDir, '../integraciones')
+

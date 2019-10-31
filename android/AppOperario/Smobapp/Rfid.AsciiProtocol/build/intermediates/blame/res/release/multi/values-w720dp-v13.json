@@ -1,0 +1,50 @@
+[
+    {
+        "outputFile": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\Rfid.AsciiProtocol\\build\\intermediates\\res\\merged\\release\\values-w720dp-v13\\values-w720dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 76,
+                    "endOffset": 127
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\Rfid.AsciiProtocol\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-w720dp\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 76,
+                        "endOffset": 128
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\Rfid.AsciiProtocol\\build\\intermediates\\res\\merged\\release\\values-w720dp-v13\\values-w720dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 76,
+                    "endOffset": 127
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\Rfid.AsciiProtocol\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-w720dp\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 76,
+                        "endOffset": 128
+                    }
+                }
+            }
+        ]
+    }
+]

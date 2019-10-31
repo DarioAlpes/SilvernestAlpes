@@ -1,0 +1,77 @@
+  <button md-fab (click)="formclick()">
+    <i class=" material-icons f-left m-r-5">save</i>
+</button>
+  <div class="col-md-4 tableview-desc">
+    <div class="">
+      <h3 class="">Forms</h3>
+      <h4 class="">Work with large data sets in tables with NG-Table</h4>
+    </div>
+    <div class="">
+          <h3><i class=" material-icons f-left m-r-5">dvr</i> ngTable</h3>
+          <p>ngTable allows you to interact with your tables.
+            It supports sorting, filtering and pagination. Header rows with titles and filters are automatically generated during compilation</p>
+    </div>
+
+    <div>
+
+    </div>
+  </div>
+
+  <div class="col-md-8">
+
+<div class="table-container">
+<md-card>
+  <form>
+  <div *ngFor="let field of fields" [formGroup]="form">
+    <!-- No Edit-->
+    <div *ngIf="field.type == 'noedit'"  class="form-group">
+      <label>{{field.label}}</label>
+      <span style="display:block" class="" type="text">{{model[field.id]}}</span>
+    </div>
+    <div *ngIf="field.type == 'input'" class="form-group">
+      <label>{{field.label}}</label>
+      <input class="form-control" type="text" pInputText [(ngModel)]="model[field.id]" name="{{field.id}}" [ngModelOptions]="{standalone: true}"/>
+      <div *ngIf="form.controls[field.id].errors" class="alert alert-danger">
+        <div *ngIf="form.controls[field.id].errors.error_message">
+          {{form.controls[field.id].errors.error_message}}
+        </div>
+        <div *ngIf="!form.controls[field.id].errors.error_message">
+          Valor invalido.
+        </div>
+      </div>
+    </div>
+    <!-- Mask-->
+    <div *ngIf="field.type == 'mask'" class="form-group">
+      <label>{{field.label}}</label>
+      <p-inputMask class="form-control" placeholder="digite el {{field.label}} en COP" alias="{{field.alias}}" [options]="{groupSeparator:'*',digits:0,prefix:'COP$',digitsOptional:true, autoGroup:false}" [(ngModel)]="model[field.id]" name="{{field.id}}" [ngModelOptions]="{standalone: true}"></p-inputMask>
+      <div *ngIf="form.controls[field.id].errors" class="alert alert-danger">
+        <div *ngIf="form.controls[field.id].errors.error_message">
+          {{form.controls[field.id].errors.error_message}}
+        </div>
+        <div *ngIf="!form.controls[field.id].errors.error_message">
+          Valor invalido.
+        </div>
+      </div>
+    </div>
+    <!--dropdown-->
+    <div *ngIf="field.type == 'dropdown'"  class="form-group">
+      <label>{{field.label}}</label>
+      <p-dropdown class="form-control" [options]="field.options" [(ngModel)]="model[field.id]" [filter]="true" name="{{field.id}}" [ngModelOptions]="{standalone: true}"></p-dropdown>
+    </div>
+    <!--checkbox-->
+      <p-checkbox class="checkbox"  *ngIf="field.type == 'checkbox'" [(ngModel)]="model[field.id]"  label="{{field.label}}" binary="true" name="{{field.id}}" [ngModelOptions]="{standalone: true}"></p-checkbox>
+      <!--datepicker-->
+      <div *ngIf="field.type == 'date'"  class="form-group">
+        <label>{{field.label}}</label>
+        <p-calendar class="form-control" [locale]="es" [(ngModel)]="model[field.id]" name="{{field.id}}" dateFormat="dd.mm.yy" [ngModelOptions]="{standalone: true}"></p-calendar>
+    </div>
+  </div>
+  <div *ngIf="imageCallback">
+    <label>Imagen: </label>
+    <input type="file" name="file" (change)="imageCallback($event)">
+  </div>
+  </form>
+</md-card>
+
+</div>
+</div>

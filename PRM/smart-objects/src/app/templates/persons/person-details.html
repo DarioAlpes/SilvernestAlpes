@@ -1,0 +1,82 @@
+<!--<div *ngIf="person">
+  <h2>Detalles de la persona {{person.name}}</h2>
+  <div class="error" *ngIf="error">
+    <label>Error: </label>
+    {{error}}
+  </div>
+  <div *ngIf="person.id"><label>Id: </label>{{person.id}}</div>
+  <div>
+    <label>Nombre: </label>
+    <input [(ngModel)]="person.name" placeholder="Nombre"/>
+  </div>
+  <div>
+    <label>Tipo documento: </label>
+    <select [(ngModel)]="person['document-type']">
+      <option *ngFor="let documentType of documentTypes" [ngValue]="documentType.value">{{documentType.text}}</option>
+    </select>
+  </div>
+  <div>
+    <label>Número documento: </label>
+    <input [(ngModel)]="person['document-number']" placeholder="123456789"/>
+  </div>
+  <div>
+    <label>Mail: </label>
+    <input [(ngModel)]="person.mail" placeholder="mail@example.com"/>
+  </div>
+  <div>
+    <label>Fecha nacimiento: </label>
+    <input [(ngModel)]="person.birthdate" placeholder="19900101"/>
+  </div>
+  <div>
+    <label>Genero: </label>
+    <select [(ngModel)]="person.gender">
+      <option *ngFor="let gender of genders" [ngValue]="gender.value">{{gender.text}}</option>
+    </select>
+  </div>
+  <div>
+    <label>Tipo: </label>
+    <select [(ngModel)]="person.type">
+      <option *ngFor="let type of types" [ngValue]="type.value">{{type.text}}</option>
+    </select>
+  </div>
+  <div>
+    <label>Categoría: </label>
+    <select [(ngModel)]="person.category">
+      <option *ngFor="let category of categories" [ngValue]="category.value">{{category.text}}</option>
+    </select>
+  </div>
+  <div>
+    <label>Afiliación: </label>
+    <select [(ngModel)]="person.affiliation">
+      <option *ngFor="let affiliation of affiliations" [ngValue]="affiliation.value">{{affiliation.text}}</option>
+    </select>
+  </div>
+  <div>
+    <label>Nacionalidad: </label>
+    <input [(ngModel)]="person.nationality" placeholder="Colombiana"/>
+  </div>
+  <div>
+    <label>Profesión: </label>
+    <input [(ngModel)]="person.profession" placeholder="Ingeniero"/>
+  </div>
+  <div>
+    <label>Ciudad: </label>
+    <input [(ngModel)]="person.city" placeholder="Bogotá"/>
+  </div>
+  <div>
+    <label>Compañía: </label>
+    <input [(ngModel)]="person.company" placeholder=""/>
+  </div>
+  <div *ngIf="!(person['image-key'] && person['image-key']!='null')">
+    <label>Imagen: </label>
+    <input type="file" name="file" (change)="setFile($event)">
+  </div>
+  <div *ngIf="person['image-key'] && person['image-key']!='null'">
+    <img src="{{imageUrl}}">
+  </div>
+  <button (click)="savePerson()">Guardar</button>
+  <button (click)="goBack()">Volver</button>
+</div>-->
+
+<pageheader [title]="'Personas'"></pageheader>
+<formview *ngIf="person" [fields]="fields" [(model)]="person" [click]="boundCallBack" [imageCallback]="boundImageCallback"></formview>

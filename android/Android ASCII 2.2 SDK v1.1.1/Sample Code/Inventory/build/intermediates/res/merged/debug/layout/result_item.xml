@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+
+</TextView>
+<!-- From: file:/C:/workspace_smart_objects/SmartObjects/android/Android%20ASCII%202.2%20SDK%20v1.1.1/Sample%20Code/Inventory/res/layout/result_item.xml -->

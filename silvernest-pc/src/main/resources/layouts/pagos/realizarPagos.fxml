@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.smartobjects.ui.javafx.controladores.genericos.DialogoDeEspera?>
+<?import co.smartobjects.ui.javafx.controladores.pagos.ControladorPagosDeUnaCompra?>
+<?import co.smartobjects.ui.javafx.controladores.pagos.ControladorPersonasYTotalAPagar?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<StackPane xmlns="http://javafx.com/javafx/8.0.112"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:id="raiz">
+    <GridPane
+            alignment="TOP_CENTER"
+            styleClass="raiz">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="31.25"/>
+            <ColumnConstraints percentWidth="0.2"/>
+            <ColumnConstraints percentWidth="68.55"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints percentHeight="10"/>
+            <RowConstraints percentHeight="90"/>
+        </rowConstraints>
+
+        <padding>
+            <Insets right="15" left="15"/>
+        </padding>
+
+        <Label text="PERSONAS"
+               styleClass="etiqueta-22px-color-texto-bold"
+               GridPane.halignment="CENTER"
+               GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+
+        <VBox GridPane.halignment="CENTER"
+              GridPane.rowIndex="1" GridPane.columnIndex="0">
+            <padding>
+                <Insets bottom="65"/>
+            </padding>
+
+            <ControladorPersonasYTotalAPagar
+                    fx:id="listaPersonasConGrupoDeCliente"
+                    VBox.vgrow="ALWAYS"/>
+
+            <JFXButton fx:id="botonPagar"
+                       text="PAGAR"
+                       styleClass="jfx-button-principal"
+                       prefWidth="115"
+                       VBox.vgrow="NEVER">
+                <GridPane.margin>
+                    <Insets top="10" left="25"/>
+                </GridPane.margin>
+            </JFXButton>
+        </VBox>
+
+        <Separator orientation="VERTICAL"
+                   styleClass="separador-grueso"
+                   GridPane.vgrow="ALWAYS"
+                   GridPane.rowIndex="1" GridPane.columnIndex="1">
+        </Separator>
+
+        <Label text="PAGOS"
+               styleClass="etiqueta-22px-color-texto-bold"
+               GridPane.halignment="CENTER"
+               GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+
+        <VBox GridPane.halignment="CENTER"
+              GridPane.rowIndex="1" GridPane.columnIndex="2">
+            <padding>
+                <Insets left="31" right="31" bottom="65"/>
+            </padding>
+            <ControladorPagosDeUnaCompra fx:id="pagosDeUnaCompra"/>
+        </VBox>
+
+    </GridPane>
+
+    <DialogoDeEspera fx:id="dialogoDeEspera"/>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+</StackPane>

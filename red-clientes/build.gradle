@@ -1,0 +1,98 @@
+buildscript {
+    ext.kotlin_version = '1.3.11'
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+apply plugin: 'idea'
+
+group 'co.smartobjects'
+version '0.1.0'
+description = "Módulo para petición de red de los clientes"
+
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+compileJava {
+    sourceCompatibility = '1.6'
+    targetCompatibility = '1.6'
+}
+
+compileTestJava {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+    options.compilerArgs += '-parameters'
+}
+
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "1.6"
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation(fileTree(include: '*.jar', dir: 'libs'))
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    api project(':entidades')
+    api project(':red')
+
+    def retrofit_version = "2.4.0"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-jackson:$retrofit_version"
+    api 'com.squareup.okhttp3:okhttp-urlconnection:3.11.0'
+
+    def junit5_jupiter = '5.3.1'
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junit5_jupiter"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$junit5_jupiter"
+    testImplementation "org.junit.jupiter:junit-jupiter-params:$junit5_jupiter"
+
+    testImplementation 'org.junit.platform:junit-platform-launcher:1.3.1'
+
+    testImplementation "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
+    testImplementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+
+    testImplementation 'org.mockito:mockito-inline:2.19.0'
+    testImplementation 'com.squareup.okhttp3:mockwebserver:3.11.0'
+}
+
+test {
+    useJUnitPlatform()
+
+    filter {
+        includeTestsMatching('*Pruebas')
+    }
+
+    // Always run tests, even when nothing changed.
+    dependsOn 'cleanTest'
+
+    // Show test results.
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+
+    reports {
+        junitXml.enabled = false
+        html.enabled = false
+    }
+}

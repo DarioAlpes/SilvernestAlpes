@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="configuracion-persistencia-h2_main" target="1.6" />
+      <module name="configuracion-persistencia-h2_test" target="1.8" />
+      <module name="configuracion-persistencia-sqlite_main" target="1.6" />
+      <module name="configuracion-persistencia-sqlite_test" target="1.8" />
+      <module name="configuracion-persistencia_main" target="1.6" />
+      <module name="configuracion-persistencia_test" target="1.8" />
+      <module name="entidades_main" target="1.6" />
+      <module name="entidades_test" target="1.8" />
+      <module name="persistencia_main" target="1.6" />
+      <module name="persistencia_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

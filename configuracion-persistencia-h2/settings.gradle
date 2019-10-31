@@ -1,0 +1,5 @@
+rootProject.name = 'configuracion-persistencia-h2'
+
+
+include ':configuracion-persistencia'
+project(':configuracion-persistencia').projectDir = new File(settingsDir, '../configuracion-persistencia')

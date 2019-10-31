@@ -1,0 +1,209 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.getkeepsafe.dexcount'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'de.mannodermaus.android-junit5'
+
+dexcount {
+    orderByMethodCount = true
+}
+
+android {
+    compileSdkVersion 28
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId "co.smartobjects.silvernestandroid"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "0.1.0"
+
+        vectorDrawables.useSupportLibrary = true
+
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        release {
+            def Properties props = new Properties()
+            def propFile = new File(projectDir.parent, "firmadoAPKs.properties")
+            if (propFile.canRead()) {
+
+                props.load(new FileInputStream(propFile))
+
+                def llaveNombreKeystore = 'RELEASE_KEYSTORE'
+                def llaveContraseñaKeystore = 'RELEASE_KEYSTORE_PASSWORD'
+                def llaveAliasKeystore = 'RELEASE_KEY_ALIAS'
+                def llaveContraseña = 'RELEASE_KEY_PASSWORD'
+
+                if (props != null
+                        && props.containsKey(llaveNombreKeystore)
+                        && props.containsKey(llaveContraseñaKeystore)
+                        && props.containsKey(llaveAliasKeystore)
+                        && props.containsKey(llaveContraseña)) {
+                    storeFile = file(new File(projectDir.absolutePath, props[llaveNombreKeystore]))
+                    storePassword = props[llaveContraseñaKeystore]
+                    keyAlias = props[llaveAliasKeystore]
+                    keyPassword = props[llaveContraseña]
+                    // new String(System.console().readPassword("\n\$ Enter keys password: "))
+                } else {
+                    println ' ---------------------------------- firmadoAPKs.properties encontrado, pero faltan parámetros de configuración ---------------------------------- '
+                    android.buildTypes.release.signingConfig = null
+                }
+            } else {
+                println " ---------------------------------- firmadoAPKs.properties no encontrado en '${propFile.absolutePath}' ---------------------------------- "
+                android.buildTypes.release.signingConfig = null
+            }
+        }
+        debug {
+            storeFile file("C:/Users/mors/.android/debug.keystore")
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix '.debug'
+            versionNameSuffix '-DEBUG'
+            debuggable true
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+            proguardFiles fileTree('proguard').asList().toArray()
+
+            buildConfigField "String", "TAPLINX_API_KEY", "\"97ce1ef995e9303ee78ac30512966d79\""
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.release
+            proguardFiles = buildTypes.debug.proguardFiles
+
+            buildConfigField "String", "TAPLINX_API_KEY", "\"71b8548036fd2612999c8361f5feff95\""
+        }
+    }
+
+    flavorDimensions "cliente", "ambiente"
+    productFlavors {
+        cafam {
+            dimension "cliente"
+
+            ext.idDelCliente = 1L
+            buildConfigField "Long", "ID_CLIENTE", ext.idDelCliente + 'L'
+        }
+
+        desarrollo {
+            dimension "ambiente"
+
+            buildConfigField "String", "URL_BASE", '"http://dev.back.silvernest.com.co/"'
+        }
+        preproduccion {
+            dimension "ambiente"
+
+            buildConfigField "String", "URL_BASE", '"http://stage.back.silvernest.com.co/"'
+        }
+        produccion {
+            dimension "ambiente"
+
+            buildConfigField "String", "URL_BASE", '"https://back.silvernest.com.co/"'
+        }
+    }
+
+    applicationVariants.all { variant ->
+        def flavors = variant.productFlavors
+        def cliente = flavors[0]
+        def ambiente = flavors[1]
+        println variant.baseName + " : " + variant.name
+        variant.outputs.all { output ->
+            outputFileName = variant.baseName + "_C" + variant.productFlavors.get(0).ext.idDelCliente + "_v" + defaultConfig.versionName.replace('.', '_') + ".apk"
+        }
+    }
+
+    testOptions {
+        junitPlatform {
+            filters {
+                includePatterns '.*Pruebas'
+            }
+        }
+
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+
+    sourceSets {
+        test.java.srcDirs += 'src/test/kotlin'
+        main.java.srcDirs += 'src/main/kotlin'
+        debug.java.srcDirs += 'src/debug/kotlin'
+    }
+
+    packagingOptions {
+        exclude 'META-INF/proguard/androidx-annotations.pro'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+    def versionCorutinas = '1.0.1'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$versionCorutinas"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$versionCorutinas"
+
+    implementation project(':modelos-ui')
+    implementation project(':configuracion-persistencia-sqlite')
+
+    def ormlite_version = "5.1"
+    api "com.j256.ormlite:ormlite-android:$ormlite_version"
+
+    def sqllite_version = '3.23.1'
+    implementation "io.requery:sqlite-android:$sqllite_version"
+
+    implementation 'io.paperdb:paperdb:2.6'
+
+    implementation 'org.koin:koin-core:1.0.2'
+    implementation 'org.koin:koin-android:1.0.2'
+//    implementation 'org.koin:koin-androidx-scope:1.0.2'
+    implementation 'org.koin:koin-android-scope:1.0.2'
+
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    implementation 'com.jakewharton.rxbinding3:rxbinding:3.0.0-alpha1'
+
+//    implementation 'androidx.core:core-ktx:1.0.1'
+//    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+//    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+//    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.0-alpha2'
+//    implementation 'androidx.sqlite:sqlite:2.0.0'
+    implementation 'android.arch.persistence:db:1.1.1'
+//    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'com.android.support:multidex:1.0.3'
+
+    implementation 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
+
+    implementation('taplinx-android:nxpnfcandroidlib:1.5@aar') { transitive = true }
+
+    debugImplementation 'com.facebook.stetho:stetho:1.5.0'
+
+    def junit5_version = '5.2.0'
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$junit5_version"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junit5_version"
+    testImplementation "org.junit.jupiter:junit-jupiter-params:$junit5_version"
+
+    testImplementation "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
+    testImplementation 'androidx.test:core:1.0.0'
+    def robolectric_version = '4.0.1'
+    testImplementation "org.robolectric:robolectric:$robolectric_version"
+
+    testImplementation 'org.mockito:mockito-inline:2.21.0'
+}

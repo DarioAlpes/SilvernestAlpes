@@ -1,0 +1,13 @@
+group 'co.smartobjects'
+version '1.0.0'
+
+apply plugin: 'groovy'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+}

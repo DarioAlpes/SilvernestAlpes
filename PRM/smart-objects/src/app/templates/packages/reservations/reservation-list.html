@@ -1,0 +1,24 @@
+<div class="error" *ngIf="error">{{error}}</div>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Compañía</th>
+        <th>Número de personas</th>
+        <th>Id paquete</th>
+        <th>Opciones</th>
+    </tr>
+    <tr *ngFor="let reservation of reservations">
+        <td>{{reservation.id}}</td>
+        <td>{{reservation.company}}</td>
+        <td>{{reservation["number-persons"]}}</td>
+        <td>{{reservation["id-package"]}}</td>
+        <td>
+            <button type="button" (click)="onSelect(reservation)">Editar</button>
+        </td>
+    </tr>
+</table>
+<button (click)="addReservation()">Crear reserva</button>
+<button (click)="goBack()">Volver</button>
+<div *ngIf="showReservation">
+    <reservation-detail (close)="close($event)" [reservation]="selecteReservation"></reservation-detail>
+</div>

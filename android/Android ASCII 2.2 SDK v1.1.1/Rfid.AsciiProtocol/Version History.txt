@@ -1,0 +1,38 @@
+Version History
+---------------
+09/01/2015      BigFix: BluetoothReaderService no longer leaves blocked threads each time it is stopped
+
+12/11/2014		Added LicenceKey Sample Project - demonstrates how to authorise a reader to only work with the reader supplier's software
+				Added LicenceKeyCommand - read/write/delete a licence key from the reader
+				Added getDeviceProperties() method to AsciiCommander that returns an object describing reader properties that may be 
+					different to the ASCII protocol limits in the library e.g. antenna power 
+				Updated Inventory Sample project to demonstrate use of getDeviceProperties() method.
+				Added Bluetooth Address to VersionInformationCommand
+				Added switch repeat rate parameters to the SwitchActionCommand
+				Added SleepTimeoutCommand to configure the reader's sleep timeout duration
+				Updated to the latest Android v4 support library.
+				BugFix:	Life-cycle delegate responseBegan() method is no longer incorrectly invoked for non-library responses
+						when the responder is not capturing non-library responses
+				
+
+18/12/2013		BugFix: TransponderResponder no longer consumes the OK: and ER: responses.
+13/12/2013		BugFix: SwitchStateCommand state property is now a SwitchState not a SwitchAction!
+09/12/2013		Added Kill command		
+06/12/2013		Added Lock command		
+04/12/2013		Added Auto-run file commands
+				Added ReadLogFileCommand
+				AsciiCommander synchronous command timeout is now based on time since last reader response
+				Added WriteTransponderCommand
+
+03/12/2103		Added SwitchSinglePressUserActionCommand
+				Added SwitchDoublePressUserActionCommand
+				Added SwitchSinglePressCommand
+				Added SwitchDoublePressCommand
+
+02/12/2013		SwitchResponder class added for monitoring asynchronous switch reports
+				BugFix: SwitchAction now implements the ControlParameters correctly
+
+20/11/2013		AsciiCommander and BluetoothReaderService are now more robust when stopping and starting.
+				BluetoothReaderService no longer constructed with unused AsciiCommander.
+				BugFix: Repeated calls to AsciiCommander.connect() no longer causes SIGSEGV when closing bluetooth socket twice.
+				

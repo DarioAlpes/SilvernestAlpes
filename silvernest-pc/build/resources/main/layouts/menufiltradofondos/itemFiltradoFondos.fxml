@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.smartobjects.ui.javafx.iconosyfonts.PrompterIconosCategoriasView?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<JFXButton xmlns="http://javafx.com/javafx/8.0.121"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:id="botonCategoria"
+           styleClass="item-lista-categorias">
+    <graphic>
+        <VBox alignment="CENTER_LEFT"
+              fillWidth="false">
+
+            <padding>
+                <Insets top="-3.6" bottom="-3.6"/>
+            </padding>
+
+            <Separator fx:id="separadorSuperior"
+                       prefHeight="15"
+                       orientation="VERTICAL"
+                       styleClass="linea-separacion-paso">
+                <VBox.margin>
+                    <Insets left="51.49"/>
+                </VBox.margin>
+            </Separator>
+
+            <HBox alignment="CENTER_LEFT" prefWidth="Infinity">
+                <VBox.margin>
+                    <Insets top="-3.6" bottom="-4.6" left="45"/>
+                </VBox.margin>
+                <StackPane>
+                    <HBox.margin>
+                        <Insets right="12"/>
+                    </HBox.margin>
+
+                    <FontAwesomeIconView fill="#66b4a0" glyphName="CIRCLE_ALT" size="1.5em"/>
+
+                    <FontAwesomeIconView fx:id="iconoIndicador" styleClass="icono-color-acento" glyphName="CIRCLE"
+                                         size="1.5em"/>
+
+                </StackPane>
+
+                <PrompterIconosCategoriasView fx:id="iconoCategoria" glyphName="GENERICO" size="2em">
+                    <HBox.margin>
+                        <Insets right="12"/>
+                    </HBox.margin>
+                </PrompterIconosCategoriasView>
+
+                <Label fx:id="nombreCategoria" text="AMARILLO 1" wrapText="true"/>
+            </HBox>
+
+            <Separator fx:id="separadorInferior"
+                       prefHeight="15"
+                       orientation="VERTICAL"
+                       styleClass="linea-separacion-paso">
+                <VBox.margin>
+                    <Insets left="51.49"/>
+                </VBox.margin>
+            </Separator>
+
+        </VBox>
+    </graphic>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+</JFXButton>

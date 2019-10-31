@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<fx:root
+        xmlns="http://javafx.com/javafx/8.0.112"
+        xmlns:fx="http://javafx.com/fxml/1"
+        styleClass="raiz, panel-con-borde-color-primario-fondo-texto"
+        type="javafx.scene.layout.VBox"
+        spacing="10">
+    <padding>
+        <Insets top="10" bottom="3" right="10" left="10"/>
+    </padding>
+
+    <Label styleClass="etiqueta-16px-blanca-medium-peso800"
+           wrapText="true"
+           text="BUSCAR TRANSACCIÓN"/>
+
+    <JFXTextField fx:id="campoNumeroTransaccion" maxWidth="420" promptText="Número de transacción"
+                  styleClass="jfx-textfield-principal-texto-blanco">
+        <VBox.margin>
+            <Insets top="10"/>
+        </VBox.margin>
+    </JFXTextField>
+
+    <StackPane alignment="BOTTOM_RIGHT">
+        <VBox.margin>
+            <Insets top="5"/>
+        </VBox.margin>
+        <JFXButton
+                fx:id="botonBuscar"
+                styleClass="jfx-button-principal"
+                text="Buscar"/>
+    </StackPane>
+
+    <Label fx:id="labelError" styleClass="error-label-externa" wrapText="true"/>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+</fx:root>

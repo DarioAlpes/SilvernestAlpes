@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1117396333/entidades.iml" filepath="$PROJECT_DIR$/.idea/modules/-1117396333/entidades.iml" group="entidades" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1117396333/entidades_main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1117396333/entidades_main.iml" group="entidades" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1117396333/entidades_test.iml" filepath="$PROJECT_DIR$/.idea/modules/-1117396333/entidades_test.iml" group="entidades" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1296132045/red.iml" filepath="$PROJECT_DIR$/.idea/modules/1296132045/red.iml" group="red" />
+      <module fileurl="file://$PROJECT_DIR$/red-clientes.iml" filepath="$PROJECT_DIR$/red-clientes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/red-clientes_main.iml" filepath="$PROJECT_DIR$/.idea/modules/red-clientes_main.iml" group="red-clientes" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/red-clientes_test.iml" filepath="$PROJECT_DIR$/.idea/modules/red-clientes_test.iml" group="red-clientes" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1296132045/red_main.iml" filepath="$PROJECT_DIR$/.idea/modules/1296132045/red_main.iml" group="red" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1296132045/red_test.iml" filepath="$PROJECT_DIR$/.idea/modules/1296132045/red_test.iml" group="red" />
+    </modules>
+  </component>
+</project>

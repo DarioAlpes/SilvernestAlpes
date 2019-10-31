@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+
+    <string name="app_name">Device List</string>
+	<string name="not_connected">No se ha podido conectar a algún d</string>
+	<string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving…</string>
+	<string name="title_connecting">Conectando…</string>
+	<string name="title_connected_to">Conectado: </string>
+	<string name="title_not_connected">No conectado</string>
+	<string name="scanning">Buscando dispositivos…</string>
+	<string name="select_device">Seleccione un dispositivo para conectar</string>
+	<string name="secure_connect">Conectando a dispositivo - Seguro</string>
+	<string name="insecure_connect">Conectar a Lector</string>
+	<string name="insecure_change">Cambio de Lector</string>
+	<string name="disconnect">Desconectar Lector</string>
+    <string name="reset_reader_menu_text">Reiniciar Lector</string>
+    <string name="reconnect_reader_menu_item_text">Reconectar al ultimo lector</string>
+		
+	<string name="none_paired">Ningún dispositivo ha sido asociado</string>
+	<string name="none_found">No hay dispositivos encontrados</string>
+	<string name="title_paired_devices">Dispositivos encontrados</string>
+	<string name="title_paired_devices_count_format">Dispositivos encontrados (%d)</string>
+    <string name="title_paired_devices_empty">Dispositivos encontrados (Ninguno)</string>
+    <string name="title_other_devices">Otros dispositivos disponibles</string>
+    <string name="title_other_devices_count_format">Otros dispositivos disponibles (%d)</string>
+    <string name="title_other_devices_empty">Otros dispositivos disponibles (Ninguno)</string>
+    <string name="button_scan">Buscando</string>
+	<string name="discoverable">Make discoverable</string>
+
+</resources>

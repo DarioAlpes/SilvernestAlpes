@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.microsoft.azure:adal4j:1.6.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.microsoft.azure/adal4j/1.6.3/ef99191d38dc5c1c8439711f91d32083fae51f6e/adal4j-1.6.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.microsoft.azure/adal4j/1.6.3/6f81ca054fd369137cdc6bbe6837893e441f437b/adal4j-1.6.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

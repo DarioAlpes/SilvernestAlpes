@@ -1,0 +1,1 @@
+{"version":3,"file":"access.routes.js","sourceRoot":"","sources":["access.routes.ts"],"names":[],"mappings":";AACA,sCAAoC,yBAAyB,CAAC,CAAA;AAC9D,yCAAuC,4BAA4B,CAAC,CAAA;AAEvD,qBAAa,GAAY;IACpC;QACE,IAAI,EAAE,kDAAkD;QACxD,SAAS,EAAE,2CAAmB;KAC/B;IACD;QACE,IAAI,EAAE,sDAAsD;QAC5D,SAAS,EAAE,iDAAsB;KAClC;CACF,CAAC;AAEW,gCAAwB,GAAU,CAAC,2CAAmB,EAAE,iDAAsB,CAAC,CAAA"}

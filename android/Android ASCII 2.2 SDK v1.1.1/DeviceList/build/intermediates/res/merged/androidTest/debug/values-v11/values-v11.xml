@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/workspace_smart_objects/SmartObjects/android/Android%20ASCII%202.2%20SDK%20v1.1.1/DeviceList/build/intermediates/bundles/debug/res/values-v11/values-v11.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!-- API 11 theme customizations can go here. -->
+    </style>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mensaje_esperando_manilla">"Esperando manilla…"</string>
+
+    <string name="titulo_dialog_activar_nfc">"¡NFC Desactivado!"</string>
+    <string name="mensaje_dialogo_activar_nfc">"¿Ir a configuración para activar NFC?"</string>
+    <string name="mensaje_boton_activar_nfc">Activar</string>
+    <string name="mensaje_boton_activar_nfc_despues">Ahora no</string>
+</resources>

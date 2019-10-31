@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="co.smartobjects-configuracion-persistencia-h2_main" target="1.6" />
+      <module name="co.smartobjects-configuracion-persistencia-h2_test" target="1.8" />
+      <module name="co.smartobjects-configuracion-persistencia-sqlite_main" target="1.6" />
+      <module name="co.smartobjects-configuracion-persistencia-sqlite_test" target="1.6" />
+      <module name="co.smartobjects-entidades_main" target="1.6" />
+      <module name="co.smartobjects-entidades_test" target="1.8" />
+      <module name="co.smartobjects-logger_main" target="1.6" />
+      <module name="co.smartobjects-logger_test" target="1.8" />
+      <module name="co.smartobjects-persistencia_main" target="1.6" />
+      <module name="co.smartobjects-persistencia_test" target="1.8" />
+      <module name="co.smartobjects-prompter-backend_main" target="1.8" />
+      <module name="co.smartobjects-prompter-backend_test" target="1.8" />
+      <module name="co.smartobjects-red_main" target="1.6" />
+      <module name="co.smartobjects-red_test" target="1.8" />
+      <module name="co.smartobjects-weaver-aspectj-interno_main" target="1.8" />
+      <module name="co.smartobjects-weaver-aspectj-interno_test" target="1.8" />
+      <module name="co.smartobjects.configuracion-persistencia-h2.main" target="1.6" />
+      <module name="co.smartobjects.configuracion-persistencia-h2.test" target="1.8" />
+      <module name="co.smartobjects.configuracion-persistencia-postgresql.main" target="1.8" />
+      <module name="co.smartobjects.configuracion-persistencia-postgresql.test" target="1.8" />
+      <module name="co.smartobjects.configuracion-persistencia-sqlite.main" target="1.6" />
+      <module name="co.smartobjects.configuracion-persistencia-sqlite.test" target="1.6" />
+      <module name="co.smartobjects.configuracion-persistencia.main" target="1.6" />
+      <module name="co.smartobjects.configuracion-persistencia.test" target="1.8" />
+      <module name="co.smartobjects.entidades.main" target="1.6" />
+      <module name="co.smartobjects.entidades.test" target="1.8" />
+      <module name="co.smartobjects.integraciones.main" target="1.8" />
+      <module name="co.smartobjects.integraciones.test" target="1.8" />
+      <module name="co.smartobjects.logger.main" target="1.6" />
+      <module name="co.smartobjects.logger.test" target="1.8" />
+      <module name="co.smartobjects.persistencia.main" target="1.6" />
+      <module name="co.smartobjects.persistencia.test" target="1.8" />
+      <module name="co.smartobjects.prompter-backend.main" target="1.8" />
+      <module name="co.smartobjects.prompter-backend.test" target="1.8" />
+      <module name="co.smartobjects.red.main" target="1.6" />
+      <module name="co.smartobjects.red.test" target="1.8" />
+      <module name="co.smartobjects.weaver-aspectj-interno.main" target="1.8" />
+      <module name="co.smartobjects.weaver-aspectj-interno.test" target="1.8" />
+      <module name="configuracion-persistencia-h2_main" target="1.6" />
+      <module name="configuracion-persistencia-h2_test" target="1.8" />
+      <module name="configuracion-persistencia-postgresql_main" target="1.8" />
+      <module name="configuracion-persistencia-postgresql_test" target="1.8" />
+      <module name="configuracion-persistencia-sqlite_main" target="1.6" />
+      <module name="configuracion-persistencia-sqlite_test" target="1.6" />
+      <module name="configuracion-persistencia_main" target="1.6" />
+      <module name="configuracion-persistencia_test" target="1.8" />
+      <module name="entidades_main" target="1.6" />
+      <module name="entidades_test" target="1.8" />
+      <module name="integraciones_main" target="1.8" />
+      <module name="integraciones_test" target="1.8" />
+      <module name="logger_main" target="1.6" />
+      <module name="logger_test" target="1.8" />
+      <module name="persistencia_main" target="1.6" />
+      <module name="persistencia_test" target="1.8" />
+      <module name="prompter-backend.configuracion-persistencia-h2.main" target="1.6" />
+      <module name="prompter-backend.configuracion-persistencia-h2.test" target="1.8" />
+      <module name="prompter-backend.configuracion-persistencia-postgresql.main" target="1.8" />
+      <module name="prompter-backend.configuracion-persistencia-postgresql.test" target="1.8" />
+      <module name="prompter-backend.configuracion-persistencia-sqlite.main" target="1.6" />
+      <module name="prompter-backend.configuracion-persistencia-sqlite.test" target="1.6" />
+      <module name="prompter-backend.configuracion-persistencia.main" target="1.6" />
+      <module name="prompter-backend.configuracion-persistencia.test" target="1.8" />
+      <module name="prompter-backend.entidades.main" target="1.6" />
+      <module name="prompter-backend.entidades.test" target="1.8" />
+      <module name="prompter-backend.integraciones.main" target="1.8" />
+      <module name="prompter-backend.integraciones.test" target="1.8" />
+      <module name="prompter-backend.logger.main" target="1.6" />
+      <module name="prompter-backend.logger.test" target="1.8" />
+      <module name="prompter-backend.persistencia.main" target="1.6" />
+      <module name="prompter-backend.persistencia.test" target="1.8" />
+      <module name="prompter-backend.red.main" target="1.6" />
+      <module name="prompter-backend.red.test" target="1.8" />
+      <module name="prompter-backend_main" target="1.8" />
+      <module name="prompter-backend_test" target="1.8" />
+      <module name="red_main" target="1.6" />
+      <module name="red_test" target="1.8" />
+      <module name="weaver-aspectj-interno_main" target="1.8" />
+      <module name="weaver-aspectj-interno_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

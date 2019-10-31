@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/dim_match_match"
+    android:fillViewport="true"
+    tools:context="smartobjects.com.smobapp.ActivityUbicacion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".9"
+            android:orientation="vertical">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/appbar_padding_top"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar_conciliar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                </android.support.v7.widget.Toolbar>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <TextView
+                style="@style/titulo_principal"
+                android:text="Ubicación" />
+
+            <LinearLayout style="@style/layout_ubicacion">
+
+                <TextView
+                    android:id="@+id/tv_ubicacion_pais"
+                    style="@style/text_view_generic"
+                    android:text="País:" />
+
+                <Spinner
+                    android:id="@+id/sp_ubicacion_paises"
+                    style="@style/dim_match_wrap" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_ubicacion">
+
+                <TextView
+                    android:id="@+id/tv_ubicacion_region"
+                    style="@style/text_view_generic"
+                    android:text="Región:" />
+
+                <Spinner
+                    android:id="@+id/sp_ubicacion_region"
+                    style="@style/dim_match_wrap" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_ubicacion">
+
+                <TextView
+                    android:id="@+id/tv_ubicacion_ciudad"
+                    style="@style/text_view_generic"
+                    android:text="Ciudad:" />
+
+                <Spinner
+                    android:id="@+id/sp_ubicacion_ciudad"
+                    style="@style/dim_match_wrap" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_ubicacion">
+
+                <TextView
+                    android:id="@+id/tv_ubicacion_zona"
+                    style="@style/text_view_generic"
+                    android:text="Zona:" />
+
+                <Spinner
+                    android:id="@+id/sp_ubicacion_zona"
+                    style="@style/dim_match_wrap" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_ubicacion">
+
+                <TextView
+                    android:id="@+id/tv_ubicacion_local"
+                    style="@style/text_view_generic"
+                    android:text="Local:" />
+
+                <Spinner
+                    android:id="@+id/sp_ubicacion_local"
+                    style="@style/dim_match_wrap" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_ubicacion">
+
+                <TextView
+                    android:id="@+id/tv_ubicacion_area"
+                    style="@style/text_view_generic"
+                    android:text="Área:" />
+
+                <Spinner
+                    android:id="@+id/sp_ubicacion_area"
+                    style="@style/dim_match_wrap" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_ubicacion">
+
+                <TextView
+                    android:id="@+id/tv_ubicacion_contenedor"
+                    style="@style/text_view_generic"
+                    android:text="Contenedor:" />
+
+                <Spinner
+                    android:id="@+id/sp_ubicacion_contenedor"
+                    style="@style/dim_match_wrap" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_ubicacion_siguiente"
+            style="@style/estilo_boton_dos"
+            android:layout_height="@dimen/general_finger_hight"
+            android:text="Siguiente"
+            android:background="@drawable/estilo_boton_no_disponible"/>
+    </LinearLayout>
+</ScrollView>

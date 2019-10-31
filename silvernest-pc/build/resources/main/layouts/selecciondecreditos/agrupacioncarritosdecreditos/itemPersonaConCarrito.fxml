@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.smartobjects.ui.javafx.controladores.carritocreditos.ControladorCarritoDeCreditos?>
+<?import co.smartobjects.ui.javafx.controladores.registropersonas.ControladorInformacionPersonaConGrupo?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<GridPane xmlns="http://javafx.com/javafx/8.0.121"
+          xmlns:fx="http://javafx.com/fxml/1"
+          fx:id="raiz"
+          styleClass="item-lista-personas-con-carrito-default">
+    <columnConstraints>
+        <ColumnConstraints percentWidth="44.47"/>
+        <ColumnConstraints percentWidth="55.53"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="77.16"/>
+        <RowConstraints percentHeight="22.84"/>
+    </rowConstraints>
+
+    <ControladorInformacionPersonaConGrupo
+            fx:id="informacionPersonaConGrupo"
+            GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+
+    <HBox
+            fx:id="contendorInfoSaldo"
+            alignment="CENTER_LEFT"
+            maxWidth="Infinity"
+            GridPane.rowIndex="1" GridPane.columnIndex="0">
+        <Label fx:id="etiquetaSaldo"
+               styleClass="etiqueta-19px-blanca-medium"
+               text="Saldo"
+               wrapText="true">
+            <HBox.margin>
+                <Insets left="30"/>
+            </HBox.margin>
+        </Label>
+        <Label fx:id="saldo"
+               styleClass="etiqueta-19px-blanca-black"
+               text="Saldo"
+               wrapText="true">
+            <HBox.margin>
+                <Insets left="30"/>
+            </HBox.margin>
+        </Label>
+    </HBox>
+
+    <StackPane fx:id="contendorCarrito"
+               GridPane.hgrow="NEVER"
+               GridPane.rowIndex="0" GridPane.columnIndex="1" GridPane.rowSpan="2">
+        <ControladorCarritoDeCreditos fx:id="carritoDeCreditos"/>
+    </StackPane>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+</GridPane>

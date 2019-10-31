@@ -1,0 +1,44 @@
+<div class="error" *ngIf="error">{{error}}</div>
+<!--<table>
+    <tr>
+        <th>Id historico</th>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Descripción</th>
+        <th>Consumo restringido</th>
+        <th>Valido desde</th>
+        <th>Valido hasta</th>
+        <th>Duración</th>
+        <th>Id evento social</th>
+        <th>Id ubicación</th>
+        <th>Opciones</th>
+    </tr>
+    <tr *ngFor="let package of packages">
+        <td>{{package["historic-id"]}}</td>
+        <td>{{package.id}}</td>
+        <td>{{package.name}}</td>
+        <td>{{package.price}}</td>
+        <td>{{package.description}}</td>
+        <td>{{package["restricted-consumption"]}}</td>
+        <td>{{package["valid-from"]}}</td>
+        <td>{{package["valid-through"]}}</td>
+        <td>{{package.duration}}</td>
+        <td>{{package["id-social-event"]}}</td>
+        <td>{{package["id-location"]}}</td>
+        <td>
+            <button type="button" (click)="onSelect(package)">Editar</button>
+        </td>
+    </tr>
+</table>-->
+<pageheader [title]="'Paquetes'"></pageheader>
+
+<tableview *ngIf="packages" [config]="config" [TableData] = "packages"
+           [rows]="rows" [columns]="columns" [click]="boundCallBack" [edit]="boundCallBack2" [delete]="boundCallBackDelete">
+</tableview>
+
+<button (click)="addPackage()">Crear paquete</button>
+<button (click)="goBack()">Volver</button>
+<div *ngIf="showPackage">
+    <package-detail (close)="close($event)" [package]="selectedPackage"></package-detail>
+</div>

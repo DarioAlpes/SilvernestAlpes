@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/workspace_smart_objects/SmartObjects/android/Android%20ASCII%202.2%20SDK%20v1.1.1/Sample%20Code/Inventory/res/values-sw720dp-land/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">128dp</dimen>
+</resources>

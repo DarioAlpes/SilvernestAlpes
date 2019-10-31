@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<fx:root
+        xmlns="http://javafx.com/javafx/8.0.121"
+        xmlns:fx="http://javafx.com/fxml/1"
+        type="javafx.scene.control.ScrollPane"
+        fitToHeight="true" fitToWidth="true"
+        hbarPolicy="NEVER"
+        vbarPolicy="ALWAYS"
+        VBox.vgrow="ALWAYS">
+
+    <VBox alignment="TOP_CENTER" prefWidth="Infinity">
+        <TilePane fx:id="catalogoDeProductos"
+                  hgap="6"
+                  prefColumns="1"
+                  prefRows="1"
+                  vgap="25"
+                  VBox.vgrow="NEVER">
+
+            <padding>
+                <Insets bottom="1" left="1" right="1" top="1"/>
+            </padding>
+        </TilePane>
+
+        <ImageView fx:id="imagenDeError"
+                   VBox.vgrow="NEVER"
+                   visible="false">
+            <VBox.margin>
+                <Insets top="20"/>
+            </VBox.margin>
+            <Image url="@/imagenes/no_fue_posible_cargar.png"/>
+        </ImageView>
+
+        <Label fx:id="textoDeError"
+               styleClass="etiqueta-titulo-default"
+               VBox.vgrow="NEVER"
+               visible="false">
+            <VBox.margin>
+                <Insets top="20"/>
+            </VBox.margin>
+        </Label>
+    </VBox>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+
+</fx:root>

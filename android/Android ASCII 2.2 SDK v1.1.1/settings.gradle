@@ -1,0 +1,6 @@
+include ':Sample Code:Trigger', ':smobapp'
+include ':Sample Code:Inventory'
+include ':Sample Code:ReadWrite'
+include ':DeviceList'
+include ':Rfid.AsciiProtocol'
+include ':Sample Code:LicenceKey'

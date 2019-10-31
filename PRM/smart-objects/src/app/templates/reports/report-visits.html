@@ -1,0 +1,44 @@
+
+<div>
+  <label>Tiempo inicial: </label>
+  <input [(ngModel)]="initialTime" placeholder=""/>
+</div>
+<div>
+  <label>Tiempo final: </label>
+  <input [(ngModel)]="finalTime" placeholder=""/>
+</div>
+<button (click)="getReport()">Consultar</button>
+
+<div *ngIf="report">
+<pageheader [title]="title"></pageheader>
+<div class="col-md-12 report-head">
+    <button md-raised-button color="accent" (click)="switch(0)">Gráfica</button>
+    <button md-raised-button color="accent" (click)="switch(1)">Tabla</button>
+    <button *ngIf="isTable" md-icon-button color="primary"  (click)="dt.exportCSV()"><i class="material-icons">file_download</i></button>
+    <button tooltip="yo" md-icon-button color="primary"  (click)="dt.exportCSV()"><i class="material-icons">email</i></button>
+    <label>Desde:</label>
+    <p-calendar class="" [locale]="es" [(ngModel)]="ini" name="inicio" dateFormat="dd.mm.yy" [ngModelOptions]="{standalone: true}"></p-calendar>
+    <label>Hasta:</label>
+    <p-calendar class="" [locale]="es" [(ngModel)]="end" name="fin" dateFormat="dd.mm.yy" [ngModelOptions]="{standalone: true}"></p-calendar>
+</div>
+<!--<div *ngIf="report">
+  <h3>Categoría A: {{report["A"]}}</h3>
+  <h3>Categoría B: {{report["B"]}}</h3>
+  <h3>Categoría C: {{report["C"]}}</h3>
+  <h3>Categoría D: {{report["D"]}}</h3>
+  <h3>Otros: {{report[""]}}</h3>
+</div>-->
+<div *ngIf='data'>
+<p-dropdown [options]="locations" [(ngModel)]="selectedCity"></p-dropdown>
+<div *ngIf="!isTable">
+  <nvd3 [options]="options" [data]="data"></nvd3>
+</div>
+
+<div *ngIf="isTable">
+<p-dataTable #dt [value]="data[0].values" [emptyMessage]="'No se encuentran registros con esa búsqueda'" [globalFilter]="gb">
+  <p-column field="label" header="'Categoría'"></p-column>
+  <p-column field="value" header="'Cuenta usuarios Únicos'"></p-column>
+</p-dataTable>
+</div>
+
+</div>

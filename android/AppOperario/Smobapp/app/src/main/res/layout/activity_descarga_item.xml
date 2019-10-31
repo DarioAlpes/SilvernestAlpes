@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="smartobjects.com.smobapp.ActivityDescargaItem">
+
+    <android.support.design.widget.AppBarLayout android:id="@+id/appbar"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar_conciliar"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar"
+        android:paddingTop="@dimen/padding_small"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Última actualización : 19/02/2016"
+        android:id="@+id/tv_descarga_item_actualizacion"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_descarga_item_actualizacion"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Local : Andino"
+        android:id="@+id/tv_descarga_item_local"
+        android:gravity="center"/>
+
+    <Button
+        android:text="Descargar"
+        android:id="@+id/btn_descarga_item_descargar"
+        style="@style/boton_agregar_jugador"
+        android:layout_below="@+id/tv_descarga_item_local"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/tv_descarga_item_local"
+        android:layout_alignEnd="@+id/tv_descarga_item_local"
+        android:layout_marginLeft="@dimen/padding_xxxsmall"
+        android:layout_marginRight="@dimen/padding_xxxsmall"
+        android:background="@drawable/estilo_boton_activo"/>
+
+    <Button
+        android:text="Iniciar"
+        android:id="@+id/btn_descarga_item_iniciar"
+        style="@style/boton_agregar_jugador"
+        android:layout_below="@+id/btn_descarga_item_descargar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/padding_xxxsmall"
+        android:layout_marginRight="@dimen/padding_xxxsmall"
+        android:background="@drawable/estilo_boton_no_disponible"
+        android:layout_alignRight="@+id/btn_descarga_item_descargar"
+        android:layout_alignEnd="@+id/btn_descarga_item_descargar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btn_descarga_item_iniciar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/fl_descargar_item_espera"></FrameLayout>
+</RelativeLayout>

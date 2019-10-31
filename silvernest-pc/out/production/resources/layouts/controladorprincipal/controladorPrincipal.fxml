@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.smartobjects.ui.javafx.controladores.controladorprincipal.ControladorToolbar?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<BorderPane
+        xmlns="http://javafx.com/javafx/8"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:id="raiz">
+    <top>
+        <ControladorToolbar fx:id="toolbar" BorderPane.alignment="CENTER"/>
+    </top>
+
+    <center>
+        <StackPane fx:id="panelContendorPrincipal" BorderPane.alignment="CENTER">
+            <StackPane fx:id="contenidoFlujo">
+            </StackPane>
+        </StackPane>
+    </center>
+
+    <bottom>
+        <fx:include source="../footer.fxml"/>
+    </bottom>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+</BorderPane>

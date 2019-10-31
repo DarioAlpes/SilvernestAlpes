@@ -1,0 +1,10 @@
+rootProject.name = 'nfc-windows-pcsc'
+
+include ':nfc'
+project(':nfc').projectDir = new File(settingsDir, '../nfc')
+
+include ':persistencia'
+project(':persistencia').projectDir = new File(settingsDir, '../persistencia')
+
+include ':configuracion-persistencia-sqlite'
+project(':configuracion-persistencia-sqlite').projectDir = new File(settingsDir, '../configuracion-persistencia-sqlite')

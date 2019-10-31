@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.smartobjects.ui.javafx.controladores.menuprincipal.BotonMenuPrincipal?>
+<?import co.smartobjects.ui.javafx.controladores.genericos.DialogoTipoRegistro?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<GridPane xmlns="http://javafx.com/javafx/8.0.112"
+          xmlns:fx="http://javafx.com/fxml/1"
+          fx:id="raiz"
+          styleClass="raiz">
+    <columnConstraints>
+        <ColumnConstraints percentWidth="49.9"/>
+        <ColumnConstraints percentWidth="0.2"/>
+        <ColumnConstraints percentWidth="49.9"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="100"/>
+    </rowConstraints>
+
+    <BotonMenuPrincipal fx:id="botonIrARegistrar" text="REGISTRAR" nombreIcono="REGISTRO"
+                        GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.halignment="CENTER">
+        <padding>
+            <Insets bottom="65"/>
+        </padding>
+    </BotonMenuPrincipal>
+
+    <Separator orientation="VERTICAL"
+               styleClass="separador-grueso"
+               GridPane.vgrow="ALWAYS"
+               GridPane.rowIndex="0" GridPane.columnIndex="1">
+        <padding>
+            <Insets top="65" bottom="65"/>
+        </padding>
+    </Separator>
+
+    <BotonMenuPrincipal fx:id="botonIrAConsumos" text="CONSUMOS" nombreIcono="CONSUMOS"
+                        GridPane.rowIndex="0" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+        <padding>
+            <Insets bottom="65"/>
+        </padding>
+    </BotonMenuPrincipal>
+
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+
+    <DialogoTipoRegistro fx:id="dialogoTipoRegistro"/>
+
+</GridPane>

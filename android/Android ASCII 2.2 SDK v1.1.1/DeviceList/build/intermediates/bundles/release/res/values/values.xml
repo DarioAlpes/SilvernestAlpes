@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/workspace_smart_objects/SmartObjects/android/Android%20ASCII%202.2%20SDK%20v1.1.1/DeviceList/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">Device List</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving…</string>
+    <string name="button_scan">Buscando</string>
+    <string name="disconnect">Desconectar Lector</string>
+    <string name="discoverable">Make discoverable</string>
+    <string name="insecure_change">Cambio de Lector</string>
+    <string name="insecure_connect">Conectar a Lector</string>
+    <string name="none_found">No hay dispositivos encontrados</string>
+    <string name="none_paired">Ningún dispositivo ha sido asociado</string>
+    <string name="not_connected">No se ha podido conectar a algún d</string>
+    <string name="reconnect_reader_menu_item_text">Reconectar al ultimo lector</string>
+    <string name="reset_reader_menu_text">Reiniciar Lector</string>
+    <string name="scanning">Buscando dispositivos…</string>
+    <string name="secure_connect">Conectando a dispositivo - Seguro</string>
+    <string name="select_device">Seleccione un dispositivo para conectar</string>
+    <string name="title_connected_to">Conectado: </string>
+    <string name="title_connecting">Conectando…</string>
+    <string name="title_not_connected">No conectado</string>
+    <string name="title_other_devices">Otros dispositivos disponibles</string>
+    <string name="title_other_devices_count_format">Otros dispositivos disponibles (%d)</string>
+    <string name="title_other_devices_empty">Otros dispositivos disponibles (Ninguno)</string>
+    <string name="title_paired_devices">Dispositivos encontrados</string>
+    <string name="title_paired_devices_count_format">Dispositivos encontrados (%d)</string>
+    <string name="title_paired_devices_empty">Dispositivos encontrados (Ninguno)</string>
+    <!-- From: file:/C:/workspace_smart_objects/SmartObjects/android/Android%20ASCII%202.2%20SDK%20v1.1.1/DeviceList/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>

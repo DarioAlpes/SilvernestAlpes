@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.smartobjects.ui.javafx.controladores.pagos.ControladorAgregarPago?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<fx:root xmlns="http://javafx.com/javafx/8.0.112"
+         xmlns:fx="http://javafx.com/fxml/1"
+         type="javafx.scene.layout.VBox"
+         styleClass="raiz"
+         spacing="10">
+    <padding>
+        <Insets top="15" bottom="15"/>
+    </padding>
+
+    <VBox spacing="10" styleClass="panel-con-borde-color-primario-fondo-texto">
+
+        <padding>
+            <Insets top="15" bottom="10" left="10" right="10"/>
+        </padding>
+
+        <Label styleClass="etiqueta-16px-blanca-medium-peso800"
+               wrapText="true"
+               text="SALDO PENDIENTE"/>
+
+        <Label fx:id="saldoPendiente"
+               styleClass="etiqueta-16px-blanco-normal"
+               wrapText="true"
+               text="\$ 999.999.999"/>
+    </VBox>
+
+    <ControladorAgregarPago fx:id="agregarPago"/>
+
+    <VBox styleClass="panel-con-borde-color-primario-fondo-texto"
+          spacing="25"
+          VBox.vgrow="ALWAYS">
+        <padding>
+            <Insets top="15" bottom="10" left="10" right="10"/>
+        </padding>
+
+        <BorderPane>
+            <left>
+                <Label styleClass="etiqueta-16px-blanca-medium-peso800"
+                       wrapText="true"
+                       text="COMPRA"/>
+            </left>
+            <right>
+                <Label fx:id="fechaDeCompra"
+                       styleClass="etiqueta-16px-blanco-normal"
+                       wrapText="true"
+                       text="22/MAYO/2018"/>
+            </right>
+        </BorderPane>
+
+        <ScrollPane fitToHeight="true"
+                    fitToWidth="true"
+                    prefHeight="1"
+                    VBox.vgrow="ALWAYS"
+                    styleClass="panel-scroll">
+
+            <VBox fx:id="contenedorPagos" styleClass="fondo-color-texto" spacing="10" alignment="TOP_CENTER"/>
+
+        </ScrollPane>
+    </VBox>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+</fx:root>

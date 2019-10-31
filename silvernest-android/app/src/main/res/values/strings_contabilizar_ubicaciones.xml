@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mensaje_conteo_en_ubicacion">"Conteo en Ubicación"</string>
+    <string name="mensaje_conteo">"Conteo: %1$d"</string>
+    <string name="mensaje_cargando_ubicaciones">"Cargando ubicaciones…"</string>
+    <string name="mensaje_intentando_realizar_conteo">"Intentando realizar conteo…"</string>
+    <string name="mensaje_conteo_correcto">"¡Conteo exitoso!"</string>
+    <string name="error_conteo_fallido">"¡Conteo fallido!"</string>
+</resources>

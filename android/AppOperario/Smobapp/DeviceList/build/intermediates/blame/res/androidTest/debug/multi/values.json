@@ -1,0 +1,1008 @@
+[
+    {
+        "outputFile": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\res\\merged\\androidTest\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 48,
+                    "endOffset": 99
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 48,
+                        "endOffset": 99
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 104,
+                    "endColumn": 98,
+                    "endOffset": 198
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 104,
+                        "endColumn": 98,
+                        "endOffset": 198
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 203,
+                    "endColumn": 48,
+                    "endOffset": 247
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 203,
+                        "endColumn": 48,
+                        "endOffset": 247
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 252,
+                    "endColumn": 61,
+                    "endOffset": 309
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 252,
+                        "endColumn": 61,
+                        "endOffset": 309
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 314,
+                    "endColumn": 58,
+                    "endOffset": 368
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 314,
+                        "endColumn": 58,
+                        "endOffset": 368
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 373,
+                    "endColumn": 61,
+                    "endOffset": 430
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 373,
+                        "endColumn": 61,
+                        "endOffset": 430
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 435,
+                    "endColumn": 62,
+                    "endOffset": 493
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 435,
+                        "endColumn": 62,
+                        "endOffset": 493
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 498,
+                    "endColumn": 71,
+                    "endOffset": 565
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 498,
+                        "endColumn": 71,
+                        "endOffset": 565
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 570,
+                    "endColumn": 69,
+                    "endOffset": 635
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 570,
+                        "endColumn": 69,
+                        "endOffset": 635
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 640,
+                    "endColumn": 80,
+                    "endOffset": 716
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 640,
+                        "endColumn": 80,
+                        "endOffset": 716
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 721,
+                    "endColumn": 97,
+                    "endOffset": 814
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 721,
+                        "endColumn": 97,
+                        "endOffset": 814
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 819,
+                    "endColumn": 67,
+                    "endOffset": 882
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 819,
+                        "endColumn": 67,
+                        "endOffset": 882
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 887,
+                    "endColumn": 76,
+                    "endOffset": 959
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 887,
+                        "endColumn": 76,
+                        "endOffset": 959
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 964,
+                    "endColumn": 68,
+                    "endOffset": 1028
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 964,
+                        "endColumn": 68,
+                        "endOffset": 1028
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1033,
+                    "endColumn": 82,
+                    "endOffset": 1111
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1033,
+                        "endColumn": 82,
+                        "endOffset": 1111
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1116,
+                    "endColumn": 58,
+                    "endOffset": 1170
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1116,
+                        "endColumn": 58,
+                        "endOffset": 1170
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1175,
+                    "endColumn": 56,
+                    "endOffset": 1227
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1175,
+                        "endColumn": 56,
+                        "endOffset": 1227
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1232,
+                    "endColumn": 72,
+                    "endOffset": 1300
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1232,
+                        "endColumn": 72,
+                        "endOffset": 1300
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1305,
+                    "endColumn": 78,
+                    "endOffset": 1379
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1305,
+                        "endColumn": 78,
+                        "endOffset": 1379
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1384,
+                    "endColumn": 96,
+                    "endOffset": 1476
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1384,
+                        "endColumn": 96,
+                        "endOffset": 1476
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1481,
+                    "endColumn": 91,
+                    "endOffset": 1568
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1481,
+                        "endColumn": 91,
+                        "endOffset": 1568
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1573,
+                    "endColumn": 73,
+                    "endOffset": 1642
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1573,
+                        "endColumn": 73,
+                        "endOffset": 1642
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1647,
+                    "endColumn": 91,
+                    "endOffset": 1734
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1647,
+                        "endColumn": 91,
+                        "endOffset": 1734
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1739,
+                    "endColumn": 86,
+                    "endOffset": 1821
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1739,
+                        "endColumn": 86,
+                        "endOffset": 1821
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1826,
+                    "endLine": 32,
+                    "endColumn": 12,
+                    "endOffset": 2112
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1826,
+                        "endLine": 32,
+                        "endColumn": 12,
+                        "endOffset": 2112
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 2117,
+                    "endLine": 35,
+                    "endColumn": 12,
+                    "endOffset": 2272
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 4,
+                        "startOffset": 2117,
+                        "endLine": 35,
+                        "endColumn": 12,
+                        "endOffset": 2272
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\res\\merged\\androidTest\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 48,
+                    "endOffset": 99
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 48,
+                        "endOffset": 99
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 104,
+                    "endColumn": 98,
+                    "endOffset": 198
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 104,
+                        "endColumn": 98,
+                        "endOffset": 198
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 203,
+                    "endColumn": 48,
+                    "endOffset": 247
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 203,
+                        "endColumn": 48,
+                        "endOffset": 247
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 252,
+                    "endColumn": 61,
+                    "endOffset": 309
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 252,
+                        "endColumn": 61,
+                        "endOffset": 309
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 314,
+                    "endColumn": 58,
+                    "endOffset": 368
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 314,
+                        "endColumn": 58,
+                        "endOffset": 368
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 373,
+                    "endColumn": 61,
+                    "endOffset": 430
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 373,
+                        "endColumn": 61,
+                        "endOffset": 430
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 435,
+                    "endColumn": 62,
+                    "endOffset": 493
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 435,
+                        "endColumn": 62,
+                        "endOffset": 493
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 498,
+                    "endColumn": 71,
+                    "endOffset": 565
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 498,
+                        "endColumn": 71,
+                        "endOffset": 565
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 570,
+                    "endColumn": 69,
+                    "endOffset": 635
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 570,
+                        "endColumn": 69,
+                        "endOffset": 635
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 640,
+                    "endColumn": 80,
+                    "endOffset": 716
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 640,
+                        "endColumn": 80,
+                        "endOffset": 716
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 721,
+                    "endColumn": 97,
+                    "endOffset": 814
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 721,
+                        "endColumn": 97,
+                        "endOffset": 814
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 819,
+                    "endColumn": 67,
+                    "endOffset": 882
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 819,
+                        "endColumn": 67,
+                        "endOffset": 882
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 887,
+                    "endColumn": 76,
+                    "endOffset": 959
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 887,
+                        "endColumn": 76,
+                        "endOffset": 959
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 964,
+                    "endColumn": 68,
+                    "endOffset": 1028
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 964,
+                        "endColumn": 68,
+                        "endOffset": 1028
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1033,
+                    "endColumn": 82,
+                    "endOffset": 1111
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1033,
+                        "endColumn": 82,
+                        "endOffset": 1111
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1116,
+                    "endColumn": 58,
+                    "endOffset": 1170
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1116,
+                        "endColumn": 58,
+                        "endOffset": 1170
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1175,
+                    "endColumn": 56,
+                    "endOffset": 1227
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1175,
+                        "endColumn": 56,
+                        "endOffset": 1227
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1232,
+                    "endColumn": 72,
+                    "endOffset": 1300
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1232,
+                        "endColumn": 72,
+                        "endOffset": 1300
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1305,
+                    "endColumn": 78,
+                    "endOffset": 1379
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1305,
+                        "endColumn": 78,
+                        "endOffset": 1379
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1384,
+                    "endColumn": 96,
+                    "endOffset": 1476
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1384,
+                        "endColumn": 96,
+                        "endOffset": 1476
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1481,
+                    "endColumn": 91,
+                    "endOffset": 1568
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1481,
+                        "endColumn": 91,
+                        "endOffset": 1568
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1573,
+                    "endColumn": 73,
+                    "endOffset": 1642
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1573,
+                        "endColumn": 73,
+                        "endOffset": 1642
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1647,
+                    "endColumn": 91,
+                    "endOffset": 1734
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1647,
+                        "endColumn": 91,
+                        "endOffset": 1734
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1739,
+                    "endColumn": 86,
+                    "endOffset": 1821
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1739,
+                        "endColumn": 86,
+                        "endOffset": 1821
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1826,
+                    "endLine": 32,
+                    "endColumn": 12,
+                    "endOffset": 2112
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1826,
+                        "endLine": 32,
+                        "endColumn": 12,
+                        "endOffset": 2112
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 2117,
+                    "endLine": 35,
+                    "endColumn": 12,
+                    "endOffset": 2272
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\DeviceList\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 4,
+                        "startOffset": 2117,
+                        "endLine": 35,
+                        "endColumn": 12,
+                        "endOffset": 2272
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,33 @@
+<div class="error" *ngIf="error">{{error}}</div>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Tipo de documento</th>
+        <th>Número de documento</th>
+        <th>Mail</th>
+        <th>Genero</th>
+        <th>Fecha de nacimiento</th>
+        <th>Es persona fantasma</th>
+        <th>Opciones</th>
+    </tr>
+    <tr *ngFor="let person of persons">
+        <th>{{person.id}}</th>
+        <th>{{person.name}}</th>
+        <th>{{person['document-type']}}</th>
+        <th>{{person['document-number']}}</th>
+        <th>{{person.mail}}</th>
+        <th>{{person.gender}}</th>
+        <th>{{person.birthdate}}</th>
+        <th>{{person['is-phantom']}}</th>
+        <td>
+            <button type="button" (click)="onSelect(person)">Editar</button>
+            <button type="button" (click)="onDelete(person)">Eliminar</button>
+        </td>
+    </tr>
+</table>
+<button (click)="addPerson()">Crear persona</button>
+<button (click)="goBack()">Volver</button>
+<div *ngIf="showPerson">
+    <person-detail (close)="close($event)" [person]="selectedPerson"></person-detail>
+</div>

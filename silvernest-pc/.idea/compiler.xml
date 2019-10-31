@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <file url="file://$PROJECT_DIR$/src/test/kotlin/co/smartobjects/ui/javafx/PruebaJavaFXBase.kt" />
+      <file url="file://$PROJECT_DIR$/src/test/kotlin/co/smartobjects/ui/javafx/controladores/carritocreditos/ControladorCarritoDeCreditosPruebas.kt" />
+      <file url="file://$PROJECT_DIR$/src/test/kotlin/co/smartobjects/ui/javafx/controladores/carritocreditos/ControladorItemCreditoPruebas.kt" />
+      <file url="file://$PROJECT_DIR$/src/test/kotlin/co/smartobjects/ui/javafx/controladores/catalogo/ControladorCatalogoProductosPruebas.kt" />
+      <file url="file://$PROJECT_DIR$/src/test/kotlin/co/smartobjects/ui/javafx/controladores/catalogo/ControladorItemProductoPruebas.kt" />
+      <file url="file://$PROJECT_DIR$/src/test/kotlin/co/smartobjects/ui/javafx/controladores/login/ControladorLoginPruebas.kt" />
+      <file url="file://$PROJECT_DIR$/src/test/kotlin/co/smartobjects/ui/javafx/controladores/menufiltradofondos/ControladorItemFiltradoFondo.kt" />
+    </excludeFromCompile>
+    <bytecodeTargetLevel>
+      <module name="co.smartobjects-configuracion-persistencia-h2_main" target="1.6" />
+      <module name="co.smartobjects-entidades_test" target="1.8" />
+      <module name="co.smartobjects-modelos-ui_main" target="1.6" />
+      <module name="co.smartobjects-modelos-ui_test" target="1.8" />
+      <module name="co.smartobjects-nfc-windows-pcsc_main" target="1.6" />
+      <module name="co.smartobjects-nfc-windows-pcsc_test" target="1.8" />
+      <module name="co.smartobjects-nfc_main" target="1.6" />
+      <module name="co.smartobjects-nfc_test" target="1.8" />
+      <module name="co.smartobjects-persistencia_test" target="1.8" />
+      <module name="co.smartobjects-red-clientes_main" target="1.6" />
+      <module name="co.smartobjects-red-clientes_test" target="1.8" />
+      <module name="co.smartobjects.ui-silvernest-pc_main" target="1.8" />
+      <module name="co.smartobjects.ui-silvernest-pc_test" target="1.8" />
+      <module name="co.smartobjects.ui.silvernest-pc.main" target="1.8" />
+      <module name="co.smartobjects.ui.silvernest-pc.test" target="1.8" />
+      <module name="configuracion-persistencia-h2_main" target="1.6" />
+      <module name="configuracion-persistencia-h2_test" target="1.8" />
+      <module name="configuracion-persistencia-postgresql_main" target="1.8" />
+      <module name="configuracion-persistencia-postgresql_test" target="1.8" />
+      <module name="configuracion-persistencia-sqlite_main" target="1.6" />
+      <module name="configuracion-persistencia-sqlite_test" target="1.6" />
+      <module name="configuracion-persistencia_main" target="1.6" />
+      <module name="configuracion-persistencia_test" target="1.8" />
+      <module name="entidades_main" target="1.6" />
+      <module name="entidades_test" target="1.8" />
+      <module name="modelos-ui_main" target="1.6" />
+      <module name="modelos-ui_test" target="1.8" />
+      <module name="nfc-windows-pcsc_main" target="1.6" />
+      <module name="nfc-windows-pcsc_test" target="1.8" />
+      <module name="nfc_main" target="1.6" />
+      <module name="nfc_test" target="1.8" />
+      <module name="persistencia_main" target="1.6" />
+      <module name="persistencia_test" target="1.8" />
+      <module name="red-clientes_main" target="1.6" />
+      <module name="red-clientes_test" target="1.8" />
+      <module name="red_main" target="1.6" />
+      <module name="red_test" target="1.8" />
+      <module name="silvernest-pc.configuracion-persistencia-h2.main" target="1.6" />
+      <module name="silvernest-pc.configuracion-persistencia-h2.test" target="1.8" />
+      <module name="silvernest-pc.configuracion-persistencia-postgresql.main" target="1.8" />
+      <module name="silvernest-pc.configuracion-persistencia-postgresql.test" target="1.8" />
+      <module name="silvernest-pc.configuracion-persistencia-sqlite.main" target="1.6" />
+      <module name="silvernest-pc.configuracion-persistencia-sqlite.test" target="1.6" />
+      <module name="silvernest-pc.configuracion-persistencia.main" target="1.6" />
+      <module name="silvernest-pc.configuracion-persistencia.test" target="1.8" />
+      <module name="silvernest-pc.entidades.main" target="1.6" />
+      <module name="silvernest-pc.entidades.test" target="1.8" />
+      <module name="silvernest-pc.modelos-ui.main" target="1.6" />
+      <module name="silvernest-pc.modelos-ui.test" target="1.8" />
+      <module name="silvernest-pc.nfc-windows-pcsc.main" target="1.6" />
+      <module name="silvernest-pc.nfc-windows-pcsc.test" target="1.8" />
+      <module name="silvernest-pc.nfc.main" target="1.6" />
+      <module name="silvernest-pc.nfc.test" target="1.8" />
+      <module name="silvernest-pc.persistencia.main" target="1.6" />
+      <module name="silvernest-pc.persistencia.test" target="1.8" />
+      <module name="silvernest-pc.red-clientes.main" target="1.6" />
+      <module name="silvernest-pc.red-clientes.test" target="1.8" />
+      <module name="silvernest-pc.red.main" target="1.6" />
+      <module name="silvernest-pc.red.test" target="1.8" />
+      <module name="silvernest-pc.sincronizador-de-datos.main" target="1.6" />
+      <module name="silvernest-pc.sincronizador-de-datos.test" target="1.8" />
+      <module name="silvernest-pc_main" target="1.8" />
+      <module name="silvernest-pc_test" target="1.8" />
+      <module name="sincronizador-de-datos_main" target="1.6" />
+      <module name="sincronizador-de-datos_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

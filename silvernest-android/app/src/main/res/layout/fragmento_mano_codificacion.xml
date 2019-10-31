@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margen_separacion_contenido_pantalla"
+        >
+
+    <ImageView
+            android:id="@+id/iv_mano_con_manilla"
+            android:layout_width="@dimen/alto_ancho_imagen_manilla"
+            android:layout_height="@dimen/alto_ancho_imagen_manilla"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.33"
+            app:srcCompat="@drawable/ic_manilla"
+            />
+
+    <TextSwitcher
+            android:id="@+id/txvw_label_estado_codificacion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/iv_mano_con_manilla"
+            app:layout_constraintStart_toStartOf="@+id/iv_mano_con_manilla"
+            app:layout_constraintEnd_toEndOf="@+id/iv_mano_con_manilla"
+            android:layout_marginTop="@dimen/margen_separacion_extra"
+            />
+
+</android.support.constraint.ConstraintLayout>

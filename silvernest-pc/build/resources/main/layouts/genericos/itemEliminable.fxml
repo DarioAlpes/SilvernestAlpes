@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<fx:root
+        xmlns="http://javafx.com/javafx/8.0.121"
+        xmlns:fx="http://javafx.com/fxml/1"
+        type="javafx.scene.layout.HBox"
+        alignment="CENTER"
+        spacing="10"
+        styleClass="raiz">
+
+    <StackPane
+            fx:id="panelItem"
+            styleClass="raiz"
+            HBox.hgrow="ALWAYS"/>
+
+    <JFXButton fx:id="botonEliminar"
+               styleClass="boton-icono-fondo-blanco-icono-color-texto"
+               HBox.hgrow="NEVER">
+        <graphic>
+            <FontAwesomeIconView glyphName="REMOVE" size="1.3em"/>
+        </graphic>
+    </JFXButton>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+
+</fx:root>

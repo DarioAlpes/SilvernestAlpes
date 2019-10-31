@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\workspace_smart_objects\SmartObjects\android\Android ASCII 2.2 SDK v1.1.1\Sample Code\ReadWrite\build\intermediates\exploded-aar\Android ASCII 2.2 SDK v1.1.1\Rfid.AsciiProtocol\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9f5d0358f8fe4580f29287405cdcadf31e7f71a3">
+        <dex dex="C:\workspace_smart_objects\SmartObjects\android\Android ASCII 2.2 SDK v1.1.1\Sample Code\ReadWrite\build\intermediates\pre-dexed\debug\classes-6e779742c7170387f54993bb70582ad383ba2546.jar" />
+    </item>
+    <item
+        jar="C:\workspace_smart_objects\SmartObjects\android\Android ASCII 2.2 SDK v1.1.1\Sample Code\ReadWrite\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
+        <dex dex="C:\workspace_smart_objects\SmartObjects\android\Android ASCII 2.2 SDK v1.1.1\Sample Code\ReadWrite\build\intermediates\pre-dexed\release\classes-a77c76c2e0f683f997f5d5c35a419cc74c0a041d.jar" />
+    </item>
+    <item
+        jar="C:\Android\extras\android\m2repository\com\android\support\support-annotations\21.0.0\support-annotations-21.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
+        <dex dex="C:\workspace_smart_objects\SmartObjects\android\Android ASCII 2.2 SDK v1.1.1\Sample Code\ReadWrite\build\intermediates\pre-dexed\release\support-annotations-21.0.0-87b115eeba94f5c68c86c105cbc1213093403a7f.jar" />
+    </item>
+    <item
+        jar="C:\workspace_smart_objects\SmartObjects\android\Android ASCII 2.2 SDK v1.1.1\Sample Code\ReadWrite\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="95fd37732ec852e99f07eeb516a3650172f1d136">
+        <dex dex="C:\workspace_smart_objects\SmartObjects\android\Android ASCII 2.2 SDK v1.1.1\Sample Code\ReadWrite\build\intermediates\pre-dexed\release\classes-6d5e3ba605aef1a7c31b18297fb5ce33f169fe99.jar" />
+    </item>
+    <item
+        jar="C:\workspace_smart_objects\SmartObjects\android\Android ASCII 2.2 SDK v1.1.1\Sample Code\ReadWrite\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\jars\libs\internal_impl-21.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
+        <dex dex="C:\workspace_smart_objects\SmartObjects\android\Android ASCII 2.2 SDK v1.1.1\Sample Code\ReadWrite\build\intermediates\pre-dexed\release\internal_impl-21.0.0-1c89be9aafbe94cd2da6bfc6c0f799e377ee36e4.jar" />
+    </item>
+    <item
+        jar="C:\workspace_smart_objects\SmartObjects\android\Android ASCII 2.2 SDK v1.1.1\Sample Code\ReadWrite\build\intermediates\exploded-aar\Android ASCII 2.2 SDK v1.1.1\DeviceList\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="ba49e26df5200fe64f18532284e97e43bdfa0a47">
+        <dex dex="C:\workspace_smart_objects\SmartObjects\android\Android ASCII 2.2 SDK v1.1.1\Sample Code\ReadWrite\build\intermediates\pre-dexed\release\classes-95b5b937d4d805fcf0d4879ceec492b30a5ac47e.jar" />
+    </item>
+
+</items>

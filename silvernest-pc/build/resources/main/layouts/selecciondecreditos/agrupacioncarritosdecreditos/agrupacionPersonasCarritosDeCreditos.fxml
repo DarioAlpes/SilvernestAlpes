@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import co.smartobjects.ui.javafx.controladores.genericos.ControladorListaFiltrable?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<fx:root xmlns="http://javafx.com/javafx/8.0.121"
+         xmlns:fx="http://javafx.com/fxml/1"
+         type="javafx.scene.layout.VBox"
+         alignment="TOP_RIGHT"
+         fillWidth="false">
+
+    <StackPane styleClass="lista-personas-con-carrito-default">
+        <ControladorListaFiltrable fx:id="listaPersonasCarritosDeCreditos" VBox.vgrow="ALWAYS"/>
+    </StackPane>
+
+    <HBox fx:id="contendorBotonesAgregando" alignment="CENTER_RIGHT" spacing="15" visible="false">
+        <VBox.margin>
+            <Insets top="30"/>
+        </VBox.margin>
+
+        <JFXButton fx:id="botonCancelar"
+                   text="CANCELAR"
+                   styleClass="boton-secundario-color-acento"
+                   prefWidth="200">
+        </JFXButton>
+        <JFXButton fx:id="botonConfirmar"
+                   text="AGREGAR"
+                   styleClass="boton-primario-anaranjado"
+                   prefWidth="200">
+        </JFXButton>
+    </HBox>
+
+    <GridPane alignment="TOP_CENTER">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="50.0"/>
+            <ColumnConstraints percentWidth="50.0"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints vgrow="NEVER"/>
+            <RowConstraints vgrow="NEVER"/>
+            <RowConstraints vgrow="NEVER"/>
+            <RowConstraints vgrow="NEVER"/>
+            <RowConstraints vgrow="NEVER"/>
+        </rowConstraints>
+
+        <VBox.margin>
+            <Insets top="5"/>
+        </VBox.margin>
+
+        <Label styleClass="etiqueta-18px-color-texto-normal" text="TOTAL"
+               GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
+        <Label fx:id="total" styleClass="etiqueta-18px-color-texto-normal" text="TOTAL"
+               GridPane.rowIndex="0" GridPane.columnIndex="1">
+            <GridPane.margin>
+                <Insets left="25"/>
+            </GridPane.margin>
+        </Label>
+
+        <Label styleClass="etiqueta-18px-color-texto-normal" text="IMPUESTOS"
+               GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
+        <Label fx:id="impuesto" styleClass="etiqueta-18px-color-texto-normal" text="IMPUESTOS"
+               GridPane.rowIndex="1" GridPane.columnIndex="1">
+            <GridPane.margin>
+                <Insets left="25"/>
+            </GridPane.margin>
+        </Label>
+
+        <Label styleClass="etiqueta-18px-color-texto-normal" text="PAGADO"
+               GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
+        <Label fx:id="pagado" styleClass="etiqueta-18px-color-texto-normal" text="PAGADO"
+               GridPane.rowIndex="2" GridPane.columnIndex="1">
+            <GridPane.margin>
+                <Insets left="25"/>
+            </GridPane.margin>
+        </Label>
+
+        <Label styleClass="etiqueta-23px-color-primario-bold" text="GRAN TOTAL"
+               GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.halignment="RIGHT">
+            <GridPane.margin>
+                <Insets top="15"/>
+            </GridPane.margin>
+        </Label>
+        <Label fx:id="granTotal" styleClass="etiqueta-23px-color-primario-bold" text="GRAN TOTAL"
+               GridPane.rowIndex="3" GridPane.columnIndex="1">
+            <GridPane.margin>
+                <Insets top="18" left="25"/>
+            </GridPane.margin>
+        </Label>
+
+        <StackPane fx:id="panelTooltipoBotonPagar"
+                   GridPane.rowIndex="4" GridPane.columnIndex="1">
+            <GridPane.margin>
+                <Insets top="10" left="25"/>
+            </GridPane.margin>
+
+            <JFXButton fx:id="botonPagar"
+                       text="PAGAR"
+                       styleClass="jfx-button-principal"
+                       minWidth="115"
+                       GridPane.rowIndex="4" GridPane.columnIndex="1">
+            </JFXButton>
+        </StackPane>
+
+    </GridPane>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+</fx:root>

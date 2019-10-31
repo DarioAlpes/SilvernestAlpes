@@ -1,0 +1,30 @@
+<div class="error" *ngIf="error">{{error}}</div>
+<table>
+    <tr>
+        <th>Id historico</th>
+        <th>Id</th>
+        <th>Cantidad incluida</th>
+        <th>Dinero incluido</th>
+        <th>Tipo de limite</th>
+        <th>Ids skus</th>
+        <th>Ids locations</th>
+        <th>Opciones</th>
+    </tr>
+    <tr *ngFor="let consumption of consumptions">
+        <td>{{consumption["historic-id"]}}</td>
+        <td>{{consumption.id}}</td>
+        <td>{{consumption["amount-included"]}}</td>
+        <td>{{consumption["money-included"]}}</td>
+        <td>{{consumption["limit-type"]}}</td>
+        <td>{{consumption["id-skus"]}}</td>
+        <td>{{consumption["id-locations"]}}</td>
+        <td>
+            <button type="button" (click)="onSelect(consumption)">Editar</button>
+        </td>
+    </tr>
+</table>
+<button (click)="addConsumption()">Crear consumo</button>
+<button (click)="goBack()">Volver</button>
+<div *ngIf="showConsumption">
+    <consumption-detail (close)="close($event)" [consumption]="selectedConsumption"></consumption-detail>
+</div>

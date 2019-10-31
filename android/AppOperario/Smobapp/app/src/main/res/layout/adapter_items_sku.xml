@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/rl_adapter_items_sku">
+
+
+    <TextView
+        android:id="@+id/tv_adapter_sku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:text="SKU1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/tv_adapter_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignTop="@+id/iv_adapter_item_sku"
+        android:layout_alignLeft="@+id/tv_adapter_sku"
+        android:layout_alignStart="@+id/tv_adapter_sku" />
+
+    <TextView
+        android:id="@+id/tv_adapter_talla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Talla"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignBottom="@+id/iv_adapter_item_sku"
+        android:layout_alignLeft="@+id/tv_adapter_nombre"
+        android:layout_alignStart="@+id/tv_adapter_nombre" />
+
+    <ImageView
+        android:id="@+id/iv_adapter_item_sku"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+
+</RelativeLayout>

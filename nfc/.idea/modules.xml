@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1117396333/entidades.iml" filepath="$PROJECT_DIR$/.idea/modules/-1117396333/entidades.iml" group="entidades" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1117396333/entidades_main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1117396333/entidades_main.iml" group="entidades" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1117396333/entidades_test.iml" filepath="$PROJECT_DIR$/.idea/modules/-1117396333/entidades_test.iml" group="entidades" />
+      <module fileurl="file://$PROJECT_DIR$/nfc.iml" filepath="$PROJECT_DIR$/nfc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nfc_main.iml" filepath="$PROJECT_DIR$/.idea/modules/nfc_main.iml" group="nfc" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nfc_test.iml" filepath="$PROJECT_DIR$/.idea/modules/nfc_test.iml" group="nfc" />
+    </modules>
+  </component>
+</project>

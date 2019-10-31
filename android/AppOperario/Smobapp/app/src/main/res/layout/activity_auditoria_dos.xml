@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:id="@+id/hsv_botones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_inventario"
+                style="@style/boton_agregar_jugador_mitad"
+                android:layout_width="wrap_content"
+                android:text="1.Inventario"
+                android:background="@drawable/estilo_boton_activo"/>
+
+            <Button
+                android:id="@+id/btn_conciliar"
+                style="@style/boton_agregar_jugador_mitad"
+                android:layout_width="wrap_content"
+                android:text="2.Conciliar"
+                android:layout_marginLeft="@dimen/padding_xxxsmall"
+                android:background="@drawable/estilo_boton_disponible"/>
+
+            <Button
+                android:id="@+id/btn_aprobar"
+                style="@style/boton_agregar_jugador_mitad"
+                android:layout_width="wrap_content"
+                android:text="3.Aprobar"
+                android:layout_marginLeft="@dimen/padding_xxxsmall"
+                android:background="@drawable/estilo_boton_no_disponible"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tv_resumen_dos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_encontrado_esperado"
+        android:layout_centerHorizontal="true"
+        android:text="0/0"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tv_encontrado_esperado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <FrameLayout
+        android:id="@+id/fl_auditoria_dos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/hsv_botones"
+        android:layout_below="@+id/pb"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+    </FrameLayout>
+
+    <ToggleButton
+        android:id="@+id/tb_buscar_automatico"
+        android:layout_width="@dimen/general_finger_hight"
+        android:layout_height="@dimen/general_finger_hight"
+        android:layout_alignEnd="@+id/fl_auditoria_dos"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/fl_auditoria_dos"
+        android:checked="false"
+        android:background="@drawable/unpress_button"
+        android:text="New ToggleButton" />
+
+    <ImageButton
+        android:id="@+id/ib_auditoria_siguiente"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/arrow_next"
+        android:visibility="invisible"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/tb_buscar_automatico"
+        android:layout_alignEnd="@+id/tb_buscar_automatico" />
+
+    <smartobjects.com.smobapp.views.textView.TextProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="20dip"
+        android:minHeight="20dip"
+        android:progress="0"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_below="@+id/tb_buscar_automatico"
+        android:layout_alignRight="@+id/tb_buscar_automatico"
+        android:layout_alignEnd="@+id/tb_buscar_automatico" />
+
+</RelativeLayout>

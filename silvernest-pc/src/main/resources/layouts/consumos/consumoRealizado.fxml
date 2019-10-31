@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<fx:root xmlns="http://javafx.com/javafx/8.0.112"
+         xmlns:fx="http://javafx.com/fxml/1"
+         type="javafx.scene.layout.GridPane"
+         styleClass="raiz"
+         alignment="CENTER">
+
+    <padding>
+        <Insets left="5" right="5"/>
+    </padding>
+
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS"/>
+        <ColumnConstraints hgrow="NEVER"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints vgrow="NEVER"/>
+        <RowConstraints vgrow="NEVER"/>
+        <RowConstraints vgrow="NEVER"/>
+        <RowConstraints vgrow="NEVER"/>
+    </rowConstraints>
+
+    <Label fx:id="nombreFondoConsumido" styleClass="etiqueta-23px-color-texto-medium" text="Nombre del fondo consumido"
+           GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="LEFT">
+        <GridPane.margin>
+            <Insets bottom="10"/>
+        </GridPane.margin>
+    </Label>
+
+    <Label styleClass="etiqueta-20px-color-texto-normal" text="Inicial"
+           GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.halignment="LEFT">
+        <GridPane.margin>
+            <Insets left="10"/>
+        </GridPane.margin>
+    </Label>
+    <Label fx:id="inicial" styleClass="etiqueta-20px-color-texto-normal" text="123"
+           GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.halignment="RIGHT"/>
+
+    <Label styleClass="etiqueta-20px-color-texto-normal" text="Consumido"
+           GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.halignment="LEFT">
+        <GridPane.margin>
+            <Insets left="10"/>
+        </GridPane.margin>
+    </Label>
+    <Label fx:id="consumido" styleClass="etiqueta-20px-color-texto-normal" text="23"
+           GridPane.rowIndex="2" GridPane.columnIndex="1" GridPane.halignment="RIGHT"/>
+
+    <Label styleClass="etiqueta-20px-color-texto-bold" text="Saldo"
+           GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.halignment="LEFT">
+        <GridPane.margin>
+            <Insets left="10"/>
+        </GridPane.margin>
+    </Label>
+    <Label fx:id="saldo" styleClass="etiqueta-20px-color-texto-bold" text="100"
+           GridPane.rowIndex="3" GridPane.columnIndex="1" GridPane.halignment="RIGHT"/>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+
+</fx:root>

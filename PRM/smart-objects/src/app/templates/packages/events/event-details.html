@@ -1,0 +1,30 @@
+<div *ngIf="event">
+    <h2>Detalles del evento {{event.name}}</h2>
+    <div class="error" *ngIf="error">
+        <label>Error: </label>
+        {{error}}
+    </div>
+    <div *ngIf="event.id"><label>Id: </label>{{event.id}}</div>
+    <div>
+      <label>Nombre: </label>
+      <input [(ngModel)]="event.name" placeholder="Name"/>
+    </div>
+    <div>
+      <label>Descripción: </label>
+      <input [(ngModel)]="event.description" placeholder="Descripción"/>
+    </div>
+    <div>
+      <label>Capacidad: </label>
+      <input type="number" [(ngModel)]="event.capacity" placeholder="0"/>
+    </div>
+    <div>
+      <label>Fecha inicial: </label>
+      <input [(ngModel)]="event['initial-date']" placeholder="20100101"/>
+    </div>
+    <div>
+      <label>Fecha final: </label>
+      <input [(ngModel)]="event['final-date']" placeholder="20150101"/>
+    </div>
+    <button (click)="saveEvent()">Guardar</button>
+    <button (click)="goBack()">Volver</button>
+</div>

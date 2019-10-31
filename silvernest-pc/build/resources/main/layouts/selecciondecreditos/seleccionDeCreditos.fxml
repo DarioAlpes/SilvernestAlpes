@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.smartobjects.ui.javafx.controladores.catalogo.ControladorCatalogoProductos?>
+<?import co.smartobjects.ui.javafx.controladores.genericos.DialogoDeEspera?>
+<?import co.smartobjects.ui.javafx.controladores.menufiltradofondos.ControladorMenuFiltrado?>
+<?import co.smartobjects.ui.javafx.controladores.selecciondecreditos.agrupacioncarritosdecreditos.ControladorAgrupacionPersonasCarritosDeCreditos?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<StackPane xmlns="http://javafx.com/javafx/8.0.112"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:id="raiz">
+    <GridPane
+            alignment="TOP_CENTER"
+            styleClass="raiz">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="19.70"/>
+            <ColumnConstraints percentWidth="0.2"/>
+            <ColumnConstraints percentWidth="36.61"/>
+            <ColumnConstraints percentWidth="0.2"/>
+            <ColumnConstraints percentWidth="43.29"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints percentHeight="7"/>
+            <RowConstraints percentHeight="93"/>
+        </rowConstraints>
+
+        <padding>
+            <Insets right="15" left="15"/>
+        </padding>
+
+        <Label text="CATEGORÍAS"
+               styleClass="etiqueta-22px-color-texto-bold"
+               GridPane.halignment="CENTER"
+               GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+
+        <StackPane GridPane.halignment="CENTER"
+                   GridPane.rowIndex="1" GridPane.columnIndex="0">
+            <padding>
+                <Insets bottom="65"/>
+            </padding>
+
+            <ControladorMenuFiltrado fx:id="menuDeFiltrado"/>
+        </StackPane>
+
+        <Separator orientation="VERTICAL"
+                   styleClass="separador-grueso"
+                   GridPane.vgrow="ALWAYS"
+                   GridPane.rowIndex="1" GridPane.columnIndex="1">
+        </Separator>
+
+        <Label text="PRODUCTOS"
+               styleClass="etiqueta-22px-color-texto-bold"
+               GridPane.halignment="CENTER"
+               GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+
+        <StackPane GridPane.halignment="CENTER"
+                   GridPane.rowIndex="1" GridPane.columnIndex="2">
+            <padding>
+                <Insets left="31" right="31" bottom="65"/>
+            </padding>
+
+            <ControladorCatalogoProductos fx:id="catalogoDeProductos"/>
+        </StackPane>
+
+        <Separator orientation="VERTICAL"
+                   styleClass="separador-grueso"
+                   GridPane.vgrow="ALWAYS"
+                   GridPane.rowIndex="1" GridPane.columnIndex="3">
+        </Separator>
+
+        <Label text="COMPRAS POR PERSONA"
+               styleClass="etiqueta-22px-color-texto-bold"
+               GridPane.halignment="CENTER"
+               GridPane.rowIndex="0" GridPane.columnIndex="4"/>
+
+        <StackPane
+                GridPane.valignment="TOP"
+                GridPane.halignment="CENTER"
+                GridPane.rowIndex="1" GridPane.columnIndex="4">
+            <padding>
+                <Insets left="31" bottom="65"/>
+            </padding>
+
+            <ControladorAgrupacionPersonasCarritosDeCreditos fx:id="agrupacionPersonasCarritosDeCreditos"/>
+        </StackPane>
+
+    </GridPane>
+
+    <DialogoDeEspera fx:id="dialogoDeEspera"/>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+</StackPane>

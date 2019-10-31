@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import java.net.URL?>
+<fx:root
+        xmlns:fx="http://javafx.com/fxml/1"
+        spacing="13"
+        type="javafx.scene.layout.VBox">
+
+    <HBox spacing="12">
+        <JFXTextField fx:id="campoDia" maxWidth="131"
+                      promptText="Día"
+                      styleClass="jfx-textfield-principal"/>
+
+        <JFXTextField fx:id="campoMes" maxWidth="131"
+                      promptText="Mes"
+                      styleClass="jfx-textfield-principal"/>
+
+        <JFXTextField fx:id="campoAño" maxWidth="131"
+                      promptText="Año"
+                      styleClass="jfx-textfield-principal"/>
+    </HBox>
+
+    <Label fx:id="labelError" maxWidth="420"
+           styleClass="error-label"
+           wrapText="true"
+           alignment="CENTER"/>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+</fx:root>

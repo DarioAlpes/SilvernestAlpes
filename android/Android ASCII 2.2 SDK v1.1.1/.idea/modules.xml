@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Android ASCII 2.2 SDK v1.1.1.iml" filepath="$PROJECT_DIR$/Android ASCII 2.2 SDK v1.1.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DeviceList/DeviceList.iml" filepath="$PROJECT_DIR$/DeviceList/DeviceList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sample Code/Inventory/Inventory.iml" filepath="$PROJECT_DIR$/Sample Code/Inventory/Inventory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sample Code/LicenceKey/LicenceKey.iml" filepath="$PROJECT_DIR$/Sample Code/LicenceKey/LicenceKey.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sample Code/ReadWrite/ReadWrite.iml" filepath="$PROJECT_DIR$/Sample Code/ReadWrite/ReadWrite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Rfid.AsciiProtocol/Rfid.AsciiProtocol.iml" filepath="$PROJECT_DIR$/Rfid.AsciiProtocol/Rfid.AsciiProtocol.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sample Code/Sample Code.iml" filepath="$PROJECT_DIR$/Sample Code/Sample Code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sample Code/Trigger/Trigger.iml" filepath="$PROJECT_DIR$/Sample Code/Trigger/Trigger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smobapp/smobapp.iml" filepath="$PROJECT_DIR$/smobapp/smobapp.iml" />
+    </modules>
+  </component>
+</project>

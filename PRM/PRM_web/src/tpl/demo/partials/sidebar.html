@@ -1,0 +1,64 @@
+<div class="demo-drawer mdl-layout__drawer mdl-color-text--blue-grey-50 mdl-color--grey-900">
+  <header class="mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+
+    <div class="brand-logo">
+      <div class="logo">
+      <img src="img/object.png" class="img-responsive">
+      </div>
+    </div>
+
+    <div class="clear">
+      <div class="f-left m-l-30 m-r-10">
+        <img src="img/icons/ballicons/workspace.svg" class="demo-avatar img-responsive">
+      </div>
+      <div class="f-left">
+        <h4 class="mdl-color-text--white m-t-5 no-m-b">Felipe Gómez<h4>
+        <div class="mdl-color-text--blue-grey-400 f12"><i class=" material-icons f12">place</i> Bogotá, CO</div>
+      </div>
+    </div>
+    <div class="demo-avatar-dropdown">
+      <span>felipe@smartobjects.co</span>
+      <div class="mdl-layout-spacer"></div>
+      <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons f14">menu</i>
+      </button>
+      <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
+        <li class="mdl-menu__item">pedro@space.com</li>
+        <li class="mdl-menu__item">miguel@strife.com</li>
+        <li class="mdl-menu__item">Otra cuenta</li>
+      </ul>
+    </div>
+  </header>
+
+  <ul ml-menu close-others="true" class="demo-navigation mdl-navigation">
+    <ml-menu-item>
+      <a class="mdl-navigation__link" href="#/dashboard"><i class="mdl-color-text--blue-grey-400 material-icons">dashboard</i>Dashboard</a>
+    </ml-menu-item>
+    <!--<ml-menu-item>
+      <a class="mdl-navigation__link" href="#/ordenes"><i class="mdl-color-text--blue-grey-400 material-icons">settings</i>Ordenes de producción</a>
+    </ml-menu-item>-->
+    <ml-menu-item>
+      <a class="mdl-navigation__link" href="#/personas"><i class="mdl-color-text--blue-grey-400 material-icons">accessibility</i>Personas</a>
+    </ml-menu-item>
+
+    <ml-menu-group path="clients">
+      <ml-menu-group-heading>
+        <i class="mdl-color-text--blue-grey-400 material-icons">school</i>Aprendizaje
+      </ml-menu-group-heading>
+      <ml-menu-item><a class="mdl-navigation__link" href="#">Valor de Vida del Cliente</a></ml-menu-item>
+      <ml-menu-item><a class="mdl-navigation__link" href="#">Productos</a></ml-menu-item>
+      <ml-menu-item><a class="mdl-navigation__link" href="#">Métricas</a></ml-menu-item>
+    </ml-menu-group>
+
+    <ml-menu-group path="clients">
+      <ml-menu-group-heading>
+        <i class="mdl-color-text--blue-grey-400 material-icons">account_balance</i>Administración
+      </ml-menu-group-heading>
+      <ml-menu-item><a class="mdl-navigation__link" href="#">Ubicaciones</a></ml-menu-item>
+      <ml-menu-item><a class="mdl-navigation__link" href="#">hardware</a></ml-menu-item>
+      <ml-menu-item><a class="mdl-navigation__link" href="#">Productos</a></ml-menu-item>
+      <ml-menu-item><a class="mdl-navigation__link" href="#">Métricas</a></ml-menu-item>
+    </ml-menu-group>
+
+  </ul>
+</div>

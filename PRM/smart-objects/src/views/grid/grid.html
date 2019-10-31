@@ -1,0 +1,43 @@
+  <button md-fab (click)="click()">
+    <i class=" material-icons f-left m-r-5">add</i>
+</button>
+  <div class="col-md-4 tableview-desc">
+    <div class="">
+      <h3 class="">Accesos</h3>
+      <h4 class="">Accesos incluídos en el paquete]</h4>
+    </div>
+    <div class="">
+          <h3><i class=" material-icons f-left m-r-5">dvr</i> A</h3>
+          <p>Lorem Ipsum</p>
+    </div>
+    <div>
+      <input #gb type="text" pInputText placeholder="Filtrar"/>
+    </div>
+    <div>
+      <button md-icon-button color="primary"  (click)="dt.exportCSV()"><i class="material-icons">file_download</i></button>
+    </div>
+  </div>
+
+  <div class="col-md-8">
+
+<div class="table-container">
+<md-card>
+  <p-dataGrid *ngIf="TableData" [value]="TableData" [columns]="3">
+    <template let-data>
+      <div class="grid-container">
+        <div class="grid-content">
+          <p-panel>
+            <div *ngFor="let col of columns" class="{{col.class}}">
+              <button *ngIf="col.edit == true" md-icon-button color="warn" class="warn" (click)="edit()">
+                  <i class=" material-icons f-left m-r-5">edit</i>
+              </button>
+              <span *ngIf="col.edit != true"><span *ngIf='!data["unlimited-amount"]'>{{col.decorator}}</span>{{data[col.field]}}</span>
+            </div>
+          </p-panel>
+        </div>
+        </div>
+    </template>
+</p-dataGrid>
+</md-card>
+</div>
+</div>

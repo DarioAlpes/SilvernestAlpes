@@ -1,0 +1,19 @@
+rootProject.name = 'modelos-ui'
+
+include ':entidades'
+project(':entidades').projectDir = new File(settingsDir, '../entidades')
+
+include ':red'
+project(':red').projectDir = new File(settingsDir, '../red')
+
+include ':red-clientes'
+project(':red-clientes').projectDir = new File(settingsDir, '../red-clientes')
+
+include ':nfc'
+project(':nfc').projectDir = new File(settingsDir, '../nfc')
+
+include ':persistencia'
+project(':persistencia').projectDir = new File(settingsDir, '../persistencia')
+
+include ':sincronizador-de-datos'
+project(':sincronizador-de-datos').projectDir = new File(settingsDir, '../sincronizador-de-datos')

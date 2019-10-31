@@ -1,0 +1,28 @@
+<div class="error" *ngIf="error">{{error}}</div>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Cantidad consumida</th>
+        <th>Dinero consumido</th>
+        <th>Id consumo</th>
+        <th>Id acceso</th>
+        <th>Id sku</th>
+        <th>Opciones</th>
+    </tr>
+    <tr *ngFor="let personConsumption of personConsumptions">
+        <td>{{personConsumption.id}}</td>
+        <td>{{personConsumption['amount-consumed']}}</td>
+        <td>{{personConsumption['money-consumed']}}</td>
+        <td>{{personConsumption['id-consumption']}}</td>
+        <td>{{personConsumption['id-access']}}</td>
+        <td>{{personConsumption['id-sku']}}</td>
+        <td>
+            <button type="button" (click)="onSelect(personConsumption)">Editar</button>
+        </td>
+    </tr>
+</table>
+<button (click)="addPersonConsumption()">Crear consumo</button>
+<button (click)="goBack()">Volver</button>
+<div *ngIf="showPersonConsumption">
+    <person-consumption-detail (close)="close($event)" [personConsumption]="selectePersonConsumption"></person-consumption-detail>
+</div>

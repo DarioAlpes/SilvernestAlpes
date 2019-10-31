@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDialog?>
+<?import com.jfoenix.controls.JFXDialogLayout?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import java.net.URL?>
+<fx:root xmlns="http://javafx.com/javafx/2.2"
+         xmlns:fx="http://javafx.com/fxml/1"
+         type="com.jfoenix.controls.JFXDialog"
+         fx:id="dialogoDeEspera"
+         transitionType="CENTER"
+         overlayClose="false">
+    <JFXDialogLayout>
+        <heading>
+            <Label fx:id="labelTituloDialogo">Esperando...</Label>
+        </heading>
+        <body>
+            <StackPane>
+                <JFXSpinner fx:id="spinnerEspera" styleClass="indicador-de-espera-color, indicador-de-espera"
+                            startingAngle="0"/>
+                <FontAwesomeIconView fx:id="iconoError" styleClass="icono-rojo" glyphName="EXCLAMATION_TRIANGLE"
+                                     size="4.3em"/>
+            </StackPane>
+        </body>
+    </JFXDialogLayout>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+
+</fx:root>

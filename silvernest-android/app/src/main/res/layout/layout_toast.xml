@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/contenedor_toast"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/fondo_toast"
+              android:orientation="vertical"
+              android:padding="10dp"
+              android:paddingTop="18dp"
+              android:paddingBottom="18dp"
+              android:paddingLeft="13dp"
+              android:paddingRight="13dp"
+        >
+
+    <TextView
+            android:id="@+id/mensaje_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="@style/EtiquetaToastPersonalizado"
+            android:textColor="@color/blanco"
+            android:shadowColor="#BB000000"
+            android:shadowRadius="2.75"
+            />
+
+</LinearLayout>

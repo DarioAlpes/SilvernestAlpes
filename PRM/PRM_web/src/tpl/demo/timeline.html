@@ -1,0 +1,161 @@
+<section class="tables-data">
+  <div class="mdl-color--teal ml-header relative clear">
+    <div class="p-20">
+      <h3 class="mdl-color-text--white m-t-20 m-b-5">{{person.name}}</h3>
+      <h4 class="mdl-color-text--grey-100 m-b-20 no-m-t w100">Historia del Cliente</h4>
+    </div>
+  </div>
+
+  <div class="mdl-grid mdl-grid--no-spacing">
+
+    <div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-color--grey-100">
+      <div class="p-40 p-r-20 p-20--small">
+        <div class=" mdl-color-text--blue-grey-400">
+          <div class="m-t-30">
+            <ul class="list-bordered">
+              <li>Nombre: {{person.name}}</li>
+              <li>Numero de documento: {{person['document-number']}}</li>
+              <li>Tipo de documento: {{person['document-type']}}</li>
+              <li>Correo: {{person.mail}}</li>
+              <li>Sexo: {{person.gender}}</li>
+              <li>Fecha nacimiento: {{person.birthdate}}</li>
+            </ul>
+
+            <br/>
+            	<div class="mdl-typography--text-center">
+            		<image src="http://static4.lxdcdn.net/images/a75e9cb32a01ea64b33e51e5fe511dcc.jpeg" class="img-round-profile person-picture">
+            	</div>
+            
+
+            <div class="mdl-textfield">
+           
+              <input class="mdl-textfield__input" type="text" placeholder="Buscar en línea de tiempo" data-ng-model="searchTxt" />
+            </div>
+            <button type="reset" class="mdl-button mdl-button--raised mdl-button--colored mdl-color--pink mdl-color-text--white mdl-js-button mdl-js-ripple-effect" ng-click="searchTxt = '';">
+              Limpiar Búsqueda
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div class="mdl-cell mdl-cell--5-col  mdl-cell--12-col-tablet mdl-cell--12-col-phone no-p-l">
+		
+
+		<div class="p-20 ml-card-holder ml-card-holder-first">
+        <div class="mdl-card mdl-shadow--1dp">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Acciones del Cliente</h2>
+          </div>
+          <div class="chat-container p-15" >
+
+            <div class="message-wrapper timeline" ng-repeat="item in data">
+              <i class="material-icons circle-wrapper mdl-shadow--0dp timeline-icon" ng-class="{'ml-color--blue': item.type == 'Feedback' , 'ml-color--red': item.type == 'Purchase',
+              'ml-color--green': item.type == 'Action', 'ml-color--purple': item.type == 'Visit', 'ml-color--orange': item.type == 'Order' } ">{{icon(item.type)}}</i>
+              <div class="text-wrapper mdl-shadow--0dp" style="opacity:100">{{item.description}}</div>
+              <div class="f11 mdl-color-text--grey-400 m-h-20 clear">{{item['initial-time'] | date:'yyyy-MM-dd HH:mm:ss Z'}}</div>
+              <div class="timeline-info">{{item.amounts[0]}}</div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+		<!--<table ng-table="tableParams" template-pagination="custom/pager" class="table mdl-data-table fullwidth">
+            <tr ng-repeat="item in $data">
+              <td class="text-left" data-title="'Tipo'" filter="{ 'tipo': 'text' }" sortable="'tipo'">{{item.tipo}}</td>
+              <td data-title="'Descripcion'" sortable="'descripcion'">{{item.descripcion}}</td>
+              <td data-title="'Tipo Documento'" sortable="'tipoDocumento'">{{item.tipoDocumento}}</td>
+              <td data-title="'Tiempo'" sortable="'tiempo'">{{item.tiempo}}</td>
+              <td data-title="'Número'" sortable="'numero'">{{item.numero}}</td>
+            </tr>
+          </table>
+        
+
+          <script type="text/ng-template" id="custom/pager">
+            <div ng-if="params.data.length" class="ml-data-table-pager p-10">
+              <div ng-if="params.settings().counts.length" class="f-right">
+                <button ng-class="{'active':params.count() == 10}" ng-click="params.count(10)" class="mdl-button">10</button>
+                <button ng-class="{'active':params.count() == 25}" ng-click="params.count(25)" class="mdl-button">25</button>
+                <button ng-class="{'active':params.count() == 50}" ng-click="params.count(50)" class="mdl-button">50</button>
+                <button ng-class="{'active':params.count() == 100}" ng-click="params.count(100)" class="mdl-button">100</button>
+              </div>
+              <span ng-repeat="page in pages"
+                  ng-class="{'disabled': !page.active, 'previous': page.type == 'prev', 'next': page.type == 'next'}"
+                  ng-switch="page.type">
+                <button ng-switch-when="prev" ng-click="params.page(page.number)" class="mdl-button">&laquo;</button>
+                <button ng-switch-when="first" ng-click="params.page(page.number)" class="mdl-button"><span ng-bind="page.number"></span></button>
+                <button ng-switch-when="page" ng-click="params.page(page.number)" class="mdl-button"><span ng-bind="page.number"></span></button>
+                <button ng-switch-when="more" ng-click="params.page(page.number)" class="mdl-button">&#8230;</button>
+                <button ng-switch-when="last" ng-click="params.page(page.number)" class="mdl-button"><span ng-bind="page.number"></span></button>
+                <button ng-switch-when="next" ng-click="params.page(page.number)" class="mdl-button">&raquo;</button>
+              </span>
+            </div>
+          </script>-->
+	</div>
+	<div class="mdl-cell mdl-cell--4-col  mdl-cell--12-col-tablet mdl-cell--12-col-phone no-p-l">
+      <div class="p-40 p-r-20 p-20--small">
+        <div class=" mdl-color-text--blue-grey-400">
+          <h3><i class=" material-icons f-left m-r-5">accessibility</i>Personalidad con respecto al servicio</h3>
+          <p>Cómo se comporta este usuario.</p>
+          	<div ng-repeat="metric in metrics">
+          		<div class="mdl-grid">
+          			<div class="mdl-cell mdl-cell--6-col slider-left">{{metric.low}}</div>
+          			<div class="mdl-cell mdl-cell--6-col mdl-typography--text-right slider-right">{{metric.high}}</div>
+          		</div>
+      			<input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" ng-model=metric.value tabindex="0" >	
+     		</div>
+     	</div>
+     </div>
+     </div>
+    <!--<div class="mdl-cell mdl-cell--9-col  mdl-cell--12-col-tablet mdl-cell--12-col-phone no-p-l">
+
+      <div class="p-20 ml-card-holder ml-card-holder-first">
+
+        <div id="gridWrap">
+          <ul class="dynamic-grid" angular-grid="images" grid-width="350" gutter-size="20" refresh-on-img-load="true">
+            <li data-ng-repeat="pic in images" class="grid">
+
+              <div class="mdl-card mdl-shadow--0dp">
+                <div class="mdl-card__title mdl-card--expand" style="background-image:url('{{pic.src}}'); min-height:200px;">
+                  <h2 class="mdl-card__title-text mdl-color-text--white">{{pic.title}}</h2>
+                </div>
+
+
+                <div class="mdl-card__supporting-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenan convallis.
+                  <div class="tags m-t-20">
+                    <div class="f-right">
+                      <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                        <i class="material-icons f18">edit</i>
+                      </button>
+                      <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                        <i class="material-icons f18 mdl-color-text--red-400">clear</i>
+                      </button>
+                    </div>
+                    <div class="p-t-5">
+                      <span data-ng-repeat="tag in pic.tags.split(',')" class="mdl-color--grey-200 radius3 inline p-5 f11 m-r-5">
+                        {{tag}}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mdl-card__menu">
+                  <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                    <i class="material-icons mdl-color-text--white">more_vert</i>
+                  </button>
+                </div>
+              </div>
+
+
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>-->
+  </div>
+</section>

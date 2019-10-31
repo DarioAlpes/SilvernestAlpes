@@ -1,0 +1,21 @@
+<!--<div *ngIf="client">
+    <h2>Detalles del cliente {{client.name}}</h2>
+    <div class="error" *ngIf="error">
+        <label>Error: </label>
+        {{error}}
+    </div>
+    <div *ngIf="client.id"><label>Id: </label>{{client.id}}</div>
+    <div>
+      <label>Nombre: </label>
+      <input [(ngModel)]="client.name" placeholder="Nombre"/>
+    </div>
+    <button (click)="saveClient()">Guardar</button>
+    <button (click)="goBack()">Volver</button>
+    <div *ngIf="client.id"><a [routerLink]="['/clients', client.id, '/packages']">Paquetes del cliente</a></div>
+    <div *ngIf="client.id"><a [routerLink]="['/clients', client.id, '/events']">Eventos del cliente</a></div>
+    <div *ngIf="client.id"><a [routerLink]="['/clients', client.id, '/sku-categories']">Categorias de SKUs del cliente</a></div>
+    <div *ngIf="client.id"><a [routerLink]="['/clients', client.id, '/skus']">SKUs del cliente</a></div>
+    <div *ngIf="client.id"><a [routerLink]="['/clients', client.id, '/persons']">Personas del cliente</a></div>
+</div>-->
+<pageheader [title]="'Clientes'"></pageheader>
+<formview *ngIf="client" [fields]="fields" [(model)]="client" [click]="boundCallBack"></formview>

@@ -1,0 +1,34 @@
+Manifest-Version: 1.0
+Class-Path: jersey-test-framework-provider-grizzly2-2.27.jar jersey-co
+ mmon-2.27.jar aopalliance-repackaged-2.5.0-b42.jar shiro-core-1.2.6.j
+ ar jackson-jaxrs-base-2.9.7.jar animal-sniffer-annotations-1.14.jar c
+ ommons-logging-1.2.jar kotlin-stdlib-jdk7-1.3.11.jar javax.servlet-ap
+ i-4.0.0.jar jackson-module-afterburner-2.9.7.jar postgresql-42.2.4.ja
+ r jersey-server-2.27.jar kotlin-reflect-1.3.11.jar shiro-redis-3.1.0.
+ jar jersey-hk2-2.27.jar jackson-annotations-2.9.0.jar paranamer-2.8.j
+ ar grizzly-http-servlet-2.4.0.jar shiro-web-1.2.3.jar jsr305-1.3.9.ja
+ r jersey-container-grizzly2-servlet-2.27.jar javax.inject-2.5.0-b42.j
+ ar jackson-core-2.9.7.jar checkstyle-8.3.jar metrics-core-3.2.3.jar j
+ ackson-jaxrs-json-provider-2.9.7.jar jackson-module-jaxb-annotations-
+ 2.9.7.jar kotlin-stdlib-jre7-1.2.21.jar javax.annotation-api-1.2.jar 
+ kotlin-stdlib-jdk8-1.3.11.jar shiro-jersey-0.2.0.jar jersey-media-jax
+ b-2.27.jar kotlinpoet-0.7.0.jar jersey-container-servlet-2.27.jar jav
+ assist-3.22.0-CR2.jar HikariCP-3.2.0.jar junit-4.12.jar jackson-modul
+ e-paranamer-2.9.7.jar kotlin-stdlib-common-1.3.11.jar jackson-module-
+ kotlin-2.9.7.jar ormlite-jdbc.jar kotlinx-coroutines-core-common-1.0.
+ 0.jar Saxon-HE-9.8.0-4.jar jedis-2.9.0.jar kotlin-stdlib-1.3.11.jar j
+ ackson-datatype-jaxrs-2.9.7.jar hk2-locator-2.5.0-b42.jar osgi-resour
+ ce-locator-1.0.1.jar jersey-test-framework-core-2.27.jar hk2-api-2.5.
+ 0-b42.jar javax.inject-1.jar jersey-client-2.27.jar annotations-13.0.
+ jar jersey-container-grizzly2-http-2.27.jar hk2-utils-2.5.0-b42.jar v
+ alidation-api-1.1.0.Final.jar kotlin-reflect-1.2.21.jar javax.ws.rs-a
+ pi-2.1.jar threetenbp-1.3.6.jar commons-pool2-2.4.2.jar j2objc-annota
+ tions-1.1.jar grizzly-http-2.4.0.jar grizzly-http-server-2.4.0.jar sl
+ f4j-api-1.7.25.jar kotlinx-coroutines-core-1.0.0.jar grizzly-framewor
+ k-2.4.0.jar commons-collections-3.2.2.jar jackson-databind-2.9.7.jar 
+ antlr-2.7.7.jar ormlite-core-5.1.jar jersey-container-servlet-core-2.
+ 27.jar antlr4-runtime-4.7.jar commons-beanutils-1.9.3.jar guava-23.0.
+ jar hamcrest-core-1.3.jar slf4j-api-1.7.22.jar commons-cli-1.4.jar h2
+ -1.4.196.jar error_prone_annotations-2.0.18.jar
+Main-Class: co.smartobjects.prompterbackend.PrompterBackend
+

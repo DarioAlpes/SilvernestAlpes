@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1162596152/configuracion-persistencia.iml" filepath="$PROJECT_DIR$/.idea/modules/-1162596152/configuracion-persistencia.iml" group="configuracion-persistencia" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-285642769/configuracion-persistencia-h2.iml" filepath="$PROJECT_DIR$/.idea/modules/-285642769/configuracion-persistencia-h2.iml" group="configuracion-persistencia-h2" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-285642769/configuracion-persistencia-h2_main.iml" filepath="$PROJECT_DIR$/.idea/modules/-285642769/configuracion-persistencia-h2_main.iml" group="configuracion-persistencia-h2" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-285642769/configuracion-persistencia-h2_test.iml" filepath="$PROJECT_DIR$/.idea/modules/-285642769/configuracion-persistencia-h2_test.iml" group="configuracion-persistencia-h2" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/172075185/configuracion-persistencia-sqlite.iml" filepath="$PROJECT_DIR$/.idea/modules/172075185/configuracion-persistencia-sqlite.iml" group="configuracion-persistencia-sqlite" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/172075185/configuracion-persistencia-sqlite_main.iml" filepath="$PROJECT_DIR$/.idea/modules/172075185/configuracion-persistencia-sqlite_main.iml" group="configuracion-persistencia-sqlite" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/172075185/configuracion-persistencia-sqlite_test.iml" filepath="$PROJECT_DIR$/.idea/modules/172075185/configuracion-persistencia-sqlite_test.iml" group="configuracion-persistencia-sqlite" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1162596152/configuracion-persistencia_main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1162596152/configuracion-persistencia_main.iml" group="configuracion-persistencia" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1162596152/configuracion-persistencia_test.iml" filepath="$PROJECT_DIR$/.idea/modules/-1162596152/configuracion-persistencia_test.iml" group="configuracion-persistencia" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1117396333/entidades.iml" filepath="$PROJECT_DIR$/.idea/modules/-1117396333/entidades.iml" group="entidades" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1117396333/entidades_main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1117396333/entidades_main.iml" group="entidades" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1117396333/entidades_test.iml" filepath="$PROJECT_DIR$/.idea/modules/-1117396333/entidades_test.iml" group="entidades" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/persistencia.iml" filepath="$PROJECT_DIR$/.idea/persistencia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/persistencia_main.iml" filepath="$PROJECT_DIR$/.idea/modules/persistencia_main.iml" group="persistencia" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/persistencia_test.iml" filepath="$PROJECT_DIR$/.idea/modules/persistencia_test.iml" group="persistencia" />
+    </modules>
+  </component>
+</project>

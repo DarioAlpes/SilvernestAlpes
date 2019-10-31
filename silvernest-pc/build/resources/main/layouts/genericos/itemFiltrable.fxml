@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<HBox
+        xmlns="http://javafx.com/javafx/8.0.121"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:id="raiz"
+        fx:controller="co.smartobjects.ui.javafx.controladores.genericos.ControladorItemFiltrable"
+        styleClass="raiz"
+        maxHeight="150" maxWidth="Infinity"
+        prefHeight="150" prefWidth="300">
+    <JFXCheckBox fx:id="checkSeleccion"
+                 styleClass="jfx-checkbox-principal"
+                 HBox.hgrow="NEVER"
+                 visible="false">
+        <HBox.margin>
+            <Insets top="10"/>
+        </HBox.margin>
+    </JFXCheckBox>
+    <StackPane
+            fx:id="panelItem"
+            HBox.hgrow="ALWAYS">
+    </StackPane>
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+
+</HBox>

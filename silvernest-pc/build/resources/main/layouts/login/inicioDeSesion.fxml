@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.smartobjects.ui.javafx.controladores.genericos.CampoTextoConSugerencias?>
+<?import co.smartobjects.ui.javafx.controladores.genericos.DialogoDeEspera?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import java.net.URL?>
+<StackPane
+        fx:id="raiz"
+        xmlns="http://javafx.com/javafx/8.0.112"
+        xmlns:fx="http://javafx.com/fxml/1"
+        styleClass="raiz">
+    <VBox alignment="CENTER"
+          maxWidth="470"
+          minWidth="470"
+          spacing="38">
+
+        <CampoTextoConSugerencias fx:id="campoUsuario" maxWidth="420" promptText="Usuario"
+                                  styleClass="jfx-textfield-principal"/>
+
+        <JFXPasswordField fx:id="campoContraseña" labelFloat="true" maxWidth="420" promptText="Contraseña"
+                          styleClass="jfx-textfield-principal"/>
+
+        <JFXButton fx:id="botonIniciarSesion"
+                   text="INICIAR SESIÓN"
+                   styleClass="jfx-button-principal"
+                   prefWidth="420">
+            <VBox.margin>
+                <Insets top="40"/>
+            </VBox.margin>
+        </JFXButton>
+
+        <Label fx:id="labelVersionApplicacion" maxWidth="420"
+               alignment="CENTER" styleClass="title-label-pequeno"
+               wrapText="true"/>
+
+        <Label fx:id="labelError" maxWidth="420"
+               alignment="CENTER" styleClass="error-label-externa"
+               wrapText="true"/>
+
+        <Label fx:id="labelVersion" maxWidth="420" text="Version 1.0"
+               alignment="BOTTOM_RIGHT" styleClass="title-label-pequeno"
+               wrapText="true"/>
+    </VBox>
+
+    <DialogoDeEspera fx:id="dialogoDeEspera"/>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+</StackPane>

@@ -1,0 +1,13 @@
+rootProject.name = 'modelos-ui'
+
+include ':entidades'
+project(':entidades').projectDir = new File(settingsDir, '../entidades')
+
+include ':red'
+project(':red').projectDir = new File(settingsDir, '../red')
+
+include ':red-clientes'
+project(':red-clientes').projectDir = new File(settingsDir, '../red-clientes')
+
+include ':persistencia'
+project(':persistencia').projectDir = new File(settingsDir, '../persistencia')

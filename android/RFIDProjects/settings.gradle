@@ -1,0 +1,5 @@
+include ':VisitsCreator'
+include ':Sample Code:ReadWrite'
+include ':DeviceList'
+include ':Rfid.AsciiProtocol'
+

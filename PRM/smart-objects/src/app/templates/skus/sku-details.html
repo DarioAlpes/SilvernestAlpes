@@ -1,0 +1,4 @@
+<div *ngIf="sku">
+  <pageheader [title]="'SKU'"></pageheader>
+  <formview *ngIf="sku&&fields" [fields]="fields" [(model)]="sku" [click]="boundCallBack"></formview>
+</div>

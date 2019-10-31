@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+<?import java.net.URL?>
+<fx:root xmlns="http://javafx.com/javafx/8.0.112"
+         xmlns:fx="http://javafx.com/fxml/1"
+         type="javafx.scene.layout.VBox"
+         styleClass="raiz, panel-con-borde-color-primario"
+         spacing="8">
+    <padding>
+        <Insets top="10" left="10" right="10"/>
+    </padding>
+
+    <Label styleClass="etiqueta-16px-blanca-medium-peso800"
+           wrapText="true"
+           text="FAMILIARES (nombre, documento, edad)"/>
+
+    <Label fx:id="labelError"
+           styleClass="error-label-externa"
+           wrapText="true"/>
+
+    <ScrollPane fitToHeight="true"
+                fitToWidth="true"
+                prefHeight="1"
+                VBox.vgrow="ALWAYS"
+                styleClass="panel-scroll">
+
+        <VBox fx:id="contenedorFamiliares" styleClass="fondo-color-texto" spacing="10"/>
+
+    </ScrollPane>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+</fx:root>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#04B5A1</color>
+    <color name="colorPrimaryDark">#038677</color>
+    <color name="colorAccent">#FF8349</color>
+
+    <color name="blanco">#ffffffff</color>
+
+    <color name="texto">#2D343B</color>
+    <color name="textoDeshabilitado">#992d343b</color>
+
+    <color name="hint_blanco">#99ffffff</color>
+
+    <color name="color_fondo_mensaje_de_error">#e6ef5350</color>
+    <color name="color_fondo_mensaje_toast_defecto">#e6555555</color>
+
+    <color name="etiqueta">#757575</color>
+
+    <color name="operacion_exitosa">#4CAF50</color>
+    <color name="operacion_fallida">#FF4D4D</color>
+
+</resources>

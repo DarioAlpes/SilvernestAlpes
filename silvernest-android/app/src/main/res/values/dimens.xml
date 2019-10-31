@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Alto y ancho -->
+    <dimen name="alto_ancho_imagen_manilla">230dp</dimen>
+
+    <!-- Márgenes -->
+    <dimen name="margen_separacion_defecto">5dp</dimen>
+    <dimen name="margen_separacion_extra">7dp</dimen>
+    <dimen name="margen_separacion_defecto_doble">10dp</dimen>
+    <dimen name="margen_separacion_contenido_pantalla">16dp</dimen>
+    <dimen name="margen_separacion_grupos_ui">16dp</dimen>
+    <dimen name="margen_inferior_toast">60dp</dimen>
+    <dimen name="margen_separacion_grupos_ui_doble">16dp</dimen>
+
+    <!-- Paddings -->
+    <dimen name="padding_clear_icon">5dp</dimen>
+    <dimen name="padding_lateral_botones">25dp</dimen>
+
+    <!-- Tamaños de letra -->
+    <dimen name="tamaño_letra_etiqueta_grande">20sp</dimen>
+    <dimen name="tamaño_letra_toolbar">19sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

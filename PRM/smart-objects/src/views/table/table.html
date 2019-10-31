@@ -1,0 +1,59 @@
+  <button md-fab (click)="click()">
+    <i class=" material-icons f-left m-r-5">add</i>
+</button>
+  <div class="col-md-4 tableview-desc">
+    <div class="">
+      <h3 class="">Data tables</h3>
+      <h4 class="">Work with large data sets in tables with NG-Table</h4>
+    </div>
+    <div class="">
+          <h3><i class=" material-icons f-left m-r-5">dvr</i> ngTable</h3>
+          <p>ngTable allows you to interact with your tables.
+            It supports sorting, filtering and pagination. Header rows with titles and filters are automatically generated during compilation</p>
+    </div>
+    <div>
+      <input #gb type="text" pInputText placeholder="Filtrar"/>
+    </div>
+    <div>
+      <button md-icon-button color="primary"  (click)="dt.exportCSV()"><i class="material-icons">file_download</i></button>
+    </div>
+  </div>
+
+  <div class="col-md-8">
+
+<div class="table-container">
+<md-card>
+<p-dataTable #dt [value]="TableData" [emptyMessage]="'No se encuentran registros con esa búsqueda'" [globalFilter]="gb">
+      <p-column *ngFor="let col of columns" [field]="col.field" [header]="col.header" [filter]="col.filter" [filterMatchMode]="col.filtermode" [sortable]="col.sortable" [styleClass]="col.styleClass"></p-column>
+      <p-column *ngIf="edit" header="Editar" styleClass="editcol" [field]="id">
+        <template let-col let-obj="rowData" pTemplate>
+          <button md-icon-button color="warn" class="warn" (click)="edit(obj)">
+            <i class=" material-icons f-left m-r-5">edit</i>
+          </button>
+        </template>
+      </p-column>
+      <p-column *ngIf="delete" header="Eliminar" styleClass="editcol" [field]="id">
+        <template let-col let-obj="rowData" pTemplate>
+          <button md-icon-button color="warn" class="warn" (click)="delete(obj)">
+            <i class=" material-icons f-left m-r-5">delete</i>
+          </button>
+        </template>
+      </p-column>
+</p-dataTable>
+</md-card>
+<!--<ng-table [config]="config.sorting"
+           (tableChanged)="onChangeTable(config)"
+           [rows]="rows" [columns]="columns">
+</ng-table>
+<pagination *ngIf="config.paging"
+            [totalItems]="length"
+            [itemsPerPage]="itemsPerPage"
+            [maxSize]="maxSize"
+            [boundaryLinks]="true"
+            [rotate]="false"
+            (pageChanged)="onChangeTable(config, $event)"
+            (numPages)="numPages = $event">
+</pagination>
+<pre *ngIf="config.paging" class="card card-block card-header">Page:  / </pre>-->
+</div>
+</div>

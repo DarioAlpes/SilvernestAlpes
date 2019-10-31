@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_usuario">"Usuario"</string>
+    <string name="hint_password">"Contraseña"</string>
+    <string name="mensaje_iniciar_sesion">Iniciar Sesión</string>
+    <string name="error_usuario_yo_contraseña_incorrectos">"Usuario y/o contraseña incorrectos"</string>
+    <string name="error_no_hay_conexion_a_internet">"No hay conexión de Internet"</string>
+
+    <string name="verificando_conexion_a_internet">"Verificando Conexión…"</string>
+    <string name="iniciando_sesion">"Iniciando sesión…"</string>
+    <string name="descargando_datos">"Descargando datos…"</string>
+    <string name="error_al_descargar_datos">"Error al descargar datos"</string>
+
+</resources>

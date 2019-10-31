@@ -1,0 +1,21 @@
+<div *ngIf="access">
+    <h2>Detalles del acceso</h2>
+    <div class="error" *ngIf="error">
+        <label>Error: </label>
+        {{error}}
+    </div>
+    <div *ngIf="access.id"><label>Id: </label>{{access.id}}</div>
+    <div *ngIf="access['historic-id']"><label>Id historico: </label>{{access['historic-id']}}</div>
+    <div>
+      <label>Cantidad incluida: </label>
+      <input type="number" [(ngModel)]="access['amount-included']" placeholder="10"/>
+    </div>
+    <div>
+    <label>Ubicación: </label>
+      <select [(ngModel)]="access['id-location']">
+        <option *ngFor="let location of locations" [ngValue]="location.id">{{location.name}}</option>
+      </select>
+    </div>
+    <button (click)="saveAccess()">Guardar</button>
+    <button (click)="goBack()">Volver</button>
+</div>

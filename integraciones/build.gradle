@@ -1,0 +1,98 @@
+buildscript {
+    ext.kotlin_version = '1.3.11'
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+apply plugin: 'idea'
+
+group 'co.smartobjects'
+version '0.1.0'
+description = "Módulo para integraciones con clientes"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+compileJava {
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+}
+
+compileTestJava {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+    options.compilerArgs += '-parameters'
+}
+
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    def versionCorutinas = '1.0.0'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$versionCorutinas"
+
+    implementation project(':entidades')
+    implementation project(':persistencia')
+
+    def versionJersey = '2.27'
+    implementation "org.glassfish.jersey.inject:jersey-hk2:$versionJersey"
+    implementation "org.glassfish.jersey.containers:jersey-container-grizzly2-http:$versionJersey"
+    implementation "org.glassfish.jersey.containers:jersey-container-grizzly2-servlet:$versionJersey"
+    implementation "org.glassfish.jersey.test-framework.providers:jersey-test-framework-provider-grizzly2:$versionJersey"
+
+    def junit5_jupiter = '5.3.1'
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junit5_jupiter"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$junit5_jupiter"
+    testImplementation "org.junit.jupiter:junit-jupiter-params:$junit5_jupiter"
+
+    testImplementation 'org.junit.platform:junit-platform-launcher:1.2.0'
+
+    testImplementation "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
+    testImplementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+
+    testImplementation 'org.mockito:mockito-inline:2.19.0'
+}
+
+test {
+    useJUnitPlatform()
+
+    filter {
+        includeTestsMatching('*Pruebas')
+    }
+
+    // Always run tests, even when nothing changed.
+    dependsOn 'cleanTest'
+
+    // Show test results.
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+
+    reports {
+        junitXml.enabled = false
+        html.enabled = false
+    }
+}

@@ -1,0 +1,288 @@
+indexes:
+
+- kind: Evento
+  properties:
+  - name: class
+  - name: idUbicacion
+  - name: tiempoFin
+
+- kind: Evento
+  properties:
+  - name: class
+  - name: idUbicacion
+  - name: tiempoInicio
+
+- kind: Evento
+  properties:
+  - name: class
+  - name: idUbicacion
+  - name: tiempoFin
+  - name: tiempoInicio
+
+- kind: AccessTopoff
+  properties:
+  - name: eliminada
+  - name: idReserva
+  - name: idReservacionPersona
+  - name: tiempoTopoff
+
+- kind: AccessTopoff
+  properties:
+  - name: eliminada
+  - name: idReserva
+  - name: idReservacionPersona
+
+- kind: AccessTopoff
+  properties:
+  - name: idReserva
+  - name: idReservacionPersona
+  - name: tiempoTopoff
+
+- kind: AmountTopoff
+  properties:
+  - name: eliminada
+  - name: idReserva
+  - name: idReservacionPersona
+  - name: tiempoTopoff
+
+- kind: AmountTopoff
+  properties:
+  - name: eliminada
+  - name: idReserva
+  - name: idReservacionPersona
+
+- kind: AmountTopoff
+  properties:
+  - name: idReserva
+  - name: idReservacionPersona
+  - name: tiempoTopoff
+
+- kind: Evento
+  properties:
+  - name: class
+  - name: idPersona
+  - name: idSkus
+  - name: tiempoInicio
+
+- kind: Evento
+  properties:
+  - name: class
+  - name: idPersona
+  - name: idUbicacion
+  - name: tiempoInicio
+
+- kind: Evento
+  properties:
+  - name: class
+  - name: idPersona
+  - name: idUbicacion
+  - name: tiempoInicio
+    direction: desc
+
+- kind: Evento
+  properties:
+  - name: class
+  - name: idPersona
+  - name: tiempoInicio
+    direction: desc
+
+- kind: Evento
+  properties:
+  - name: idPersona
+  - name: tiempoInicio
+    direction: desc
+
+- kind: Evento
+  properties:
+  - name: idPersona
+  - name: tipo
+  - name: ubicacion
+  - name: tiempoInicio
+
+- kind: Evento
+  properties:
+  - name: idPersona
+  - name: tipo
+  - name: ubicacion
+  - name: tiempoInicio
+    direction: desc
+
+- kind: Evento
+  properties:
+  - name: idPersona
+  - name: ubicacion
+  - name: tiempoInicio
+
+- kind: Evento
+  properties:
+  - name: idPersona
+  - name: ubicacion
+  - name: tiempoInicio
+    direction: desc
+
+- kind: MoneyTopoff
+  properties:
+  - name: eliminada
+  - name: idReserva
+  - name: idReservacionPersona
+  - name: tiempoTopoff
+
+- kind: MoneyTopoff
+  properties:
+  - name: eliminada
+  - name: idReserva
+  - name: idReservacionPersona
+
+- kind: MoneyTopoff
+  properties:
+  - name: idReserva
+  - name: idReservacionPersona
+  - name: tiempoTopoff
+
+- kind: Paquete
+  properties:
+  - name: activo
+  - name: validoHasta
+
+- kind: PersonAccess
+  properties:
+  - name: eliminada
+  - name: idReserva
+  - name: idReservaPersona
+  - name: tiempoAcceso
+
+- kind: PersonAccess
+  properties:
+  - name: eliminada
+  - name: idReserva
+  - name: idReservaPersona
+
+- kind: PersonAccess
+  properties:
+  - name: idReserva
+  - name: idReservaPersona
+  - name: tiempoAcceso
+
+- kind: PersonConsumptionByAmount
+  properties:
+  - name: eliminada
+  - name: tiempoConsumo
+
+- kind: PersonConsumptionByAmount
+  properties:
+  - name: eliminada
+  - name: idReserva
+  - name: idReservaPersona
+  - name: idOrden
+
+- kind: PersonConsumptionByAmount
+  properties:
+  - name: eliminada
+  - name: idReserva
+  - name: idReservaPersona
+  - name: tiempoConsumo
+  - name: idOrden
+  - name: posicionOrden
+
+- kind: PersonConsumptionByAmount
+  properties:
+  - name: eliminada
+  - name: tiempoConsumo
+  - name: idPaqueteCompartido
+  - name: idPaquete
+  - name: idReserva
+  - name: idReservaPersona
+  - name: idOrden
+  - name: posicionOrden
+
+- kind: PersonConsumptionByAmount
+  properties:
+  - name: idReserva
+  - name: idReservaPersona
+  - name: tiempoConsumo
+  - name: idOrden
+  - name: posicionOrden
+
+- kind: PersonConsumptionByMoney
+  properties:
+  - name: eliminada
+  - name: tiempoConsumo
+
+- kind: PersonConsumptionByMoney
+  properties:
+  - name: eliminada
+  - name: idReserva
+  - name: idReservaPersona
+  - name: tiempoConsumo
+
+- kind: PersonConsumptionByMoney
+  properties:
+  - name: eliminada
+  - name: idReserva
+  - name: idReservaPersona
+  - name: idOrden
+
+- kind: PersonConsumptionByMoney
+  properties:
+  - name: idReserva
+  - name: idReservaPersona
+  - name: tiempoConsumo
+
+- kind: ActivacionesReservaPersona
+  properties:
+  - name: eliminada
+  - name: idReserva
+  - name: idReservaPersona
+
+- kind: SuccessLog
+  properties:
+  - name: id_client
+  - name: method
+  - name: kinds
+  - name: server_date
+
+- kind: SuccessLog
+  properties:
+  - name: id_client
+  - name: method
+  - name: server_date
+
+- kind: SuccessLog
+  properties:
+  - name: id_client
+  - name: server_date
+
+- kind: SuccessLog
+  properties:
+  - name: entities_keys
+  - name: id_client
+  - name: method
+  - name: user_key
+
+- kind: ReservaPersona
+  properties:
+  - name: eliminada
+  - name: fechaFinal
+
+- kind: ReservaPersona
+  properties:
+  - name: eliminada
+  - name: fechaInicial
+
+- kind: ReservaPersona
+  properties:
+  - name: eliminada
+  - name: idPersona
+  - name: fechaFinal
+
+- kind: ReservaPersona
+  properties:
+  - name: eliminada
+  - name: idPersona
+  - name: fechaInicial
+
+- kind: Order
+  properties:
+  - name: eliminada
+  - name: idReserva
+  - name: idReservaPersona

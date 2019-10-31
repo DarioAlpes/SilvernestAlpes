@@ -1,0 +1,36 @@
+<div *ngIf="personConsumption">
+    <h2>Detalles del consumo de la persona</h2>
+    <div class="error" *ngIf="error">
+        <label>Error: </label>
+        {{error}}
+    </div>
+    <div *ngIf="personConsumption.id"><label>Id: </label>{{personConsumption.id}}</div>
+    <div>
+      <label>Cantidad consumida: </label>
+      <input type="number" [(ngModel)]="personConsumption['amount-consumed']" placeholder="1"/>
+    </div>
+    <div>
+      <label>Dinero consumido: </label>
+      <input type="number" step="0.01" [(ngModel)]="personConsumption['money-consumed']" placeholder="10.01"/>
+    </div>
+    <div>
+      <label>Consumo usado: </label>
+      <select [(ngModel)]="personConsumption['id-consumption']">
+        <option *ngFor="let consumption of consumptions" [ngValue]="consumption.id">{{consumption.id}}</option>
+      </select>
+    </div>
+    <div>
+      <label>Acceso usado: </label>
+      <select [(ngModel)]="personConsumption['id-access']">
+        <option *ngFor="let access of accesses" [ngValue]="access.id">{{access.id}}</option>
+      </select>
+    </div>
+    <div>
+      <label>Sku consumido: </label>
+      <select [(ngModel)]="personConsumption['id-sku']">
+        <option *ngFor="let sku of skus" [ngValue]="sku.id">{{sku.name}}</option>
+      </select>
+    </div>
+    <button (click)="savePersonConsumption()">Guardar</button>
+    <button (click)="goBack()">Volver</button>
+</div>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="public" author="true" classpath="C:\Android\adt-bundle-windows-x86-20130522\eclipse\plugins\org.hamcrest.core_1.1.0.v20090501071000.jar;C:\Android\adt-bundle-windows-x86-20130522\eclipse\plugins\org.junit_4.10.0.v4_10_0_v20120426-0900\junit.jar;libs/android-support-v4.jar" destdir="doc" doctitle="TSL ASCII Command Library" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="com.uk.tsl.rfid.asciiprotocol,com.uk.tsl.rfid.asciiprotocol.enumerations,com.uk.tsl.rfid.asciiprotocol.responders,com.uk.tsl.utils,com.uk.tsl.rfid.asciiprotocol.parameters,com.uk.tsl.rfid.tests,com.uk.tsl.rfid.asciiprotocol.commands" source="1.6" sourcepath="gen;src" splitindex="true" use="true" version="true">
+            <link href="file:/C:/SVN/1151%20Android%20AsciiProtocol/Rfid.AsciiProtocol/doc/"/>
+        </javadoc>
+    </target>
+</project>

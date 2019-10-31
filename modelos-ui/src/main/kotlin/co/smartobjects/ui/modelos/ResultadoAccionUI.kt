@@ -1,0 +1,6 @@
+package co.smartobjects.ui.modelos
+
+enum class ResultadoAccionUI
+{
+    ACCION_INICIADA, MODELO_EN_ESTADO_INVALIDO, OBSERVABLES_EN_ESTADO_INVALIDO, PROCESO_EN_ESTADO_INVALIDO
+}

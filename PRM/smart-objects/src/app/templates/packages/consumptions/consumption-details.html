@@ -1,0 +1,31 @@
+<div *ngIf="consumption">
+    <h2>Detalles del consumo</h2>
+    <div class="error" *ngIf="error">
+        <label>Error: </label>
+        {{error}}
+    </div>
+    <div *ngIf="consumption.id"><label>Id: </label>{{consumption.id}}</div>
+    <div *ngIf="consumption['historic-id']"><label>Id historico: </label>{{consumption['historic-id']}}</div>
+    <div>
+      <label>Cantidad incluida: </label>
+      <input type="number" [(ngModel)]="consumption['amount-included']" placeholder="10"/>
+    </div>
+    <div>
+      <label>Dinero incluido: </label>
+      <input type="number" step="0.01" [(ngModel)]="consumption['money-included']" placeholder="10.01"/>
+    </div>
+    <div>
+      <label>Skus: </label>
+      <select multiple (change)="setSelectedSkus($event.target)">
+        <option *ngFor="let sku of skus" [ngValue]="sku.id" [value]="sku.id">{{sku.name}}</option>
+      </select>
+    </div>
+    <div>
+      <label>Ubicación: </label>
+      <select multiple (change)="setSelectedLocations($event.target)">
+        <option *ngFor="let location of locations" [ngValue]="location.id" [value]="location.id">{{location.name}}</option>
+      </select>
+    </div>
+    <button (click)="saveConsumption()">Guardar</button>
+    <button (click)="goBack()">Volver</button>
+</div>

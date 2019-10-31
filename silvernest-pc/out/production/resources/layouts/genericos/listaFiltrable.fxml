@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<fx:root xmlns="http://javafx.com/javafx/8.0.112"
+         xmlns:fx="http://javafx.com/fxml/1"
+         type="javafx.scene.layout.VBox"
+         styleClass="raiz"
+         prefWidth="Infinity"
+         spacing="10">
+
+    <HBox spacing="10">
+        <JFXCheckBox fx:id="checkSeleccionarTodos"
+                     styleClass="jfx-checkbox-principal"
+                     visible="false"/>
+    </HBox>
+
+
+    <ScrollPane fitToHeight="true"
+                fitToWidth="true"
+                styleClass="panel-scroll"
+                VBox.vgrow="ALWAYS">
+
+        <VBox fx:id="contenedorItems"
+              styleClass="raiz"
+              spacing="20"/>
+
+    </ScrollPane>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+</fx:root>

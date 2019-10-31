@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<fx:root xmlns="http://javafx.com/javafx/8.0.121"
+         xmlns:fx="http://javafx.com/fxml/1"
+         type="javafx.scene.layout.GridPane"
+         alignment="CENTER"
+         hgap="20"
+         maxWidth="Infinity" minHeight="150"
+         prefHeight="150"
+         styleClass="item-lista-informacion-persona-default">
+    <padding>
+        <Insets bottom="15" left="15" right="15" top="15"/>
+    </padding>
+
+    <columnConstraints>
+        <ColumnConstraints percentWidth="30"/>
+        <ColumnConstraints percentWidth="70"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints vgrow="NEVER"/>
+        <RowConstraints vgrow="NEVER"/>
+        <RowConstraints vgrow="NEVER"/>
+        <RowConstraints vgrow="NEVER"/>
+    </rowConstraints>
+
+    <ImageView fx:id="imagen" pickOnBounds="true" preserveRatio="true" fitWidth="92" fitHeight="92"
+               GridPane.halignment="CENTER"
+               GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.rowSpan="4">
+        <Image url="@/imagenes/imagen_persona_no_disponible.png"/>
+    </ImageView>
+
+    <Label fx:id="labelNombre" text="Nombre"
+           GridPane.halignment="LEFT"
+           GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+    <Label fx:id="labelDocumento" text="Documento"
+           GridPane.halignment="LEFT"
+           GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <Label fx:id="labelCategoria" text="Categoria"
+           GridPane.halignment="LEFT"
+           GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <Label fx:id="labelTipo" text="Tipo"
+           GridPane.halignment="LEFT"
+           GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+    <Label fx:id="labelGrupoEdad" text="Grupo edad"
+           GridPane.halignment="LEFT"
+           GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+</fx:root>

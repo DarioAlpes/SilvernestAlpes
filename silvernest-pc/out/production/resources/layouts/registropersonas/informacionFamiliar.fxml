@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<GridPane xmlns="http://javafx.com/javafx/8.0.121"
+          xmlns:fx="http://javafx.com/fxml/1"
+          alignment="CENTER"
+          prefHeight="30.0"
+          styleClass="fondo-color-texto"
+          VBox.vgrow="NEVER"
+          fx:controller="co.smartobjects.ui.javafx.controladores.registropersonas.ControladorInformacionFamiliar">
+    <columnConstraints>
+        <ColumnConstraints percentWidth="50.0"/>
+        <ColumnConstraints percentWidth="22.0"/>
+        <ColumnConstraints percentWidth="18.0"/>
+        <ColumnConstraints percentWidth="10.0"/>
+    </columnConstraints>
+
+    <Label fx:id="labelNombreCompleto" styleClass="etiqueta-14px-blanca" text="Nombre"
+           GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+
+    <Label fx:id="labelDocumento" styleClass="etiqueta-14px-blanca" text="Documento"
+           GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+    <Label fx:id="labelEdad" styleClass="etiqueta-14px-blanca" text="Edad"
+           GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+
+    <JFXButton fx:id="iconoAgregar"
+               styleClass="boton-icono-fondo-blanco-icono-color-texto"
+               GridPane.columnIndex="3"
+               GridPane.columnSpan="1"
+               GridPane.rowIndex="0"
+               GridPane.rowSpan="1">
+        <graphic>
+            <FontAwesomeIconView glyphName="PLUS" size="1.3em"/>
+        </graphic>
+    </JFXButton>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+</GridPane>

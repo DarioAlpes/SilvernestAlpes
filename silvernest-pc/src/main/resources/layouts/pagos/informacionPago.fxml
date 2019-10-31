@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<fx:root xmlns="http://javafx.com/javafx/8.0.112"
+         xmlns:fx="http://javafx.com/fxml/1"
+         type="javafx.scene.layout.GridPane"
+         styleClass="raiz"
+         alignment="CENTER">
+    <columnConstraints>
+        <ColumnConstraints percentWidth="40"/>
+        <ColumnConstraints percentWidth="40"/>
+        <ColumnConstraints percentWidth="20"/>
+    </columnConstraints>
+
+    <HBox spacing="10"
+          alignment="CENTER_LEFT"
+          GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <padding>
+            <Insets top="10" bottom="10" left="10" right="10"/>
+        </padding>
+
+        <StackPane styleClass="fondo-circular-borde-delgado-color-blanco">
+            <padding>
+                <Insets top="6" right="6" bottom="6" left="6"/>
+            </padding>
+            <FontAwesomeIconView glyphName="TICKET" styleClass="icono-blanco" size="1.7em"/>
+        </StackPane>
+
+        <Label
+                fx:id="labelNumeroTransaccion"
+                styleClass="etiqueta-14px-blanca"
+                wrapText="true"
+                text="# transacción"
+                GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    </HBox>
+
+    <HBox spacing="10"
+          alignment="CENTER_LEFT"
+          GridPane.columnIndex="1" GridPane.rowIndex="0">
+        <padding>
+            <Insets top="10" bottom="10" left="10" right="10"/>
+        </padding>
+
+        <StackPane styleClass="fondo-circular-borde-delgado-color-blanco">
+            <padding>
+                <Insets top="6" right="10" bottom="6" left="10"/>
+            </padding>
+
+            <FontAwesomeIconView glyphName="DOLLAR" styleClass="icono-blanco" size="1.7em"/>
+        </StackPane>
+
+        <Label fx:id="labelValorPagado"
+               styleClass="etiqueta-14px-blanca"
+               text="valor"/>
+    </HBox>
+
+
+    <HBox spacing="10"
+          alignment="CENTER"
+          style="-fx-background-color: -color-primario"
+          GridPane.columnIndex="2" GridPane.rowIndex="0">
+        <padding>
+            <Insets top="10" bottom="10" left="10" right="10"/>
+        </padding>
+
+        <StackPane styleClass="fondo-circular-borde-delgado-color-blanco"
+                   GridPane.columnIndex="2" GridPane.rowIndex="0">
+            <padding>
+                <Insets top="6" right="6" bottom="6" left="6"/>
+            </padding>
+            <FontAwesomeIconView fx:id="iconoMetodoPago" glyphName="MONEY" styleClass="icono-blanco"
+                                 size="1.7em"/>
+        </StackPane>
+    </HBox>
+
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+
+</fx:root>

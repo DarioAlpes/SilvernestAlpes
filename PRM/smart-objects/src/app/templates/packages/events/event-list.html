@@ -1,0 +1,34 @@
+<div class="error" *ngIf="error">{{error}}</div>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Fecha inicial</th>
+        <th>Fecha final</th>
+        <th>Capacidad</th>
+        <th>Capacidad ilimitada</th>
+
+        <th>Cantidad ilimitada</th>
+        <th>Id paquete</th>
+        <th>Id ubicación</th>
+        <th>Opciones</th>
+    </tr>
+    <tr *ngFor="let event of events">
+        <td>{{event.id}}</td>
+        <td>{{event.name}}</td>
+        <td>{{event.description}}</td>
+        <td>{{event["initial-date"]}}</td>
+        <td>{{event["final-date"]}}</td>
+        <td>{{event.capacity}}</td>
+        <td>{{event["unlimited-capacity"]}}</td>
+        <td>
+            <button type="button" (click)="onSelect(event)">Editar</button>
+        </td>
+    </tr>
+</table>
+<button (click)="addEvent()">Crear evento</button>
+<button (click)="goBack()">Volver</button>
+<div *ngIf="showEvent">
+    <event-detail (close)="close($event)" [event]="selectedEvent"></event-detail>
+</div>

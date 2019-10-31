@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Auditoría pendiente..."
+        android:id="@+id/tv_alert_auditoria"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/red_color"
+        android:visibility="gone"/>
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="120dp"
+        android:horizontalSpacing="@dimen/text_size_xsmall"
+        android:numColumns="auto_fit"
+        android:padding="@dimen/text_size_xsmall"
+        android:verticalSpacing="@dimen/text_size_xsmall" />
+</LinearLayout>
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:id="@+id/fl_activity_modulos"-->
+    <!--style="@style/dim_match_match" />-->

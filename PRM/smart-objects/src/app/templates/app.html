@@ -1,0 +1,25 @@
+<md-toolbar color="primary" class="shadow">
+  <button #mybutton (click)="start.toggle()" class="app-icon-button">
+      <i _ngcontent-xit-1="" class="material-icons app-toolbar-menu" style="vertical-align: middle;margin-top: -4px;">menu</i>
+    </button>
+  <span>Ejemplo toolbar {{title}}</span>
+</md-toolbar>
+<div>
+<md-sidenav-layout>
+    <md-sidenav *ngIf="navMenu" #start mode="side" opened="True" class="sidenavsn">
+      <ul class="nav-links">
+        <li *ngFor="let mi of navMenu">
+          <a href="{{mi.link}}"><i class="material-icons">{{mi.icon}}</i>  <span>{{mi.label}}</span></a>
+        </li>
+      </ul>
+      <br>
+      <button md-button #mybutton (click)="start.close()">Cerrar</button>
+    </md-sidenav>
+    <md-sidenav #end align="end">
+    </md-sidenav>
+  <div id="regular_content">
+    <!--<a [routerLink]="['/clients']">Clientes</a>-->
+    <router-outlet></router-outlet>
+  </div>
+</md-sidenav-layout>
+<div>

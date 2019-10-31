@@ -1,0 +1,5 @@
+rootProject.name = 'configuracion-persistencia-postgresql'
+
+
+include ':configuracion-persistencia'
+project(':configuracion-persistencia').projectDir = new File(settingsDir, '../configuracion-persistencia')

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<VBox xmlns="http://javafx.com/javafx/8.0.121"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:id="raiz"
+      alignment="CENTER_LEFT">
+
+    <ImageView fx:id="imagen" fitHeight="136" fitWidth="136"/>
+
+    <VBox alignment="CENTER_LEFT" minWidth="150" VBox.vgrow="ALWAYS">
+        <padding>
+            <Insets bottom="3" top="5"/>
+        </padding>
+
+        <Label fx:id="nombre" styleClass="etiqueta-primaria" text="Hamburguesa doble" wrapText="true"
+               VBox.vgrow="ALWAYS"/>
+
+        <Label fx:id="precio" styleClass="subtitulo-principal" text="\$999.99" VBox.vgrow="ALWAYS"/>
+
+        <JFXButton fx:id="botonAgregar" styleClass="jfx-button-agregar-catalogo-default" text="AGREGAR"
+                   VBox.vgrow="ALWAYS">
+            <VBox.margin>
+                <Insets top="15"/>
+            </VBox.margin>
+        </JFXButton>
+    </VBox>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+</VBox>

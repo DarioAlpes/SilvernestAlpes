@@ -1,0 +1,1 @@
+{"version":3,"file":"person.routes.js","sourceRoot":"","sources":["person.routes.ts"],"names":[],"mappings":";AACA,sCAAoC,yBAAyB,CAAC,CAAA;AAC9D,yCAAuC,4BAA4B,CAAC,CAAA;AAEvD,qBAAa,GAAY;IACpC;QACE,IAAI,EAAE,4BAA4B;QAClC,SAAS,EAAE,2CAAmB;KAC/B;IACD;QACE,IAAI,EAAE,gCAAgC;QACtC,SAAS,EAAE,iDAAsB;KAClC;CACF,CAAC;AAEW,gCAAwB,GAAU,CAAC,2CAAmB,EAAE,iDAAsB,CAAC,CAAA"}

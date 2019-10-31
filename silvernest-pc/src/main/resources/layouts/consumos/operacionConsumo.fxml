@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.smartobjects.ui.javafx.controladores.carritocreditos.ControladorCarritoDeCreditos?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<fx:root xmlns="http://javafx.com/javafx/8.0.121"
+         xmlns:fx="http://javafx.com/fxml/1"
+         type="javafx.scene.layout.VBox"
+         alignment="TOP_CENTER"
+         fillWidth="false">
+
+    <StackPane
+            styleClass="esquinas-superiores-inferiores-redondas-fondo-color-primario"
+            prefWidth="477"
+            prefHeight="253"
+            GridPane.valignment="TOP"
+            GridPane.halignment="CENTER"
+            GridPane.rowIndex="1" GridPane.columnIndex="4">
+        <padding>
+            <Insets left="10" right="10"/>
+        </padding>
+
+        <ControladorCarritoDeCreditos fx:id="carritoDeCreditos">
+            <StackPane.margin>
+                <Insets top="-1"/>
+            </StackPane.margin>
+        </ControladorCarritoDeCreditos>
+
+        <Label fx:id="labelCarritoVacio"
+               text="No se han agregado ítems"
+               styleClass="etiqueta-25px-blanco-normal"
+               GridPane.halignment="CENTER"
+               GridPane.rowIndex="0" GridPane.columnIndex="4"/>
+    </StackPane>
+
+    <VBox alignment="TOP_RIGHT"
+          prefWidth="477">
+        <GridPane fx:id="desgloseDeTotales"
+                  alignment="TOP_RIGHT">
+            <columnConstraints>
+                <ColumnConstraints hgrow="NEVER"/>
+                <ColumnConstraints hgrow="NEVER"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints vgrow="NEVER"/>
+                <RowConstraints vgrow="NEVER"/>
+                <RowConstraints vgrow="NEVER"/>
+            </rowConstraints>
+
+            <VBox.margin>
+                <Insets top="25"/>
+            </VBox.margin>
+
+            <Label styleClass="etiqueta-18px-color-texto-normal" text="TOTAL"
+                   GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
+            <Label fx:id="total" styleClass="etiqueta-18px-color-texto-normal" text="TOTAL"
+                   GridPane.rowIndex="0" GridPane.columnIndex="1">
+                <GridPane.margin>
+                    <Insets left="25"/>
+                </GridPane.margin>
+            </Label>
+
+            <Label styleClass="etiqueta-18px-color-texto-normal" text="IMPUESTOS"
+                   GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
+            <Label fx:id="impuesto" styleClass="etiqueta-18px-color-texto-normal" text="IMPUESTOS"
+                   GridPane.rowIndex="1" GridPane.columnIndex="1">
+                <GridPane.margin>
+                    <Insets left="25"/>
+                </GridPane.margin>
+            </Label>
+
+            <Label styleClass="etiqueta-23px-color-primario-bold" text="GRAN TOTAL"
+                   GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.halignment="RIGHT">
+                <GridPane.margin>
+                    <Insets top="15"/>
+                </GridPane.margin>
+            </Label>
+            <Label fx:id="granTotal" styleClass="etiqueta-23px-color-primario" text="GRAN TOTAL"
+                   GridPane.rowIndex="2" GridPane.columnIndex="1">
+                <GridPane.margin>
+                    <Insets top="18" left="22"/>
+                </GridPane.margin>
+            </Label>
+
+        </GridPane>
+    </VBox>
+
+    <Label fx:id="labelEsperandoManilla"
+           styleClass="etiqueta-23px-color-operacion-estado-intermedio-bold"
+           text="Esperando manilla...">
+        <VBox.margin>
+            <Insets top="10"/>
+        </VBox.margin>
+    </Label>
+
+    <TitledPane fx:id="expandibleResultado"
+                prefWidth="477"
+                text="No se ha realizado ningún consumo"
+                styleClass="expandible-por-defecto">
+        <VBox.margin>
+            <Insets top="10"/>
+        </VBox.margin>
+        <BorderPane style="-fx-background-color: white">
+            <padding>
+                <!--suppress JavaFxRedundantPropertyValue : Es necesario para eliminar el padding-->
+                <Insets top="0" right="0" bottom="0" left="0"/>
+            </padding>
+            <top>
+                <Label fx:id="tituloResultado"
+                       prefWidth="477"
+                       prefHeight="48"
+                       styleClass="etiqueta-fondo-color-primario, etiqueta-25px-blanco-bold"
+                       text="EXITOSA"
+                       alignment="CENTER"
+                       BorderPane.alignment="CENTER_LEFT">
+                </Label>
+            </top>
+            <center>
+                <VBox maxWidth="Infinity"
+                      minWidth="-Infinity"
+                      BorderPane.alignment="CENTER"
+                      spacing="5">
+                    <Label alignment="CENTER"
+                           maxWidth="Infinity"
+                           styleClass="etiqueta-25px-color-texto-bold, borde-inferior-color-texto"
+                           text="BALANCE">
+                        <padding>
+                            <Insets top="23" bottom="23"/>
+                        </padding>
+                    </Label>
+                    <ScrollPane fx:id="scrollResultadoConsumos"
+                                fitToWidth="true"
+                                hbarPolicy="NEVER"
+                                style="-fx-background-color: white">
+
+                        <VBox fx:id="listaDesglosesDeConsumos" style="-fx-background-color: white" spacing="15"/>
+
+                    </ScrollPane>
+                </VBox>
+            </center>
+        </BorderPane>
+    </TitledPane>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+
+</fx:root>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.smartobjects.ui.javafx.controladores.ControladorFechaSegunCampos?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<fx:root
+        xmlns="http://javafx.com/javafx/8.0.112"
+        xmlns:fx="http://javafx.com/fxml/1"
+        type="javafx.scene.layout.VBox"
+        styleClass="raiz, panel-con-borde-color-primario-fondo-texto"
+        spacing="10">
+    <padding>
+        <Insets top="5" right="10" bottom="5" left="10"/>
+    </padding>
+
+    <VBox styleClass="campos-de-texto-con-color-blanco">
+        <Label styleClass="etiqueta-16px-blanca-medium-peso800"
+               wrapText="true"
+               text="DATOS DEL USUARIO"/>
+
+        <VBox spacing="28">
+
+            <padding>
+                <Insets top="20"/>
+            </padding>
+
+            <JFXComboBox fx:id="comboCajaAliada" prefWidth="Infinity" promptText="Caja Aliada"
+                         styleClass="jfx-combo-principal-blanco"/>
+
+            <JFXComboBox fx:id="comboTipoDocumento" prefWidth="Infinity" promptText="Tipo de documento"
+                         styleClass="jfx-combo-principal-blanco"/>
+
+            <JFXTextField fx:id="campoNumeroDocumento" promptText="No de documento"
+                          styleClass="jfx-textfield-principal-texto-blanco"/>
+
+            <JFXTextField fx:id="campoNombreCompleto" promptText="Nombre"
+                          styleClass="jfx-textfield-principal-texto-blanco"/>
+
+            <JFXComboBox fx:id="comboGenero" prefWidth="Infinity" promptText="Genero"
+                         styleClass="jfx-combo-principal-blanco"/>
+
+            <JFXTextField fx:id="campoEmpresa" promptText="Empresa"
+                         styleClass="jfx-textfield-principal-texto-blanco"/>
+
+            <JFXTextField fx:id="campoNitEmpresa" promptText="Nit Empresa"
+                          styleClass="jfx-textfield-principal-texto-blanco"/>
+
+            <JFXComboBox fx:id="comboCategoria" prefWidth="Infinity" promptText="Categoria"
+                         styleClass="jfx-combo-principal-blanco"/>
+
+            <JFXComboBox fx:id="comboTipo" prefWidth="Infinity" promptText="Tipo"
+                         styleClass="jfx-combo-principal-blanco"/>
+
+            <ControladorFechaSegunCampos fx:id="controladorFechaDeNacimiento"/>
+        </VBox>
+    </VBox>
+
+    <HBox alignment="TOP_RIGHT" spacing="30">
+        <JFXButton fx:id="botonReiniciarCreacionPersona" styleClass="jfx-button-secundario-blanco" text="Reiniciar"/>
+        <StackPane fx:id="panelTooltipoBotonCrearPersona">
+            <JFXButton fx:id="botonCrearPersona" styleClass="jfx-button-principal" text="Guardar"/>
+        </StackPane>
+    </HBox>
+
+    <Label fx:id="labelError" styleClass="error-label-externa" wrapText="true"/>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+</fx:root>

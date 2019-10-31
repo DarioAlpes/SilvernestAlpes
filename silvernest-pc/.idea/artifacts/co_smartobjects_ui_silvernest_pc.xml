@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="co.smartobjects.ui.silvernest-pc">
+    <output-path>$PROJECT_DIR$/out/artifacts/co_smartobjects_ui_silvernest_pc</output-path>
+    <root id="root">
+      <element id="archive" name="co_smartobjects_ui_silvernest_pc.jar">
+        <element id="module-output" name="co.smartobjects.ui.silvernest-pc" />
+      </element>
+    </root>
+  </artifact>
+</component>

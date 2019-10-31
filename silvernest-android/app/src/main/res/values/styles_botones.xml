@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BotonRedondeadoDefecto" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/forma_boton_defecto</item>
+    </style>
+</resources>

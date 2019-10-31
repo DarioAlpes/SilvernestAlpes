@@ -1,0 +1,46 @@
+<pageheader [title]="'Acciones'"></pageheader>
+<div class="col-md-4">
+<div class="timeline-person" *ngIf="person">
+
+  <div class="error" *ngIf="error">
+    <label>Error: </label>
+    {{error}}
+  </div>
+  <h2>{{person.name}}</h2><br>
+  <b class="label-color">Tipo documento:</b> {{person['document-type']}}<br>
+  <b class="label-color">Número documeto:</b> {{person['document-number']}}<br>
+  <b class="label-color">Email:</b> {{person.mail}}<br>
+  <b class="label-color">Fecha nacimiento:</b> {{person.fbirthdate | date:'medium'}}<br>
+  <b class="label-color">Genero:</b> {{person.gender}}<br>
+  <img class="main-image" src="{{person['image-source']}}"/>
+</div>
+</div>
+
+<div class="col-md-8">
+<md-card class="timeline-card">
+  <div class="timeline-title">
+    <h3>Eventos</h3>
+  </div>
+<div *ngIf="events" class="timeline">
+  <div *ngFor="let event of events">
+    <div class="timeline-icon">
+        <i class=" material-icons f-left m-r-5">query_builder</i>
+    </div>
+    <md-card class="triangle-isosceles left">
+      <div class="timeline-action">
+        {{event.type}}
+      </div>
+      <div class="timeline-time">
+          <span>{{event['timestamp'] | date:'medium'}}</span>
+      </div>
+      <!--Id: {{event.id}}<br>
+      Tipo: {{event.type}}<br>
+      Fecha inicial: {{event['initial-time']}}<br>
+      Fecha dinl: {{event['final-time']}}-->
+      Descripción: {{event.description}}<br>
+      Número: {{event.number}}<br>
+    </md-card>
+  </div>
+  </div>
+  </md-card>
+</div>

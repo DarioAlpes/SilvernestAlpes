@@ -1,0 +1,22 @@
+<!--<div *ngIf="category">
+    <h2>Detalles de la categoria {{category.name}}</h2>
+    <div class="error" *ngIf="error">
+        <label>Error: </label>
+        {{error}}
+    </div>
+    <div *ngIf="category.id"><label>Id: </label>{{category.id}}</div>
+    <div>
+      <label>Nombre: </label>
+      <input [(ngModel)]="category.name" placeholder="Nombre"/>
+    </div>
+    <div>
+      <label>Categoría padre: </label>
+      <select [(ngModel)]="category['id-parent-category']">
+        <option *ngFor="let oldCategory of categories" [ngValue]="oldCategory.id">{{oldCategory.name}}</option>
+      </select>
+    </div>
+    <button (click)="saveCategory()">Guardar</button>
+    <button (click)="goBack()">Volver</button>
+</div>-->
+<pageheader [title]="'Categoría'"></pageheader>
+<formview *ngIf="category&&fields" [fields]="fields" [(model)]="category" [click]="boundCallBack"></formview>

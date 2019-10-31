@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/co.smartobjects.ui.silvernest-pc.iml" filepath="$PROJECT_DIR$/.idea/modules/co.smartobjects.ui.silvernest-pc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/co.smartobjects.ui.silvernest-pc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/co.smartobjects.ui.silvernest-pc.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/co.smartobjects.ui.silvernest-pc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/co.smartobjects.ui.silvernest-pc.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1838891083/silvernest-pc.configuracion-persistencia.iml" filepath="$PROJECT_DIR$/.idea/modules/1838891083/silvernest-pc.configuracion-persistencia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/96439692/silvernest-pc.configuracion-persistencia-h2.iml" filepath="$PROJECT_DIR$/.idea/modules/96439692/silvernest-pc.configuracion-persistencia-h2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/96439692/silvernest-pc.configuracion-persistencia-h2.main.iml" filepath="$PROJECT_DIR$/.idea/modules/96439692/silvernest-pc.configuracion-persistencia-h2.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/96439692/silvernest-pc.configuracion-persistencia-h2.test.iml" filepath="$PROJECT_DIR$/.idea/modules/96439692/silvernest-pc.configuracion-persistencia-h2.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-325286378/silvernest-pc.configuracion-persistencia-postgresql.iml" filepath="$PROJECT_DIR$/.idea/modules/-325286378/silvernest-pc.configuracion-persistencia-postgresql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-325286378/silvernest-pc.configuracion-persistencia-postgresql.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-325286378/silvernest-pc.configuracion-persistencia-postgresql.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-325286378/silvernest-pc.configuracion-persistencia-postgresql.test.iml" filepath="$PROJECT_DIR$/.idea/modules/-325286378/silvernest-pc.configuracion-persistencia-postgresql.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-279597106/silvernest-pc.configuracion-persistencia-sqlite.iml" filepath="$PROJECT_DIR$/.idea/modules/-279597106/silvernest-pc.configuracion-persistencia-sqlite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-279597106/silvernest-pc.configuracion-persistencia-sqlite.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-279597106/silvernest-pc.configuracion-persistencia-sqlite.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-279597106/silvernest-pc.configuracion-persistencia-sqlite.test.iml" filepath="$PROJECT_DIR$/.idea/modules/-279597106/silvernest-pc.configuracion-persistencia-sqlite.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1838891083/silvernest-pc.configuracion-persistencia.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1838891083/silvernest-pc.configuracion-persistencia.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1838891083/silvernest-pc.configuracion-persistencia.test.iml" filepath="$PROJECT_DIR$/.idea/modules/1838891083/silvernest-pc.configuracion-persistencia.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-796184400/silvernest-pc.entidades.iml" filepath="$PROJECT_DIR$/.idea/modules/-796184400/silvernest-pc.entidades.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-796184400/silvernest-pc.entidades.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-796184400/silvernest-pc.entidades.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-796184400/silvernest-pc.entidades.test.iml" filepath="$PROJECT_DIR$/.idea/modules/-796184400/silvernest-pc.entidades.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/875638875/silvernest-pc.modelos-ui.iml" filepath="$PROJECT_DIR$/.idea/modules/875638875/silvernest-pc.modelos-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/875638875/silvernest-pc.modelos-ui.main.iml" filepath="$PROJECT_DIR$/.idea/modules/875638875/silvernest-pc.modelos-ui.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/875638875/silvernest-pc.modelos-ui.test.iml" filepath="$PROJECT_DIR$/.idea/modules/875638875/silvernest-pc.modelos-ui.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1099874500/silvernest-pc.nfc.iml" filepath="$PROJECT_DIR$/.idea/modules/1099874500/silvernest-pc.nfc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1467926262/silvernest-pc.nfc-windows-pcsc.iml" filepath="$PROJECT_DIR$/.idea/modules/1467926262/silvernest-pc.nfc-windows-pcsc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1467926262/silvernest-pc.nfc-windows-pcsc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1467926262/silvernest-pc.nfc-windows-pcsc.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1467926262/silvernest-pc.nfc-windows-pcsc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/1467926262/silvernest-pc.nfc-windows-pcsc.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1099874500/silvernest-pc.nfc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1099874500/silvernest-pc.nfc.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1099874500/silvernest-pc.nfc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/1099874500/silvernest-pc.nfc.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1263200037/silvernest-pc.persistencia.iml" filepath="$PROJECT_DIR$/.idea/modules/1263200037/silvernest-pc.persistencia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1263200037/silvernest-pc.persistencia.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1263200037/silvernest-pc.persistencia.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1263200037/silvernest-pc.persistencia.test.iml" filepath="$PROJECT_DIR$/.idea/modules/1263200037/silvernest-pc.persistencia.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1099878314/silvernest-pc.red.iml" filepath="$PROJECT_DIR$/.idea/modules/1099878314/silvernest-pc.red.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2140925052/silvernest-pc.red-clientes.iml" filepath="$PROJECT_DIR$/.idea/modules/2140925052/silvernest-pc.red-clientes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2140925052/silvernest-pc.red-clientes.main.iml" filepath="$PROJECT_DIR$/.idea/modules/2140925052/silvernest-pc.red-clientes.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2140925052/silvernest-pc.red-clientes.test.iml" filepath="$PROJECT_DIR$/.idea/modules/2140925052/silvernest-pc.red-clientes.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1099878314/silvernest-pc.red.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1099878314/silvernest-pc.red.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1099878314/silvernest-pc.red.test.iml" filepath="$PROJECT_DIR$/.idea/modules/1099878314/silvernest-pc.red.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2144360102/silvernest-pc.sincronizador-de-datos.iml" filepath="$PROJECT_DIR$/.idea/modules/2144360102/silvernest-pc.sincronizador-de-datos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2144360102/silvernest-pc.sincronizador-de-datos.main.iml" filepath="$PROJECT_DIR$/.idea/modules/2144360102/silvernest-pc.sincronizador-de-datos.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2144360102/silvernest-pc.sincronizador-de-datos.test.iml" filepath="$PROJECT_DIR$/.idea/modules/2144360102/silvernest-pc.sincronizador-de-datos.test.iml" />
+    </modules>
+  </component>
+</project>

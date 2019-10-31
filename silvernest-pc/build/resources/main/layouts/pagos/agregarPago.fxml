@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.smartobjects.ui.javafx.controladores.genericos.ToggleButtonPersistente?>
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<fx:root
+        xmlns="http://javafx.com/javafx/8.0.112"
+        xmlns:fx="http://javafx.com/fxml/1"
+        type="javafx.scene.layout.StackPane"
+        styleClass="raiz, panel-con-borde-color-primario-fondo-texto">
+
+    <padding>
+        <Insets top="15" bottom="10" left="10" right="10"/>
+    </padding>
+
+    <StackPane>
+        <VBox spacing="20">
+            <Label styleClass="etiqueta-16px-blanca-medium-peso800"
+                   wrapText="true"
+                   text="NUEVO PAGO">
+                <VBox.margin>
+                    <Insets bottom="5"/>
+                </VBox.margin>
+            </Label>
+
+            <JFXTextField fx:id="campoNumeroTransaccion" promptText="Número de transacción"
+                          styleClass="jfx-textfield-principal-texto-blanco"/>
+
+            <JFXTextField fx:id="campoValorPagado" promptText="Valor"
+                          styleClass="jfx-textfield-principal-texto-blanco"/>
+
+            <VBox spacing="7">
+                <Label styleClass="etiqueta-floating-label-blanca" text="Medio de pago"/>
+                <fx:define>
+                    <ToggleGroup fx:id="grupoOpcionesMedioPago"/>
+                </fx:define>
+                <FlowPane hgap="5" vgap="6">
+                    <JFXRippler styleClass="rippler-boton-cuadrado-color-blanco">
+
+                        <ToggleButtonPersistente styleClass="toggle-por-defecto"
+                                                 toggleGroup="$grupoOpcionesMedioPago"
+                                                 text="Efectivo"
+                                                 userData="EFECTIVO">
+                            <graphic>
+                                <FontAwesomeIconView glyphName="MONEY" size="1.5em"/>
+                            </graphic>
+                        </ToggleButtonPersistente>
+
+                    </JFXRippler>
+
+                    <JFXRippler styleClass="rippler-boton-cuadrado-color-blanco">
+                        <ToggleButtonPersistente styleClass="toggle-por-defecto"
+                                                 toggleGroup="$grupoOpcionesMedioPago"
+                                                 text="Tarjeta Crédito"
+                                                 userData="TARJETA_CREDITO">
+                            <graphic>
+                                <FontAwesomeIconView glyphName="CREDIT_CARD" size="1.5em"/>
+                            </graphic>
+                        </ToggleButtonPersistente>
+                    </JFXRippler>
+
+                    <JFXRippler styleClass="rippler-boton-cuadrado-color-blanco">
+                        <ToggleButtonPersistente styleClass="toggle-por-defecto"
+                                                 toggleGroup="$grupoOpcionesMedioPago"
+                                                 text="Tarjeta Débito"
+                                                 userData="TARJETA_DEBITO">
+                            <graphic>
+                                <FontAwesomeIconView glyphName="BANK" size="1.5em"/>
+                            </graphic>
+                        </ToggleButtonPersistente>
+                    </JFXRippler>
+
+                    <JFXRippler styleClass="rippler-boton-cuadrado-color-blanco">
+                        <ToggleButtonPersistente styleClass="toggle-por-defecto"
+                                                 toggleGroup="$grupoOpcionesMedioPago"
+                                                 text="TIC"
+                                                 userData="TIC">
+                            <graphic>
+                                <FontAwesomeIconView glyphName="CIRCLE_ALT" size="1.5em"/>
+                            </graphic>
+                        </ToggleButtonPersistente>
+                    </JFXRippler>
+                </FlowPane>
+            </VBox>
+
+            <Label fx:id="labelError" styleClass="error-label-externa" wrapText="true"/>
+
+            <HBox alignment="TOP_RIGHT" spacing="30">
+
+                <JFXButton fx:id="botonReiniciar"
+                           styleClass="jfx-button-secundario-blanco"
+                           text="Reiniciar"/>
+
+                <JFXButton fx:id="botonAgregarPago"
+                           styleClass="jfx-button-principal"
+                           text="Guardar"/>
+            </HBox>
+        </VBox>
+    </StackPane>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+</fx:root>

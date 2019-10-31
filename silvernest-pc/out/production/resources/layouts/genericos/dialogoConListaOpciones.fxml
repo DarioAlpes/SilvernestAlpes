@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import java.net.URL?>
+<fx:root xmlns="http://javafx.com/javafx/2.2"
+         xmlns:fx="http://javafx.com/fxml/1"
+         type="com.jfoenix.controls.JFXDialog"
+         fx:id="dialogoDeEspera"
+         transitionType="CENTER"
+         overlayClose="false">
+    <JFXDialogLayout>
+        <heading>
+            <Label fx:id="labelTituloDialogo">Seleccione</Label>
+        </heading>
+        <body>
+            <StackPane>
+                <JFXSpinner fx:id="spinnerEspera" styleClass="indicador-de-espera-color, indicador-de-espera"
+                            startingAngle="0"/>
+
+                <JFXListView fx:id="listado" styleClass="lista-por-defecto" prefHeight="115"/>
+
+            </StackPane>
+        </body>
+    </JFXDialogLayout>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+
+</fx:root>

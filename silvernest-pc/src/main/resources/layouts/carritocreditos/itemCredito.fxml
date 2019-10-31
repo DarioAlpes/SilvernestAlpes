@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.smartobjects.ui.javafx.iconosyfonts.PrompterIconosGeneralesView?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<fx:root xmlns="http://javafx.com/javafx/8.0.121"
+         xmlns:fx="http://javafx.com/fxml/1"
+         type="javafx.scene.layout.HBox"
+         fx:id="raiz"
+         alignment="CENTER_RIGHT"
+         styleClass="raiz, item-lista-carrito-creditos-default">
+
+    <padding>
+        <Insets top="2" bottom="2"/>
+    </padding>
+
+    <Label fx:id="nombre" styleClass="etiqueta-primaria" text="Hamburguesa doble" wrapText="true">
+        <HBox.margin>
+            <Insets left="15"/>
+        </HBox.margin>
+    </Label>
+
+    <Label fx:id="precio" styleClass="subtitulo-principal" text="N X $XXX.XXX" wrapText="true">
+        <HBox.margin>
+            <Insets left="15"/>
+        </HBox.margin>
+    </Label>
+
+    <Label fx:id="cantidad" alignment="CENTER" prefHeight="21" prefWidth="21"
+           styleClass="etiqueta-recuadro-primaria-redonda"
+           text="3">
+        <HBox.margin>
+            <Insets left="15"/>
+        </HBox.margin>
+    </Label>
+
+
+    <VBox alignment="CENTER" spacing="1">
+        <HBox.margin>
+            <Insets left="5"/>
+        </HBox.margin>
+
+        <JFXButton fx:id="botonDeSumar" maxHeight="14" maxWidth="14" minHeight="14" minWidth="14"
+                   styleClass="boton-icono-defecto">
+            <graphic>
+                <FontAwesomeIconView glyphName="ANGLE_UP" size="1.2em"/>
+            </graphic>
+        </JFXButton>
+
+        <JFXButton fx:id="botonDeRestar" maxHeight="14" maxWidth="14" minHeight="14" minWidth="14"
+                   styleClass="boton-icono-defecto">
+            <graphic>
+                <FontAwesomeIconView glyphName="ANGLE_DOWN" size="1.2em"/>
+            </graphic>
+        </JFXButton>
+    </VBox>
+
+    <JFXButton fx:id="iconoBorrado" styleClass="boton-icono-sin-fondo-defecto" HBox.hgrow="NEVER">
+        <HBox.margin>
+            <Insets right="8"/>
+        </HBox.margin>
+
+        <graphic>
+            <FontAwesomeIconView glyphName="TRASH" size="1.3em"/>
+        </graphic>
+    </JFXButton>
+
+    <PrompterIconosGeneralesView fx:id="iconoPagado" glyphName="PRODUCTO_PAGADO" size="2.6em"
+                                 styleClass="icono-elemento-pagado" visible="false">
+        <HBox.margin>
+            <Insets right="7"/>
+        </HBox.margin>
+    </PrompterIconosGeneralesView>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+</fx:root>

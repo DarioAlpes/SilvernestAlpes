@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Smobapp</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- General  -->
+    <string name="st_general_aceptar">Aceptar</string>
+    <string name="st_general_cancelar">Cancelar</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</string>
+
+    <!-- Close session -->
+    <string name="close_session_title">Cerrar sesión</string>
+    <string name="close_session_message">¿Está seguro que desea cerrar la sesión?</string>
+    <string name="st_iniciar_sesion_usuario">Usuario</string>
+    <string name="st_iniciar_sesion_contrasena">Contraseña</string>
+    <string name="st_iniciar_sesion_mostrar_contrasena">Mostrar contraseña</string>
+    <string name="st_iniciar_sesion_iniciar_sesion">INICIAR SESIÓN</string>
+
+    <!-- Errores -->
+    <string name="error_field_mandatory">Campo obligatorio</string>
+    <string name="error_internet">Por favor, revise su conexión a internet.</string>
+
+    <!--Messages-->
+    <string name="download_descargando">Descargando...</string>
+    <string name="download_validando">Validando...</string>
+    <string name="title_activity_activity_auditoria">" "</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="transition_name_name">transition:NAME</string>
+    <string name="transition_name_circle">transition:CIRCLE</string>
+    <string name="transition_name_phone">transition:PHONE</string>
+
+    <!--Logs-->
+    <string name="log_splash_screen_error_cambiar_actividad">Error al momento de cambiar de actividad.</string>
+
+    <string name="log_iniciar_sesion_error_switch_contrasena">Componente Switch de la contraseña es nulo.</string>
+    <string name="log_iniciar_sesion_error_"></string>
+
+    <string name="target_epc_label">Tag (Hex)</string>
+    <string name="word_address_label">Start Address\n(Words)</string>
+    <string name="word_count_label">Read Count\n(Words)</string>
+    <string name="memory_bank_label">Memory Bank</string>
+    <string name="data_label">Data to be written (Hex)</string>
+    <string name="power_level_label_text">dBm</string>
+    <string name="write_button_text">Write</string>
+    <string name="read_button_text">Read</string>
+    <string name="clear_button_text">Limpiar</string>
+    <string name="tag_info_text">Partial EPCs are matched from the start and actions will affect multiple tags. Write action must have at least a partial EPC specified.</string>
+</resources>

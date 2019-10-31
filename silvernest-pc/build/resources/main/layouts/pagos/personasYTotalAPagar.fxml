@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.smartobjects.ui.javafx.controladores.genericos.ControladorListaFiltrable?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<fx:root xmlns="http://javafx.com/javafx/8.0.112"
+         xmlns:fx="http://javafx.com/fxml/1"
+         type="javafx.scene.layout.VBox"
+         alignment="TOP_CENTER"
+         styleClass="raiz"
+         spacing="25">
+
+    <ControladorListaFiltrable fx:id="listaPersonas"
+                               VBox.vgrow="ALWAYS"
+                               styleClass="forzar-esquinas-redondas-item-informacion-persona"/>
+
+    <VBox VBox.vgrow="NEVER" alignment="BOTTOM_RIGHT">
+        <StackPane styleClass="esquinas-superiores-redondas-fondo-color-primario"
+                   VBox.vgrow="NEVER">
+
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+
+            <Label fx:id="labelPersonasSeleccionadas"
+                   styleClass="etiqueta-19px-blanca-medium-peso800"
+                   text="X PERSONAS SELECCIONADAS"
+                   wrapText="true"/>
+
+        </StackPane>
+
+        <GridPane alignment="TOP_CENTER" styleClass="esquinas-inferiores-redondas-fondo-color-texto">
+            <columnConstraints>
+                <ColumnConstraints hgrow="NEVER" percentWidth="50.0"/>
+                <ColumnConstraints hgrow="NEVER" percentWidth="50.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints vgrow="NEVER"/>
+                <RowConstraints vgrow="NEVER"/>
+                <RowConstraints vgrow="NEVER"/>
+                <RowConstraints vgrow="NEVER"/>
+            </rowConstraints>
+
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+
+            <Label styleClass="etiqueta-13px-blanca-medium" text="TOTAL SIN IMPUESTOS"
+                   GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
+            <Label fx:id="totalSinImpuestos" styleClass="etiqueta-13px-blanca-medium" text="TOTAL SIN IMPUESTOS"
+                   GridPane.rowIndex="0" GridPane.columnIndex="1">
+                <GridPane.margin>
+                    <Insets left="25"/>
+                </GridPane.margin>
+            </Label>
+
+
+            <Label styleClass="etiqueta-13px-blanca-medium" text="IMPUESTOS"
+                   GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
+            <Label fx:id="impuesto" styleClass="etiqueta-13px-blanca-medium" text="IMPUESTOS"
+                   GridPane.rowIndex="1" GridPane.columnIndex="1">
+                <GridPane.margin>
+                    <Insets left="25"/>
+                </GridPane.margin>
+            </Label>
+
+            <Label styleClass="etiqueta-15px-blanca-medium" text="TOTAL"
+                   GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.halignment="RIGHT">
+                <GridPane.margin>
+                    <Insets top="15" left="25"/>
+                </GridPane.margin>
+            </Label>
+            <Label fx:id="total" styleClass="etiqueta-15px-blanca-medium" text="TOTAL"
+                   GridPane.rowIndex="2" GridPane.columnIndex="1">
+                <GridPane.margin>
+                    <Insets top="15" left="25"/>
+                </GridPane.margin>
+            </Label>
+
+            <Label styleClass="etiqueta-17px-blanca-bold" text="GRAN TOTAL"
+                   GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.halignment="RIGHT">
+                <GridPane.margin>
+                    <Insets top="15"/>
+                </GridPane.margin>
+            </Label>
+            <Label fx:id="granTotal" styleClass="etiqueta-17px-blanca-bold" text="GRAN TOTAL"
+                   GridPane.rowIndex="3" GridPane.columnIndex="1">
+                <GridPane.margin>
+                    <Insets top="18" left="25"/>
+                </GridPane.margin>
+            </Label>
+
+        </GridPane>
+
+    </VBox>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+</fx:root>

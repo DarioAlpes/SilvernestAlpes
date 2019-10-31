@@ -1,0 +1,13 @@
+rootProject.name = 'persistencia'
+
+include ':entidades'
+project(':entidades').projectDir = new File(settingsDir, '../entidades')
+
+include ':configuracion-persistencia'
+project(':configuracion-persistencia').projectDir = new File(settingsDir, '../configuracion-persistencia')
+
+include ':configuracion-persistencia-sqlite'
+project(':configuracion-persistencia-sqlite').projectDir = new File(settingsDir, '../configuracion-persistencia-sqlite')
+
+include ':configuracion-persistencia-postgresql'
+project(':configuracion-persistencia-postgresql').projectDir = new File(settingsDir, '../configuracion-persistencia-postgresql')

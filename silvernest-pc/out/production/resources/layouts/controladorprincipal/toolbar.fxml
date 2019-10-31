@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<fx:root
+        xmlns="http://javafx.com/javafx/8"
+        xmlns:fx="http://javafx.com/fxml/1"
+        type="javafx.scene.layout.GridPane"
+        style="-fx-background-color: -color-primario">
+
+    <columnConstraints>
+        <ColumnConstraints hgrow="NEVER"/>
+        <ColumnConstraints hgrow="NEVER"/>
+        <ColumnConstraints hgrow="ALWAYS"/>
+        <ColumnConstraints percentWidth="17.45"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="100"/>
+    </rowConstraints>
+
+    <JFXButton fx:id="botonVolver" styleClass="boton-en-toolbar" text=""
+               GridPane.columnIndex="0" GridPane.rowIndex="0"
+               GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+        <GridPane.margin>
+            <Insets left="20"/>
+        </GridPane.margin>
+
+        <graphic>
+            <FontAwesomeIconView
+                    fx:id="iconoVolver"
+                    glyphName="ARROW_LEFT"
+                    size="2.6em"/>
+        </graphic>
+    </JFXButton>
+
+    <ImageView fx:id="logo"
+               GridPane.columnIndex="1" GridPane.rowIndex="0"
+               GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+        <GridPane.margin>
+            <Insets left="40"/>
+        </GridPane.margin>
+
+        <Image url="@/imagenes/logo_toolbar.png"/>
+    </ImageView>
+
+    <Label fx:id="titulo"
+           text="Título"
+           styleClass="titulo-toolbar-label"
+           GridPane.columnIndex="2" GridPane.rowIndex="0"
+           GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+    </Label>
+
+    <JFXButton fx:id="botonMenu" styleClass="boton-en-toolbar" text=""
+               GridPane.columnIndex="3" GridPane.rowIndex="0"
+               GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+        <GridPane.margin>
+            <Insets right="8"/>
+        </GridPane.margin>
+
+        <graphic>
+            <FontAwesomeIconView
+                    fx:id="iconoMenu"
+                    glyphName="ELLIPSIS_V"
+                    size="2.6em"/>
+        </graphic>
+    </JFXButton>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+</fx:root>

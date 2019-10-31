@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="logger_main" target="1.6" />
+      <module name="logger_test" target="1.8" />
+      <module name="weaver-aspectj-interno_main" target="1.8" />
+      <module name="weaver-aspectj-interno_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

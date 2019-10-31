@@ -1,0 +1,8 @@
+rootProject.name = 'red-clientes'
+
+include ':entidades'
+project(':entidades').projectDir = new File(settingsDir, '../entidades')
+
+include ':red'
+project(':red').projectDir = new File(settingsDir, '../red')
+

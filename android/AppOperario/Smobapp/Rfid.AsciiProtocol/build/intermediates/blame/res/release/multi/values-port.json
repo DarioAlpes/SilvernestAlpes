@@ -1,0 +1,50 @@
+[
+    {
+        "outputFile": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\Rfid.AsciiProtocol\\build\\intermediates\\res\\merged\\release\\values-port\\values-port.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 55,
+                    "endOffset": 106
+                },
+                "from": {
+                    "file": "C:\\Users\\Jorge\\Documents\\Trabajo\\SmartObjects\\SmartObjects\\android\\AppOperario\\Smobapp\\Rfid.AsciiProtocol\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-port\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 55,
+                        "endOffset": 107
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\Rfid.AsciiProtocol\\build\\intermediates\\res\\merged\\release\\values-port\\values-port.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 55,
+                    "endOffset": 106
+                },
+                "from": {
+                    "file": "C:\\workspace_smart_objects\\SmartObjects\\android\\AppOperario\\Smobapp\\Rfid.AsciiProtocol\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-port\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 55,
+                        "endOffset": 107
+                    }
+                }
+            }
+        ]
+    }
+]

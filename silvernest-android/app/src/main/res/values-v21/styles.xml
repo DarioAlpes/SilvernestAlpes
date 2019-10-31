@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ThemeSinToolbar" parent="ThemeSinToolbarBase">
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="ThemeDeToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="actionButtonStyle">@style/Widget.AppCompat.ActionButton</item>
+        <item name="selectableItemBackground">?android:selectableItemBackground</item>
+        <item name="selectableItemBackgroundBorderless">?android:selectableItemBackground</item>
+        <item name="android:colorControlHighlight">#33ffffff</item>
+        <item name="popupTheme">@style/ThemeDePopupOverlay</item>
+
+        <item name="android:textColorHint">@color/hint_blanco</item>
+
+        <!--Para cuando se selecciona el searchview-->
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+</resources>

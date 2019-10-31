@@ -1,0 +1,37 @@
+rootProject.name = 'silvernest-pc'
+
+include ':entidades'
+project(':entidades').projectDir = new File(settingsDir, '../entidades')
+
+include ':red'
+project(':red').projectDir = new File(settingsDir, '../red')
+
+include ':modelos-ui'
+project(':modelos-ui').projectDir = new File(settingsDir, '../modelos-ui')
+
+include ':red-clientes'
+project(':red-clientes').projectDir = new File(settingsDir, '../red-clientes')
+
+include ':nfc'
+project(':nfc').projectDir = new File(settingsDir, '../nfc')
+
+include ':nfc-windows-pcsc'
+project(':nfc-windows-pcsc').projectDir = new File(settingsDir, '../nfc-windows-pcsc')
+
+include ':persistencia'
+project(':persistencia').projectDir = new File(settingsDir, '../persistencia')
+
+include ':configuracion-persistencia'
+project(':configuracion-persistencia').projectDir = new File(settingsDir, '../configuracion-persistencia')
+
+include ':configuracion-persistencia-sqlite'
+project(':configuracion-persistencia-sqlite').projectDir = new File(settingsDir, '../configuracion-persistencia-sqlite')
+
+include ':configuracion-persistencia-h2'
+project(':configuracion-persistencia-h2').projectDir = new File(settingsDir, '../configuracion-persistencia-h2')
+
+include ':configuracion-persistencia-postgresql'
+project(':configuracion-persistencia-postgresql').projectDir = new File(settingsDir, '../configuracion-persistencia-postgresql')
+
+include ':sincronizador-de-datos'
+project(':sincronizador-de-datos').projectDir = new File(settingsDir, '../sincronizador-de-datos')

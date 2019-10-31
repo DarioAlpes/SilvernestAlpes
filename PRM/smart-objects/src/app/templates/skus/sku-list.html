@@ -1,0 +1,7 @@
+<div class="error" *ngIf="error">{{error}}</div>
+
+<pageheader [title]="'SKUs'"></pageheader>
+
+<tableview *ngIf="skus" [config]="config" [TableData] = "skus"
+           [rows]="rows" [columns]="columns" [click]="boundCallBack" [edit]="boundCallBack2" [delete]="boundCallBackDelete">
+</tableview>

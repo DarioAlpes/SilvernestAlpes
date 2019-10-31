@@ -1,0 +1,1 @@
+gsutil acl ch -u AllUsers:R -R gs://frontend_smartobjectssas

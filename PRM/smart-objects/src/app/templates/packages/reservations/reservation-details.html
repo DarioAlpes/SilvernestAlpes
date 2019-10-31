@@ -1,0 +1,18 @@
+<div *ngIf="reservation">
+    <h2>Detalles de la reserva</h2>
+    <div class="error" *ngIf="error">
+        <label>Error: </label>
+        {{error}}
+    </div>
+    <div *ngIf="reservation.id"><label>Id: </label>{{reservation.id}}</div>
+    <div>
+      <label>Compañia: </label>
+      <input [(ngModel)]="reservation.company" placeholder="Compañia"/>
+    </div>
+    <div>
+      <label>Número de personas: </label>
+      <input type="number" [(ngModel)]="reservation['number-persons']" placeholder="10"/>
+    </div>
+    <button (click)="saveReservation()">Guardar</button>
+    <button (click)="goBack()">Volver</button>
+</div>

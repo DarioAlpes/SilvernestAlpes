@@ -1,0 +1,30 @@
+<div class="error" *ngIf="error">{{error}}</div>
+<pageheader [title]="'Paquetes'"></pageheader>
+<gridview *ngIf="data" [columns]="columns" [TableData] = "data" [click]="boundCallBack" [edit]="boundCallBack2"></gridview>
+<table>
+    <tr>
+        <th>Id historico</th>
+        <th>Id</th>
+        <th>Cantidad incluida</th>
+        <th>Cantidad ilimitada</th>
+        <th>Id paquete</th>
+        <th>Id ubicación</th>
+        <th>Opciones</th>
+    </tr>
+    <tr *ngFor="let access of accesses">
+        <td>{{access["historic-id"]}}</td>
+        <td>{{access.id}}</td>
+        <td>{{access["amount-included"]}}</td>
+        <td>{{access["unlimited-amount"]}}</td>
+        <td>{{access["id-package"]}}</td>
+        <td>{{access["id-location"]}}</td>
+        <td>
+            <button type="button" (click)="onSelect(access)">Editar</button>
+        </td>
+    </tr>
+</table>
+<button (click)="addAccess()">Crear acceso</button>
+<button (click)="goBack()">Volver</button>
+<div *ngIf="showAccess">
+    <access-detail (close)="close($event)" [access]="selectedAccess"></access-detail>
+</div>

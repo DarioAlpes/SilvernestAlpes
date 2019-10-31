@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/appbar"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        style="@style/dim_match_wrap"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Items esperados"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/tv_resumen_auditoria_esperados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_below="@+id/textView10"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView10"
+                android:layout_alignStart="@+id/textView10"
+                android:layout_alignTop="@+id/tv_resumen_auditoria_esperados"
+                android:layout_toLeftOf="@+id/tv_resumen_auditoria_esperados"
+                android:layout_toStartOf="@+id/tv_resumen_auditoria_esperados"
+                android:text="Cantidad de items que han sido recibidos desde el servidor"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/tv_item_encontrados_titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Items encontrados"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/tv_resumen_auditoria_encontrados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_below="@+id/tv_item_encontrados_titulo"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/tv_item_encontrados_detalle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_item_encontrados_titulo"
+                android:layout_alignStart="@+id/tv_item_encontrados_titulo"
+                android:layout_alignTop="@+id/tv_resumen_auditoria_encontrados"
+                android:layout_toLeftOf="@+id/tv_resumen_auditoria_encontrados"
+                android:layout_toStartOf="@+id/tv_resumen_auditoria_encontrados"
+                android:text="Cantidad de items que se han encontrado en la tienda."
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/tv_item_perdidos_titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Items perdidos"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/tv_resumen_auditoria_perdidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_below="@+id/tv_item_perdidos_titulo"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/tv_item_perdidos_detalle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_item_perdidos_titulo"
+                android:layout_alignStart="@+id/tv_item_perdidos_titulo"
+                android:layout_alignTop="@+id/tv_resumen_auditoria_perdidos"
+                android:layout_toLeftOf="@+id/tv_resumen_auditoria_perdidos"
+                android:layout_toStartOf="@+id/tv_resumen_auditoria_perdidos"
+                android:text="Cantidad de items que se colocaron como perdidos en el inventario."
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/tv_item_dañados_titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Items dañados"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/tv_resumen_auditoria_daniados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_below="@+id/tv_item_dañados_titulo"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/tv_item_dañados_detalle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_item_dañados_titulo"
+                android:layout_alignStart="@+id/tv_item_dañados_titulo"
+                android:layout_alignTop="@+id/tv_resumen_auditoria_daniados"
+                android:layout_toLeftOf="@+id/tv_resumen_auditoria_daniados"
+                android:layout_toStartOf="@+id/tv_resumen_auditoria_daniados"
+                android:text="Cantidad de items que tienen la etiqueta dañada."
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="60dp"
+                android:gravity="center"
+                android:text="Al aprobar esta información, dice que usted ha realizado el inventario."
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <CheckBox
+                android:id="@+id/cb_resumen_aprobar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:checked="true"
+                android:gravity="center" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

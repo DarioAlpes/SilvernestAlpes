@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="smartobjects.com.smobapp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:name=".utils.GlobalClass"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_so"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ActivitySplashScreen"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityDevice"/>
+        <activity
+            android:name=".ActivityIniciarSesion"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ActivityModulos"
+            android:icon="@drawable/logo_so"
+            android:label=""
+            android:logo="@drawable/logo_so"
+            android:parentActivityName=".ActivityIniciarSesion">
+        </activity>
+        <activity
+            android:name="com.uk.tsl.rfid.DeviceListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name=".ActivityListProduct"
+            android:icon="@drawable/logo_so"
+            android:label=""
+            android:logo="@drawable/logo_so"
+            android:parentActivityName=".ActivityModulos"/>
+        <activity
+            android:name=".ActivityProductDetail"
+            android:icon="@drawable/logo_so"
+            android:label=""
+            android:logo="@drawable/logo_so"
+            android:parentActivityName=".ActivityListProduct"/>
+        <activity android:name=".ActivityConsultarProducto"/>
+        <activity
+            android:name=".ActivityListarItem"
+            android:label=""
+            android:parentActivityName=".ActivityModulos"/>
+        <activity android:name=".ActivityItemDetail"/>
+        <activity
+            android:name=".ReadWriteActivity"
+            android:label=""
+            android:parentActivityName=".ActivityModulos">
+        </activity>
+        <activity
+            android:name=".ActivityAuditoria"
+            android:label="@string/title_activity_activity_auditoria"
+            android:parentActivityName=".ActivityModulos"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="smartobjects.com.smobapp.ActivityModulos"/>
+        </activity>
+        <activity
+            android:name=".ActivityAuditoriaDos"
+            android:label="@string/title_activity_activity_auditoria"
+            android:parentActivityName=".ActivityModulos">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="smartobjects.com.smobapp.ActivityModulos"/>
+        </activity>
+        <activity
+            android:name=".ActivityUbicacion"
+            android:label="@string/title_activity_activity_auditoria"
+            android:parentActivityName=".ActivityModulos"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".ActivityDescargaItem"
+            android:label="@string/title_activity_activity_auditoria"
+            android:parentActivityName=".ActivityUbicacion"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

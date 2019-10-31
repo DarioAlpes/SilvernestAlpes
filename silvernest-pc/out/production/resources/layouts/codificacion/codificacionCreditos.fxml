@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.smartobjects.ui.javafx.controladores.genericos.DialogoDeEspera?>
+<?import co.smartobjects.ui.javafx.controladores.genericos.DialogoPositivoNegativo?>
+<?import co.smartobjects.ui.javafx.iconosyfonts.PrompterIconosGeneralesView?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<StackPane xmlns="http://javafx.com/javafx/8.0.112"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:id="raiz">
+
+    <VBox alignment="TOP_CENTER">
+
+        <padding>
+            <Insets right="15" left="15"/>
+        </padding>
+
+        <Label text="ESTADO DE CODIFICACIÓN"
+               styleClass="etiqueta-22px-color-texto-bold"
+               GridPane.halignment="CENTER"
+               GridPane.rowIndex="0" GridPane.columnIndex="0">
+            <VBox.margin>
+                <Insets top="25"/>
+            </VBox.margin>
+        </Label>
+
+        <Label fx:id="numeroDeSesionesActivas"
+               text="x / N"
+               styleClass="etiqueta-22px-color-primario-bold"
+               GridPane.halignment="CENTER"
+               GridPane.rowIndex="0" GridPane.columnIndex="0">
+            <VBox.margin>
+                <Insets top="25"/>
+            </VBox.margin>
+        </Label>
+
+        <HBox>
+            <VBox.margin>
+                <Insets top="10"/>
+            </VBox.margin>
+            <PrompterIconosGeneralesView glyphName="NUMERO_RESERVA" size="5.2em">
+                <HBox.margin>
+                    <Insets right="15"/>
+                </HBox.margin>
+            </PrompterIconosGeneralesView>
+
+            <Label fx:id="numeroDeReserva"
+                   prefHeight="50"
+                   prefWidth="220"
+                   alignment="CENTER"
+                   styleClass="etiqueta-bordes-redondos-grises-y-fondo-gris"
+                   text="NÚMERO DE RESERVA">
+                <padding>
+                    <Insets top="5" right="5" bottom="5" left="5"/>
+                </padding>
+            </Label>
+        </HBox>
+
+        <ScrollPane fx:id="scrollPane"
+                    fitToHeight="true"
+                    fitToWidth="true"
+                    hbarPolicy="NEVER"
+                    VBox.vgrow="NEVER"
+                    prefHeight="500">
+            <VBox.margin>
+                <Insets top="40"/>
+            </VBox.margin>
+            <TilePane fx:id="itemsACodificar"
+                      alignment="CENTER"
+                      hgap="90"
+                      prefColumns="2"
+                      prefRows="2"
+                      vgap="60">
+
+                <padding>
+                    <Insets bottom="1" left="1" right="1" top="1"/>
+                </padding>
+            </TilePane>
+        </ScrollPane>
+
+        <Group>
+            <VBox.margin>
+                <Insets top="25"/>
+            </VBox.margin>
+            <StackPane fx:id="panelTooltipoBotonFinalizar">
+                <JFXButton fx:id="botonFinalizar"
+                           text="FINALIZAR"
+                           styleClass="boton-primario-anaranjado"
+                           minWidth="115">
+                </JFXButton>
+            </StackPane>
+        </Group>
+    </VBox>
+
+    <DialogoDeEspera fx:id="dialogoDeEspera"/>
+
+    <DialogoPositivoNegativo fx:id="dialogoLectorNFCDesconectado"/>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+</StackPane>

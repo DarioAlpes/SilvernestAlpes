@@ -1,0 +1,28 @@
+<div class="error" *ngIf="error">{{error}}</div>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Activo</th>
+        <th>Pago</th>
+        <th>Id persona</th>
+        <th>Id reservación</th>
+        <th>Opciones</th>
+    </tr>
+    <tr *ngFor="let personReservation of personReservations">
+        <td>{{personReservation.id}}</td>
+        <td>{{personReservation.active}}</td>
+        <td>{{personReservation.payment}}</td>
+        <td>{{personReservation["id-person"]}}</td>
+        <td>{{personReservation["id-reservation"]}}</td>
+        <td>
+            <button type="button" (click)="onSelect(personReservation)">Editar</button>
+            <button type="button" (click)="activate(personReservation)" *ngIf="!personReservation.active">Activar</button>
+            <button type="button" (click)="deactivate(personReservation)" *ngIf="personReservation.active">Desactivar</button>
+        </td>
+    </tr>
+</table>
+<button (click)="addPersonReservation()">Crear reserva</button>
+<button (click)="goBack()">Volver</button>
+<div *ngIf="showPersonReservation">
+    <person-reservation-detail (close)="close($event)" [personReservation]="selectePersonReservation"></person-reservation-detail>
+</div>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.smartobjects.ui.javafx.controladores.codificacion.creditosacodificar.ControladorCreditosACodificarDePersona?>
+<?import co.smartobjects.ui.javafx.controladores.registropersonas.ControladorInformacionPersonaConGrupo?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.GlyphsStack?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<fx:root xmlns="http://javafx.com/javafx/8.0.121"
+         xmlns:fx="http://javafx.com/fxml/1"
+         type="VBox"
+         fx:id="raiz"
+         prefHeight="140"
+         styleClass="item-lista-personas-a-codificar-default">
+
+    <GridPane>
+        <columnConstraints>
+            <ColumnConstraints hgrow="NEVER"/>
+            <ColumnConstraints hgrow="SOMETIMES"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints percentHeight="77.16"/>
+            <RowConstraints percentHeight="22.84"/>
+        </rowConstraints>
+
+        <ControladorInformacionPersonaConGrupo
+                fx:id="informacionPersonaConGrupo"
+                prefWidth="310"
+                GridPane.vgrow="ALWAYS"
+                GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+
+        <HBox fx:id="contendorInfoSaldo"
+              alignment="CENTER_LEFT"
+              maxWidth="Infinity"
+              style="-fx-background-color: -color-primario"
+              GridPane.rowIndex="1" GridPane.columnIndex="0">
+            <Label fx:id="etiquetaSaldo"
+                   styleClass="etiqueta-19px-blanca-medium"
+                   text="Saldo"
+                   wrapText="true">
+                <HBox.margin>
+                    <Insets left="30"/>
+                </HBox.margin>
+            </Label>
+            <Label fx:id="saldo"
+                   styleClass="etiqueta-19px-blanca-black"
+                   text="Saldo"
+                   wrapText="true">
+                <HBox.margin>
+                    <Insets left="30"/>
+                </HBox.margin>
+            </Label>
+        </HBox>
+
+        <ControladorCreditosACodificarDePersona
+                fx:id="creditosACodificarDePersona"
+                style="-fx-background-color: -fondo-elemento-en-lista"
+                prefWidth="330"
+                GridPane.hgrow="NEVER"
+                GridPane.vgrow="ALWAYS"
+                GridPane.rowIndex="0" GridPane.columnIndex="1" GridPane.rowSpan="2"/>
+
+    </GridPane>
+
+    <HBox fx:id="contendorEstadoCodificacion"
+          alignment="CENTER"
+          maxWidth="Infinity"
+          styleClass="contendorEstadoCodificacionSinCodificar"
+          VBox.vgrow="ALWAYS">
+        <padding>
+            <Insets left="5" top="5" right="5" bottom="5"/>
+        </padding>
+        <HBox alignment="CENTER" spacing="18">
+            <Label fx:id="estadoCodificacion"
+                   styleClass="etiqueta-19px-blanca-black"
+                   text="SIN CODIFICAR"
+                   wrapText="true">
+            </Label>
+            <JFXButton fx:id="botonReintentarActivar"
+                       styleClass="boton-redondo"
+                       text="">
+                <graphic>
+                    <GlyphsStack>
+                        <FontAwesomeIconView glyphName="CIRCLE" size="3em" styleClass="icono-blanco"/>
+                        <FontAwesomeIconView fx:id="iconoDeReintentarActivar"
+                                             glyphName="REFRESH" size="1.68em"
+                                             styleClass="icono-color-estado-intermedio"/>
+                    </GlyphsStack>
+                </graphic>
+            </JFXButton>
+        </HBox>
+    </HBox>
+
+    <stylesheets>
+        <URL value="@/css/estilo.css"/>
+    </stylesheets>
+</fx:root>
